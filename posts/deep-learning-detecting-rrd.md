@@ -1,7 +1,7 @@
 ---
 title: 'Applying Deep Learning to detect Rhegmatogenous Retinal Detachment'
-date: '2021-04-15 '
-id: 'deep-learning-rrd'
+date: '2021-04-15'
+id: 'deep-learning-detecting-rrd'
 ---
 
 **Retinal detachment is an eye disease and is one of the most serious ocular emergencies.** It occurs after a layer of the retina - essential tissue for vision - is lifted from the pigmented epithelial tissue, dragging the blood vessels that supply nutrients and the eye with it. If the retina is no longer nourished through contact with the pigment epithelium layer, cell death and a progressive and functional loss of vision or of the detached portion of the retina occur after 48 hours. 

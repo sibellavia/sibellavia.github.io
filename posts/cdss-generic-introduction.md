@@ -1,7 +1,7 @@
 ---
-title: 'What are Clinical Decision Support Systems?'
+title: 'A generic introduction to Clinical Decision Support Systems'
 date: '2021-05-17'
-id: 'cdss'
+id: 'what-are-clinical-decision-support-systems'
 ---
 
 A **Clinical Decision Support System** is defined as an "active knowledge system, which uses two or more patient data elements to generate case-specific advice" (DSS, 2001). This implies that a CDSS is simply a Decision Support System focused on the use of **knowledge management** in order to obtain **clinical advice for patient care** based on multiple variables inherent to it. The main purpose of the modern CDSS, therefore, is **to assist doctors in patient treatment cases** or in emergency situations (Benner, 2007).
