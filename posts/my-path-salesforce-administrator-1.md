@@ -6,7 +6,9 @@ id: 'my-path-salesforce-administrator-1'
 
 I started studying for the Salesforce Administrator Certification. Actually, I've been doing their Trailheads for two weeks. The architecture of the project I am following contemplates a wide use of Salesforce and the need to deepen its details is inevitable.
 
-As a Scrum Master and Analyst of my team, I have decided to set myself a goal: to work on Salesforce, and at the same time study to take the first certification that can allow me to deepen my knowledge of this CRM.
+As a Scrum Master and Analyst of my team, I have decided to set myself a goal: to work on Salesforce, and at the same time study to take the first certification that can allow me to deepen my knowledge of this CRM. My goal is to grow technically, help my team and provide the customer with a unique service.
+
+For those unfamiliar with Salesforce, below I will give an explanation in broad terms, and then I will explain my path.
 
 ## What is Salesforce
 
