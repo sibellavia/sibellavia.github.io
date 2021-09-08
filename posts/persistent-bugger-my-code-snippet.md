@@ -34,9 +34,7 @@ Here's how I solved the problem, in Python:
 
 ![my code.](/images/persistent-bugger/persistent-bugger.png)
 
-I declared a function that takes into account an **mp** counter.
-
-In the while loop: as long as the number **n** always has more than two digits, these are multiplied by each other. The counter **mp** increases and the loop renews **n** with the number obtained.
+I declared a function that takes the number **n** as input. About the while loop: as long as the number **n** always has more than two digits, these are multiplied by each other. The counter **mp** (Multiplicative Persistence) increases and the loop renews **n** with the number obtained. When the fixed point is reached, then the function will return **mp**.
 
 Tested with numerous scenarios and it works!
 
