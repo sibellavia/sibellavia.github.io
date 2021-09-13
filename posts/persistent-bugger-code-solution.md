@@ -1,7 +1,7 @@
 ---
-title: 'Persistent Bugger: my code snippet'
+title: 'Persistent Bugger – Code solution'
 date: '2021-09-08'
-id: 'persistent-bugger-my-code-snippet'
+id: 'persistent-bugger-code-solution'
 ---
 
 Hello there. I was digging in Codewars and I found a *kata* that piqued my curiosity:
@@ -28,7 +28,7 @@ From Wikipedia:
 
 In our case, we have to consider not the sum, but the product of the digits.
 
-## My code snippet
+## My solution
 
 Here's how I solved the problem, in Python:
 
@@ -38,4 +38,4 @@ I declared a function that takes the number **n** as input. About the while loop
 
 Tested with numerous scenarios and it works!
 
-Hope you found it interesting. Thanks for reading and SYL with the next code snippet.
+Hope you found it interesting. Thanks for reading and SYL with the next solution.
