@@ -7,10 +7,7 @@ import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import Social from '../components/social'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -27,28 +24,8 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <a href="https://www.linkedin.com/in/simone-bellavia/">
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            className={utilStyles.socialIcons}
-          />
-        </a>
-        <span style={{ padding: 8 }}></span>
-        <a href="https://instagram.com/simonebellavia">
-          <FontAwesomeIcon
-            icon={faInstagram}
-            className={utilStyles.socialIcons}
-          />
-        </a>
-        <span style={{ padding: 8 }}></span>
-        <a href="https://twitter.com/simoneb1x">
-          <FontAwesomeIcon
-            icon={faTwitter}
-            className={utilStyles.socialIcons}
-          />
-        </a>
-      </section>
+
+      <Social />
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>

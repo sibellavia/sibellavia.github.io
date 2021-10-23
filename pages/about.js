@@ -1,9 +1,7 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
-import styles from '../styles/utils.module.css'
 import utilStyles from '../styles/utils.module.css'
-
-import Link from 'next/link'
+import Social from '../components/social'
 
 export default function Home({ allPostsData }) {
   return (
@@ -25,6 +23,8 @@ export default function Home({ allPostsData }) {
             <h2 className={utilStyles.headingLg}>Get in touch</h2>
             <p>Write me on Instagram or on LinkedIn! For me it is always a pleasure to meet new people.</p>
         </section>
+
+        <Social />
     </Layout>
   )
 }
