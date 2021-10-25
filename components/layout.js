@@ -44,7 +44,7 @@ export default function Layout({ children, home }) {
             </Link>
             <section className={utilStyles.subHeadingHeader}>
               Business & Integration Architecture Analyst at Accenture.
-              Master's degree student in Data Science. Sometimes I write articles on my blog. 
+              Master's degree student in Data Science at the University of Trento. Sometimes I write articles on my blog. 
               Know more about me{" "}
               <Link href="/about">here.</Link>
             </section>
