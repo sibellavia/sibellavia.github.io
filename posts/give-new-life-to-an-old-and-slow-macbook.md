@@ -24,9 +24,11 @@ After installing Xubuntu, the Wi-Fi was not working. It wasn't detecting network
 Go to "Software & Updates" and go to the "Additional Drivers" tab. You should check the "Using Broadcom 802.11 ..." box. If no option is present, you may want to run these commands from the terminal:
 
 *sudo apt-get update*
+
 *sudo apt-get --reinstall install bcmwl-kernel-source*
 
 *sudo modprobe -r b43 ssb wl brcmfmac brcmsmac bcma*
+
 *sudo modprobe wl*
 
 You can find more information [on this link (which helped me fixing it).](https://askubuntu.com/questions/1076964/macbook-can-t-find-wifi-for-ubuntu-18-04)
@@ -50,7 +52,9 @@ I'm assuming that your bootloader is on sda1, otherwise /dev/disk0s2 if it's on 
 I had some issues with the trackpad at first. The cursor would move very slowly and jerkily. I actually solved it in a very basic way, and that is by updating the packages:
 
 *sudo apt-get clean*
+
 *sudo apt-get update*
+
 *sudo apt-get dist-upgrade -y*
 
 So I solved it. But I read on the internet that many users couldn't solve this way, so I found [mtrack, a Github project.](https://github.com/BlueDragonX/xf86-input-mtrack) It's a Xorg driver for multitouch trackpads. There is a very comprehensive and clear guide on how to install it. Thanks to this, many have managed to solve the issue.
