@@ -9,13 +9,13 @@ My girlfriend has an old 2009 MacBook Air. After some updates of macOS, the comp
 ![MacBook Air 2009 with Xubuntu](/images/give-new-life-to-an-old-and-slow-macbook/macbook-air-with-xubuntu.png)
 *MacBook Air 2009 finally back to life with Xubuntu.*
 
-I was very surprised with the result. Xubuntu seems to me the best Linux distribution for those who want to speed up and use an old MacBook. However, it must also be said that after the installation I had to perform some tricks and solve some long-standing bugs. Below I explain how.
+I was very surprised with the result. Xubuntu seems to me the best Linux distribution for those who want to speed up and use an old MacBook. However, it must also be said that after the installation I had to perform some tricks and solve some annoying bugs. Below I explain how I installed Xubuntu and how I fixed some of the issues I encountered.
 
 ## How I installed Xubuntu
 
 Very simple. I downloaded the ISO from [Xubuntu official website,](https://xubuntu.org/download) then I made a bootable USB flash drive with [Etcher](https://www.balena.io/etcher/) and inserted it into the MacBook. I booted from the pendrive and proceeded with the installation wizard. 
 
-By the way, I've read on some forums that it is advisable to maintain the dual boot with macOS + Linux. Anyway, I did the full disk erase, removing macOS and keeping only Xubuntu. Note that although your MacBook is very old, you will always be able to restore macOS by simply running Disk Utility while booting the computer.
+I've read on some forums that it is advisable to maintain the dual boot with macOS + Linux. Nevertheless, I did the full disk erase, removing macOS and keeping only Xubuntu. Note that although your MacBook is very old, you will always be able to restore macOS by simply running Disk Utility while booting the computer. It's still best to make sure your MacBook can do this.
 
 ## How to fix Wi-Fi
 
@@ -31,11 +31,11 @@ sudo modprobe -r b43 ssb wl brcmfmac brcmsmac bcma
 sudo modprobe wl
 ```
 
-You can find more information [on this link (which helped me solve the problem).](https://askubuntu.com/questions/1076964/macbook-can-t-find-wifi-for-ubuntu-18-04)
+You can find more information [on this link (which helped me fixing it).](https://askubuntu.com/questions/1076964/macbook-can-t-find-wifi-for-ubuntu-18-04)
 
 ## How to fix long boot times and black/white screen
 
-The first few times I started the computer, the computer would suffer very long boot times, and often a white screen would appear on which it would remain for a few seconds.
+The first few times I started the computer, I noticed very long boot times, and often a white screen would appear for some seconds.
 
 I did the following:
 
@@ -59,11 +59,11 @@ sudo apt-get update
 sudo apt-get dist-upgrade -y
 ```
 
-And so I solved it. But I read on the internet that many users couldn't solve this way, so I found [mtrack, a Github project.](https://github.com/BlueDragonX/xf86-input-mtrack) An Xorg driver for multitouch trackpads. There is a very comprehensive and clear guide on how to install it. Many, thanks to this, have managed to solve the issue.
+So I solved it. But I read on the internet that many users couldn't solve this way, so I found [mtrack, a Github project.](https://github.com/BlueDragonX/xf86-input-mtrack) It's a Xorg driver for multitouch trackpads. There is a very comprehensive and clear guide on how to install it. Thanks to this, many have managed to solve the issue.
 
 ## Other issues
 
-You may find other small bugs and problems. To solve them, I did a lot of research on Google and visited many forums, testing different solutions. I suggest you do the same, and visit the section of [the official Ubuntu forum, Ask Ubuntu, dedicated to the most relevant Macbook questions.](https://askubuntu.com/questions/tagged/macbook-pro?sort=frequent)
+You may find other small bugs and problems. To solve them, I did a lot of research on Google and visited many forums, testing different solutions. I suggest you do the same, and visit the section of [the official Ubuntu forum, Ask Ubuntu, dedicated to the most relevant MacBook questions.](https://askubuntu.com/questions/tagged/macbook-pro?sort=frequent)
 
 If you wish to have a step-by-step guide on how to install Xubuntu, there is a plethora of guides on the internet that you can draw from. I recommend looking at more than one.
 
