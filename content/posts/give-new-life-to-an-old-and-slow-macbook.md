@@ -40,7 +40,7 @@ I did the following:
 2. Utilities -> Terminal
 3. Then typed:
 
-        bless --device /dev/disk0s1 --setBoot --legacy
+`bless --device /dev/disk0s1 --setBoot --legacy`
 
 I'm assuming that your bootloader is on sda1, otherwise /dev/disk0s2 if it's on sda2, etc. [More details here.](https://help.ubuntu.com/community/MactelSupportTeam/AppleIntelInstallation)
 
