@@ -11,7 +11,7 @@ Security has always been important, but **more attention is required today in pr
 - [Keepass](https://keepass.info/)
 - [Lastpass](https://www.lastpass.com/it/)
 
-Anyway, **I used this pretext to make my own Password Generator.** At first I wrote it in Python, but then wanting to publish it on my website I totally rewrote it in for React. **[You can try it here.](/coding-projects/password-generator)**
+Anyway, **I used this pretext to make my own Password Generator.** At first I wrote it in Python, but then I totally rewrote it in with React.
 
 The approach I used is ASCII conversion [(I got my inspiration here)](https://www.studytonight.com/post/building-a-password-generator-with-javascript). Then I implemented an algorithm that randomizes the password to each generation. The User Interface is extremely simple, it allows you to choose the length of the password and to use lowercase, uppercase characters, numbers and symbols.
 
