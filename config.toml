@@ -1,4 +1,4 @@
-baseURL = "https://ecstatic-northcutt-e273e8.netlify.app/"
+baseURL = "https://simonebellavia.com/"
 # title = "Hugo Themes"
 author = "Simone Bellavia"
 copyright = "Copyright © 2008–2021, Simone Bellavia; all rights reserved."
@@ -15,10 +15,10 @@ theme = "paper"
 title = "Simone B."
 
 [params]
-  twitter = 'nanxiaobei'
-  github = 'nanxiaobei'
-  instagram = 'nan.xiaobei'
-  linkedin = 'simone-bellavia'
+  twitter = 'simoneb1x'
+  github = 'simoneb1x'
+  instagram = 'simone.bellavia'
+  linkedin = '/in/simone-bellavia'
   favicon = 'img/favicon.ico'
 # ------------------------------
 
