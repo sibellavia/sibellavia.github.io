@@ -3,7 +3,7 @@
 <article class="post-single">
   <header class="post-title">
     <p>
-      <time>{{ .Date }}</time>
+      <time>{{ .Date.Format "Jan 02, 2006" }}</time>
       {{ if or .Params.Author site.Author.name }}
       <span>{{ .Params.Author | default site.Author.name }}</span>
       {{ end }}
