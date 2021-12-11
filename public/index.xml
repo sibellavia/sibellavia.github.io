@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Simone B.</title>
+    <link>https://simonebellavia.com/</link>
+    <description>Recent content on Simone B.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2021, Simone Bellavia; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 05 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://simonebellavia.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Give new life to an old and slow MacBook Air with Xubuntu</title>
+      <link>https://simonebellavia.com/posts/give-new-life-to-an-old-and-slow-macbook/</link>
+      <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://simonebellavia.com/posts/give-new-life-to-an-old-and-slow-macbook/</guid>
+      <description>My girlfriend has an old 2009 MacBook Air. After some updates of macOS, the computer had become unusable: really very slow, it was impossible even to use any browser. The only solution that seemed possible to make it at least usable was to replace the operating system. So I immediately opted for Linux. At first I tried Ubuntu: after installing it seemed to work well, but GNOME seemed to weigh everything down.</description>
+    </item>
+    
+    <item>
+      <title>My path to Salesforce Administrator Certification – #2</title>
+      <link>https://simonebellavia.com/posts/my-path-salesforce-administrator-2/</link>
+      <pubDate>Sun, 03 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://simonebellavia.com/posts/my-path-salesforce-administrator-2/</guid>
+      <description>In July 2021, I began studying to certify myself as an Administrator on Salesforce. To learn more about my preparation for the exam, you can read my post about it. My plan initially was to take the exam next year. But I realized I could take it earlier, and so I did.
+On September 30th I took the exam and passed it. I must say that the preparation and the roadmap that I had set myself were very useful.</description>
+    </item>
+    
+    <item>
+      <title>Delete occurrences of an element if it occurs more than n times – Code solution</title>
+      <link>https://simonebellavia.com/posts/delete-occurrences-n-times-code-solution/</link>
+      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://simonebellavia.com/posts/delete-occurrences-n-times-code-solution/</guid>
+      <description>Yes, I am enjoying Codewars a lot. Here&amp;rsquo;s another kata:
+ Given a list lst and a number N, create a new list that contains each number of lst at most N times without reordering. For example if N = 2, and the input is [1,2,3,1,2,1,2,3], you take [1,2,3,1,2], drop the next [1,2] since this would lead to 1 and 2 being in the result 3 times, and then take 3, which leads to [1,2,3,1,2,3].</description>
+    </item>
+    
+    <item>
+      <title>Persistent Bugger – Code solution</title>
+      <link>https://simonebellavia.com/posts/persistent-bugger-code-solution/</link>
+      <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://simonebellavia.com/posts/persistent-bugger-code-solution/</guid>
+      <description>Hello there. I was digging in Codewars and I found a kata that piqued my curiosity:
+ Write a function, persistence, that takes in a positive parameter num and returns its multiplicative persistence, which is the number of times you must multiply the digits in num until you reach a single digit. For example:
+ persistence(39) # returns 3, because 39=27, 27=14, 1*4=4 # and 4 has only one digit</description>
+    </item>
+    
+    <item>
+      <title>My path to Salesforce Administrator Certification – #1</title>
+      <link>https://simonebellavia.com/posts/my-path-salesforce-administrator-1/</link>
+      <pubDate>Sat, 31 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://simonebellavia.com/posts/my-path-salesforce-administrator-1/</guid>
+      <description>I started studying for the Salesforce Administrator Certification. Actually, I&amp;rsquo;ve been doing their Trailheads for two weeks. The architecture of the project I am following contemplates a wide use of Salesforce and the need to deepen its details is inevitable.
+As a Scrum Master and Analyst of my team, I have decided to set myself a goal: to work on Salesforce, and at the same time study to take the first certification that can allow me to deepen my knowledge of this CRM.</description>
+    </item>
+    
+    <item>
+      <title>I made a React Password Generator for fun</title>
+      <link>https://simonebellavia.com/posts/i-made-a-react-password-generator-for-fun/</link>
+      <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://simonebellavia.com/posts/i-made-a-react-password-generator-for-fun/</guid>
+      <description>Security has always been important, but more attention is required today in protecting your accounts. The various data breaches now no longer allow us to use simple and identical passwords for all the services we subscribe to. It is important to use more sophisticated credentials, preferably supported by a Password Manager. I suggest some of them below:
+ 1Password Bitwarden, it&amp;rsquo;s open source! Keepass Lastpass  Anyway, I used this pretext to make my own Password Generator.</description>
+    </item>
+    
+    <item>
+      <title>A generic introduction to Clinical Decision Support Systems</title>
+      <link>https://simonebellavia.com/posts/what-are-clinical-decision-support-systems/</link>
+      <pubDate>Mon, 17 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://simonebellavia.com/posts/what-are-clinical-decision-support-systems/</guid>
+      <description>A Clinical Decision Support System is defined as an &amp;ldquo;active knowledge system, which uses two or more patient data elements to generate case-specific advice&amp;rdquo; (DSS, 2001). This implies that a CDSS is simply a Decision Support System focused on the use of knowledge management in order to obtain clinical advice for patient care based on multiple variables inherent to it. The main purpose of the modern CDSS, therefore, is to assist doctors in patient treatment cases or in emergency situations (Benner, 2007).</description>
+    </item>
+    
+    <item>
+      <title>Applying Deep Learning to detect Rhegmatogenous Retinal Detachment</title>
+      <link>https://simonebellavia.com/posts/deep-learning-detecting-rrd/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://simonebellavia.com/posts/deep-learning-detecting-rrd/</guid>
+      <description>Retinal detachment is an eye disease and is one of the most serious ocular emergencies. It occurs after a layer of the retina - essential tissue for vision - is lifted from the pigmented epithelial tissue, dragging the blood vessels that supply nutrients and the eye with it. If the retina is no longer nourished through contact with the pigment epithelium layer, cell death and a progressive and functional loss of vision or of the detached portion of the retina occur after 48 hours.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://simonebellavia.com/about/</link>
+      <pubDate>Sat, 10 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://simonebellavia.com/about/</guid>
+      <description>Hello there! I&amp;rsquo;m a result-oriented Business Analyst. In my teams I am a point of reference when it comes to solving a problem or planning tasks to be completed.
+I&amp;rsquo;m currently working as a Business &amp;amp; Integration Arch Analyst at Accenture. I coordinate agile teams and I assist the client to achieve the requirements and objectives set by the project
+I am also involved in the design, development and configuration of systems and architectures, making my knowledge of technologies, applications and methodologies available.</description>
+    </item>
+    
+    <item>
+      <title>My first post</title>
+      <link>https://simonebellavia.com/posts/first-post/</link>
+      <pubDate>Sat, 10 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://simonebellavia.com/posts/first-post/</guid>
+      <description>Welcome to my blog! This is my first post. Here I will drop whatever I find most interesting, or I will simply try to explain some concepts that I find fascinating but unclear. I know, it sounds a bit strange, but they say one of the best ways to learn is to exhibit and illustrate to others.
+I made this blog with Next.js and React. I also tried Gatsby.js (it&amp;rsquo;s a great SSG), but I found Next.</description>
+    </item>
+    
+  </channel>
+</rss>

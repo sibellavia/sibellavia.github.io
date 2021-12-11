@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>A generic introduction to Clinical Decision Support Systems - Simone Bellavia – simonebellavia.com</title>
+
+  
+  
+  <meta name="description" content="A Clinical Decision Support System is defined as an &ldquo;active knowledge system, which uses two or more patient data elements to generate case-specific advice&rdquo; (DSS, 2001). This implies that a CDSS is simply a Decision Support System focused on the use of knowledge management in order to obtain clinical advice for patient care based on multiple variables inherent to it. The main purpose of the modern CDSS, therefore, is to assist doctors in patient treatment cases or in emergency situations (Benner, 2007)." />
+  <meta name="author" content="" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://simonebellavia.com/app.min.css" />
+
+  
+  <link rel="preload stylesheet" as="style" href="https://simonebellavia.com/an-old-hope.min.css" />
+  <script
+    defer
+    src="https://simonebellavia.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  <link rel="preload" as="image" href="https://simonebellavia.com/theme.png" />
+
+  
+  <link rel="preload" as="image" href="https://simonebellavia.com/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://simonebellavia.com/github.svg" />
+  
+  <link rel="preload" as="image" href="https://simonebellavia.com/linkedin.svg" />
+  
+
+  
+  <link rel="icon" href="https://simonebellavia.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://simonebellavia.com/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.89.1" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="A generic introduction to Clinical Decision Support Systems" />
+<meta property="og:description" content="A Clinical Decision Support System is defined as an &ldquo;active knowledge system, which uses two or more patient data elements to generate case-specific advice&rdquo; (DSS, 2001). This implies that a CDSS is simply a Decision Support System focused on the use of knowledge management in order to obtain clinical advice for patient care based on multiple variables inherent to it. The main purpose of the modern CDSS, therefore, is to assist doctors in patient treatment cases or in emergency situations (Benner, 2007)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://simonebellavia.com/posts/what-are-clinical-decision-support-systems/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-05-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-05-17T00:00:00+00:00" />
+
+
+  
+  <meta itemprop="name" content="A generic introduction to Clinical Decision Support Systems">
+<meta itemprop="description" content="A Clinical Decision Support System is defined as an &ldquo;active knowledge system, which uses two or more patient data elements to generate case-specific advice&rdquo; (DSS, 2001). This implies that a CDSS is simply a Decision Support System focused on the use of knowledge management in order to obtain clinical advice for patient care based on multiple variables inherent to it. The main purpose of the modern CDSS, therefore, is to assist doctors in patient treatment cases or in emergency situations (Benner, 2007)."><meta itemprop="datePublished" content="2021-05-17T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-05-17T00:00:00+00:00" />
+<meta itemprop="wordCount" content="787">
+<meta itemprop="keywords" content="" />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A generic introduction to Clinical Decision Support Systems"/>
+<meta name="twitter:description" content="A Clinical Decision Support System is defined as an &ldquo;active knowledge system, which uses two or more patient data elements to generate case-specific advice&rdquo; (DSS, 2001). This implies that a CDSS is simply a Decision Support System focused on the use of knowledge management in order to obtain clinical advice for patient care based on multiple variables inherent to it. The main purpose of the modern CDSS, therefore, is to assist doctors in patient treatment cases or in emergency situations (Benner, 2007)."/>
+
+  
+  
+</head>
+
+
+  <body class="not-ready" data-menu="true">
+    <header class="header">
+  
+  <p class="logo">
+    <a class="site-name" href="https://simonebellavia.com">Simone B.</a><a class="btn-dark"></a>
+  </p>
+  
+
+  <script>
+    let bodyClx = document.body.classList;
+    let btnDark = document.querySelector('.btn-dark');
+    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let darkVal = localStorage.getItem('dark');
+
+    let setDark = (isDark) => {
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+    };
+
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
+  </script>
+
+  
+  
+  <nav class="menu">
+    
+    <a class="" href="/about/">About</a>
+    
+  </nav>
+  
+
+  
+  <nav class="social">
+    
+    <a
+      class="twitter"
+      style="--url: url(./twitter.svg)"
+      href="https://twitter.com/nanxiaobei"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="github"
+      style="--url: url(./github.svg)"
+      href="https://github.com/nanxiaobei"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="linkedin"
+      style="--url: url(./linkedin.svg)"
+      href="https://linkedin.com/simone-bellavia"
+      target="_blank"
+    ></a>
+    
+  </nav>
+  
+</header>
+
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-title">
+    <p>
+      <time>May 17, 2021</time>
+      
+    </p>
+    <h1>A generic introduction to Clinical Decision Support Systems</h1>
+  </header>
+  <section class="post-content"><p>A <strong>Clinical Decision Support System</strong> is defined as an &ldquo;active knowledge system, which uses two or more patient data elements to generate case-specific advice&rdquo; (DSS, 2001). This implies that a CDSS is simply a Decision Support System focused on the use of <strong>knowledge management</strong> in order to obtain <strong>clinical advice for patient care</strong> based on multiple variables inherent to it. The main purpose of the modern CDSS, therefore, is <strong>to assist doctors in patient treatment cases</strong> or in emergency situations (Benner, 2007).</p>
+<h2 id="cdss-an-introduction">CDSS: an introduction</h2>
+<p>As anticipated, at the beginning the CDSS were conceived to literally take important decisions, effectively replacing the figure of the doctor: the latter entered the information and waited for the CDSS to provide the &ldquo;right&rdquo; choice, so as to be able to simply act on that. However, today a CDSS only provides suggestions for the doctor, who examines and selects the informations provided, keeping the useful suggestions and discarding those he deems unsuitable (DSS, 2001). An important example of CDSS is certainly <strong>CBR, Case-based Reasoning</strong> (Shahina Begum, Mobyen Uddin Ahmed, Peter Funk, N. Xiong, Mia Folke, 2001), which uses data from previous clinical cases to <strong>indicate a specific health treatment.</strong> A CBR system was developed to facilitate radiotherapy treatment planning for brain cancer: given a new patient case, the CBR system retrieves a similar case from an archive of patients successfully treated with the suggested treatment plan, re-adapting it to meet the specific needs of the new case - the results obtained using real-world brain cancer patient cases have shown that <strong>the success rate of the new CBR recovery is higher than that of the original system</strong> (Khussainova, Gulmira; Petrovic, Sanja; Jagannathan, Rupa, 2015).</p>
+<h2 id="a-clinical-decision-support-system-for-prevention-of-venous-thromboembolism-effect-on-physician-behavior">A Clinical Decision Support System for Prevention of Venous Thromboembolism: Effect on Physician Behavior</h2>
+<p>In the study by Durieux et al. <strong>the effect of a CDSS in physician behavior</strong> during clinical decisions for the prevention of venous thromboembolism was investigated (Durieux P, Nizard R, Ravaud P, Mounier N, Lepage E, 2000). In hospital clinical practice, venous thromboembolism remains a serious problem and pulmonary embolism is a leading cause of death (Frederick A. Anderson, H. Brownell Wheeler, Robert J. Goldberg, 1991). The most effective way to prevent fatal and non-fatal venous thromboembolism is to <strong>use routine prophylaxis for high-risk patients.</strong> Optimal decisions on the use of anticoagulants in the prevention of venous thromboembolism require access to a large amount of complex information to assess the degree of risk of hospitalized patients. The objective of the study was to determine whether the presentation of guidelines for the prophylaxis of venous thromboembolism using a CDSS increased the percentage of appropriate clinical practice decisions made regarding the proportion of anticoagulant prescription.</p>
+<p>The study took place in time series between December 1997 and July 1999 in an orthopedic surgery department of a university hospital located in Paris, on a sample of 1971 patients undergoing orthopedic surgery. A CDSS designed to provide immediate information related to the prevention of venous thromboembolism among surgical patients was integrated into daily medical practice during three 10-week intervention periods, alternating with four 10-week control periods, with a 4-week washout between each period. The proportion of appropriate prescriptions for anticoagulants in line with the established clinical protocols was then analyzed during the intervention periods, and then compared with the control group. <strong>The results show the importance of using the CDSS:</strong> doctors complied with the guidelines in 82.8% of cases during the control periods and in 94.9% of cases during the intervention periods. During each intervention period, <strong>the adequacy of prescribing increased significantly,</strong> and each time the CDSS was removed, the medical practice reverted to that observed prior to the intervention. It can be confirmed that the implementation of clinical guidelines for venous thromboembolism prophylaxis through a CDSS used and integrated into the hospital information system <strong>has changed physician behavior and improved compliance with the guidelines.</strong></p>
+<p>Hope you found it interesting. Thanks for reading.</p>
+<h3 id="bibliography">Bibliography</h3>
+<ol>
+<li>DSS. (2001). <a href="https://web.archive.org/web/20010715105143/http:/www.openclinical.org/dss.html">Open Clinical - Knowledge Management for Medical Care</a></li>
+<li>Benner, E. (2007). Clinical Decision Support Systems. Springer.</li>
+<li>Shahina Begum, Mobyen Uddin Ahmed, Peter Funk, N. Xiong, Mia Folke. (2001). Case-Based Reasoning Systems in the Health Sciences: A Survey of Recent Trends and Developments. Systems, Man, and Cybernetics, Part C: Applications and Reviews, IEEE Transactions, 421-434.</li>
+<li>Khussainova, Gulmira; Petrovic, Sanja; Jagannathan, Rupa. (2015). Retrieval with clustering in a case-based reasoning system for radiotherapy treatment planning. Journal of Physics: Conference Series.</li>
+<li>Durieux P, Nizard R, Ravaud P, Mounier N, Lepage E. (2000). A Clinical Decision Support System for Prevention of Venous Thromboembolism: Effect on Physician Behavior. JAMA.</li>
+<li>Frederick A. Anderson, H. Brownell Wheeler, Robert J. Goldberg. (1991). A Population-Based Perspective of the Hospital Incidence and Case-Fatality Rates of Deep Vein Thrombosis and Pulmonary Embolism. JAMA, 933-938.</li>
+</ol>
+</section>
+
+  
+  
+
+  
+  
+  
+  <nav class="post-nav">
+    
+    <a class="prev" href="https://simonebellavia.com/posts/i-made-a-react-password-generator-for-fun/"><span>←</span><span>I made a React Password Generator for fun</span></a>
+     
+    <a class="next" href="https://simonebellavia.com/posts/deep-learning-detecting-rrd/"><span>Applying Deep Learning to detect Rhegmatogenous Retinal Detachment</span><span>→</span></a>
+    
+  </nav>
+  
+
+  
+  
+</article>
+
+</main>
+
+    <footer class="footer">
+  <p>&copy; 2021 <a href="https://simonebellavia.com">Simone B.</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
+  <p>
+    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+  </p>
+</footer>
+
+  </body>
+</html>
