@@ -19,11 +19,12 @@ I am a data lover, and a student of the Master's Degree in Data Science at the U
 ## Knowledge and technologies
 
 - Languages: Python, JavaScript, C, SQL
+- Python libraries: Pandas, NumPy, Matplotlib
 - Front-End: React, CSS, SCSS. Angular fundamentals
 - Back-End: node.js and ExpressJS fundamentals
-- VCS: Git
+- Proficiency in Git as VCS
 - Agile: PSM I, SPS, LeSS
-- BPM knowledge
-- OS: Windows XP+, macOS 10.6+, Debian
 - CRM: Salesforce Admin
+- BPM knowledge
 - Graphics & UX/UI: Photoshop, Illustrator, Xd, Figma, Sketch
+- OS: Windows XP+, macOS 10.6+, Debian
