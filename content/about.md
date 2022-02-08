@@ -24,6 +24,7 @@ I am a data lover, and a student of the Master's Degree in Data Science at the U
 - Back-End: node.js and ExpressJS fundamentals
 - Proficiency in Git as VCS
 - Agile: PSM I, SPS, LeSS
+- Management tools: Jira, Azure DevOps, Confluence, Trello, Mural/Miro
 - CRM: Salesforce Admin
 - BPM knowledge
 - Graphics & UX/UI: Photoshop, Illustrator, Xd, Figma, Sketch
