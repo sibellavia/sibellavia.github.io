@@ -1,8 +1,7 @@
-+++
-title = "About"
-date = "2021-04-10"
-author = "Simone Bellavia"
-+++
+---
+title: 'About'
+id: 'about'
+---
 
 Hello there! I'm a result-oriented Business Analyst. In my teams I am a point of reference when it comes to solving a problem or planning tasks to be completed.
 
