@@ -177,7 +177,7 @@ img {
  -------------------------------------------------- */
 .header {
   display: flex;
-  max-width: var(--wide);
+  max-width: var(--narrow);
   height: var(--header);
 }
 
