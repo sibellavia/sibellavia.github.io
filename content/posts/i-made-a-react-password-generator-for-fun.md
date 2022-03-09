@@ -1,7 +1,7 @@
 ---
-title: 'I made a React Password Generator for fun'
+title: 'A simple Password Generator in React'
 date: '2021-06-20'
-id: 'i-made-a-react-password-generator-for-fun'
+id: 'a-simple-password-generator-in-react'
 ---
 
 Security has always been important, but **more attention is required today in protecting your accounts.** The various data breaches now no longer allow us to use simple and identical passwords for all the services we subscribe to. It is important to use more sophisticated credentials, preferably supported by a Password Manager. I suggest some of them below:
