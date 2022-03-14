@@ -64,7 +64,7 @@
   <link rel="apple-touch-icon" href="https://simonebellavia.com/apple-touch-icon.png" />
 
   
-  <meta name="generator" content="Hugo 0.89.1" />
+  <meta name="generator" content="Hugo 0.92.1" />
 
   
   
@@ -194,18 +194,11 @@ sudo modprobe wl
 <p>The first few times I started the computer, I noticed very long boot times, and often a white screen would appear for some seconds.</p>
 <p>I did the following:</p>
 <ol>
-<li>
-<p>Restarted and held CMD + R</p>
-</li>
-<li>
-<p>Utilities -&gt; Terminal</p>
-</li>
-<li>
-<p>Then typed:</p>
-<pre><code> bless --device /dev/disk0s1 --setBoot --legacy
-</code></pre>
-</li>
+<li>Restarted and held CMD + R</li>
+<li>Utilities -&gt; Terminal</li>
+<li>Then typed:</li>
 </ol>
+<p><code>bless --device /dev/disk0s1 --setBoot --legacy</code></p>
 <p>I&rsquo;m assuming that your bootloader is on sda1, otherwise /dev/disk0s2 if it&rsquo;s on sda2, etc. <a href="https://help.ubuntu.com/community/MactelSupportTeam/AppleIntelInstallation">More details here.</a></p>
 <h2 id="trackpad-issues">Trackpad issues</h2>
 <p>I had some issues with the trackpad at first. The cursor would move very slowly and jerkily. I actually solved it in a very basic way, and that is by updating the packages:</p>
@@ -228,6 +221,8 @@ sudo apt-get dist-upgrade -y
   
   
   <nav class="post-nav">
+    
+    <a class="prev" href="https://simonebellavia.com/posts/from-nextjs-to-hugo/"><span>←</span><span>From Next.js to Hugo</span></a>
      
     <a class="next" href="https://simonebellavia.com/posts/my-path-salesforce-administrator-2/"><span>My path to Salesforce Administrator Certification – #2</span><span>→</span></a>
     
@@ -241,12 +236,11 @@ sudo apt-get dist-upgrade -y
 </main>
 
     <footer class="footer">
-  <p>&copy; 2021 <a href="https://simonebellavia.com/">Simone B.</a></p>
-  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
-  <p>
-    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
-  </p>
+  <p>&copy; 2022</p>
+  <p><a href="https://simonebellavia.com/">&lt;/ > by Simone B.</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️ and <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a></p>
 </footer>
+
 
   </body>
 </html>

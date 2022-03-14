@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://simonebellavia.com/posts/give-new-life-to-an-old-and-slow-macbook/</loc>
-    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://simonebellavia.com/posts/</loc>
-    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://simonebellavia.com/</loc>
+    <lastmod>2022-02-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://simonebellavia.com/posts/string-incrementer-code-solution/</loc>
+    <lastmod>2022-02-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://simonebellavia.com/posts/from-nextjs-to-hugo/</loc>
+    <lastmod>2021-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://simonebellavia.com/posts/give-new-life-to-an-old-and-slow-macbook/</loc>
     <lastmod>2021-12-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://simonebellavia.com/posts/my-path-salesforce-administrator-2/</loc>

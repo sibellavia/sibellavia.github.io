@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>From Next.js to Hugo - Simone Bellavia – simonebellavia.com</title>
+
+  
+  
+  <meta name="description" content="I published this blog on the web on April 10, 2021. In those weeks I had done some scouting of the different Static Site Generators, I also talked about them in this post which by the way is the first one I published. I had chosen to use Next.js because it allowed me to be able to write code in React and TypeScript. A few days ago, however, I decided to change and switch to Hugo." />
+  <meta name="author" content="" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://simonebellavia.com/app.min.css" />
+
+  
+  <link rel="preload stylesheet" as="style" href="https://simonebellavia.com/an-old-hope.min.css" />
+  <script
+    defer
+    src="https://simonebellavia.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  <link rel="preload" as="image" href="https://simonebellavia.com/theme.png" />
+
+  
+  <link rel="preload" as="image" href="https://simonebellavia.com/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://simonebellavia.com/github.svg" />
+  
+  <link rel="preload" as="image" href="https://simonebellavia.com/linkedin.svg" />
+  
+
+  
+  <link rel="icon" href="https://simonebellavia.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://simonebellavia.com/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.92.1" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="From Next.js to Hugo" />
+<meta property="og:description" content="I published this blog on the web on April 10, 2021. In those weeks I had done some scouting of the different Static Site Generators, I also talked about them in this post which by the way is the first one I published. I had chosen to use Next.js because it allowed me to be able to write code in React and TypeScript. A few days ago, however, I decided to change and switch to Hugo." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://simonebellavia.com/posts/from-nextjs-to-hugo/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-12-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-12-12T00:00:00+00:00" />
+
+
+  
+  <meta itemprop="name" content="From Next.js to Hugo">
+<meta itemprop="description" content="I published this blog on the web on April 10, 2021. In those weeks I had done some scouting of the different Static Site Generators, I also talked about them in this post which by the way is the first one I published. I had chosen to use Next.js because it allowed me to be able to write code in React and TypeScript. A few days ago, however, I decided to change and switch to Hugo."><meta itemprop="datePublished" content="2021-12-12T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-12-12T00:00:00+00:00" />
+<meta itemprop="wordCount" content="612">
+<meta itemprop="keywords" content="" />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="From Next.js to Hugo"/>
+<meta name="twitter:description" content="I published this blog on the web on April 10, 2021. In those weeks I had done some scouting of the different Static Site Generators, I also talked about them in this post which by the way is the first one I published. I had chosen to use Next.js because it allowed me to be able to write code in React and TypeScript. A few days ago, however, I decided to change and switch to Hugo."/>
+
+  
+  
+</head>
+
+
+  <body class="not-ready" data-menu="true">
+    <header class="header">
+  
+  <p class="logo">
+    <a class="site-name" href="https://simonebellavia.com/">Simone B.</a><a class="btn-dark"></a>
+  </p>
+  
+
+  <script>
+    let bodyClx = document.body.classList;
+    let btnDark = document.querySelector('.btn-dark');
+    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let darkVal = localStorage.getItem('dark');
+
+    let setDark = (isDark) => {
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+    };
+
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
+  </script>
+
+  
+  
+  <nav class="menu">
+    
+    <a class="" href="/about/">About</a>
+    
+  </nav>
+  
+
+  
+  <nav class="social">
+    
+    <a
+      class="twitter"
+      style="--url: url(./twitter.svg)"
+      href="https://twitter.com/simoneb1x"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="github"
+      style="--url: url(./github.svg)"
+      href="https://github.com/simoneb1x"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="linkedin"
+      style="--url: url(./linkedin.svg)"
+      href="https://linkedin.com//in/simone-bellavia"
+      target="_blank"
+    ></a>
+    
+  </nav>
+  
+</header>
+
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-title">
+    <p>
+      <time>Dec 12, 2021</time>
+      
+    </p>
+    <h1>From Next.js to Hugo</h1>
+  </header>
+  <section class="post-content"><p>I published this blog on the web on April 10, 2021. In those weeks I had done some scouting of the different Static Site Generators, I also talked about them <a href="first-post.md">in this post</a> which by the way is the first one I published. I had chosen to use Next.js because it allowed me to be able to write code in React and TypeScript. A few days ago, however, I decided to change and switch to Hugo. I&rsquo;ll explain why.</p>
+<h2 id="my-experience-with-nextjs">My experience with Next.js</h2>
+<p>It was fun to build the blog with Next.js. The only problem was that a lot of the functionality had to be written completely from scratch. The supporting documentation is great, but the plugin and themes presence isn&rsquo;t as good as Gatsby or Hugo. I needed an even more stable framework, and one that would reduce the amount of time I had to spend. Blogging is a passion of mine, but I don&rsquo;t have the time to write as much content as I want to. In parallel I have a job and a university course to follow. For this reason I liked the idea of having a stable product, and that with monthly sprints (just to think in agile) it could be technically updated by small increments. So that I can focus more on the content and less on the extra builds and features that need to be added.</p>
+<h2 id="diving-into-hugo">Diving into Hugo</h2>
+<p>After several days, looking deep into <a href="https://gohugo.io/">Hugo</a> and especially Golang, I decided to build the blog from scratch and change framework. Writing code with Hugo as underlying layer is very satisfying: as I said before, it&rsquo;s not based on JavaScript but on a Go-based HTML. The syntax is very simple and the potential is interesting. The management of the architecture through the <a href="https://gohugo.io/hugo-modules/">Hugo Modules</a> surprised me a lot for how simple and effective it is. In short, it has convinced me since the beginning. Let&rsquo;s be clear, even Hugo has some limits. But compared to Next.js it seems to me much more suitable for my blog and for my needs. It is important to specify that there are no frameworks or languages that are better than others, but there are those that are better suited to certain needs. For the moment, I don&rsquo;t need all the extra declinations and flexibility that React can give, because I don&rsquo;t have the time to take advantage of it.</p>
+<p>Getting started with Hugo is super easy. You must clearly install it:</p>
+<pre><code>brew install hugo
+</code></pre>
+<p>After installing it, you create your new site with a command that creates the root folder with its internal scaffolding:</p>
+<pre><code>hugo new site awesomewebsite
+</code></pre>
+<p>Inside it, the directory structure contains all the elements you need for development:</p>
+<pre><code>.
+├── archetypes
+├── config.toml
+├── content
+├── data
+├── layouts
+├── static
+└── themes
+</code></pre>
+<p>Hugo’s CLI scaffolds a project directory structure and then takes that single directory and uses it as the input to create a complete website.
+All content lives inside the <code>/content/</code> folder, which contains all posts and articles in markdown, and any secondary pages. Templates are stored in <code>/layouts/</code>. You can retrieve an existing theme from GitHub and insert it as a submodule:</p>
+<pre><code>git init
+git submodule add https://github.com/your-theme/your-favorite-theme.git themes/your-theme
+</code></pre>
+<p>The server locally starts with a command, and you can also add the -D flag to keep drafts active:</p>
+<pre><code>hugo server -D
+</code></pre>
+<p>And the build is just as simple:</p>
+<pre><code>hugo -D
+</code></pre>
+<p>The output will be transmitted to the <code>/public/</code> folder by default.</p>
+<p>If you want to learn more, <a href="https://gohugo.io/getting-started/">I refer you to the official Hugo documentation.</a> Any other minor updates regarding my blog will be published as a series.</p>
+<p>Thank you for reading this far. Seeya!</p>
+</section>
+
+  
+  
+
+  
+  
+  
+  <nav class="post-nav">
+    
+    <a class="prev" href="https://simonebellavia.com/posts/string-incrementer-code-solution/"><span>←</span><span>String Incrementer – Code solution</span></a>
+     
+    <a class="next" href="https://simonebellavia.com/posts/give-new-life-to-an-old-and-slow-macbook/"><span>Give new life to an old and slow MacBook Air with Xubuntu</span><span>→</span></a>
+    
+  </nav>
+  
+
+  
+  
+</article>
+
+</main>
+
+    <footer class="footer">
+  <p>&copy; 2022</p>
+  <p><a href="https://simonebellavia.com/">&lt;/ > by Simone B.</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️ and <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a></p>
+</footer>
+
+
+  </body>
+</html>

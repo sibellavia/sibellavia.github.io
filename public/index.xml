@@ -7,7 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2021, Simone Bellavia; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 05 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://simonebellavia.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://simonebellavia.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>String Incrementer – Code solution</title>
+      <link>https://simonebellavia.com/posts/string-incrementer-code-solution/</link>
+      <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://simonebellavia.com/posts/string-incrementer-code-solution/</guid>
+      <description>Hello there. Another day, another kata from Codewars. Here&amp;rsquo;s String Incrementer:
+ Your job is to write a function which increments a string, to create a new string.
+ If the string already ends with a number, the number should be incremented by 1. If the string does not end with a number. the number 1 should be appended to the new string.  Examples:
+foo -&amp;gt; foo1
+foobar23 -&amp;gt; foobar24</description>
+    </item>
+    
+    <item>
+      <title>From Next.js to Hugo</title>
+      <link>https://simonebellavia.com/posts/from-nextjs-to-hugo/</link>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://simonebellavia.com/posts/from-nextjs-to-hugo/</guid>
+      <description>I published this blog on the web on April 10, 2021. In those weeks I had done some scouting of the different Static Site Generators, I also talked about them in this post which by the way is the first one I published. I had chosen to use Next.js because it allowed me to be able to write code in React and TypeScript. A few days ago, however, I decided to change and switch to Hugo.</description>
+    </item>
+    
     <item>
       <title>Give new life to an old and slow MacBook Air with Xubuntu</title>
       <link>https://simonebellavia.com/posts/give-new-life-to-an-old-and-slow-macbook/</link>
@@ -45,7 +67,7 @@ On September 30th I took the exam and passed it. I must say that the preparation
       <guid>https://simonebellavia.com/posts/persistent-bugger-code-solution/</guid>
       <description>Hello there. I was digging in Codewars and I found a kata that piqued my curiosity:
  Write a function, persistence, that takes in a positive parameter num and returns its multiplicative persistence, which is the number of times you must multiply the digits in num until you reach a single digit. For example:
- persistence(39) # returns 3, because 39=27, 27=14, 1*4=4 # and 4 has only one digit</description>
+ persistence(39) # returns 3, because 3*9=27, 2*7=14, 1*4=4 # and 4 has only one digit persistence(999) # returns 4, because 9*9*9=729, 7*2*9=126, # 1*2*6=12, and finally 1*2=2` persistence(4) # returns 0, because 4 is already a one-digit number  If it is not fully understandable, perhaps it is better to clarify first what multiplicative persistence is.</description>
     </item>
     
     <item>
@@ -59,7 +81,7 @@ As a Scrum Master and Analyst of my team, I have decided to set myself a goal: t
     </item>
     
     <item>
-      <title>I made a React Password Generator for fun</title>
+      <title>A simple Password Generator in React</title>
       <link>https://simonebellavia.com/posts/i-made-a-react-password-generator-for-fun/</link>
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
       
