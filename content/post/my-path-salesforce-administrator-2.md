@@ -1,7 +1,7 @@
 ---
 title: 'My path to Salesforce Administrator Certification – 2'
 date: '2021-10-03'
-id: 'my-path-salesforce-administrator-2'
+series: 'Salesforce'
 ---
 
 In July 2021, I began studying to certify myself as an Administrator on Salesforce. To learn more about my preparation for the exam, [you can read my post about it.](/posts/my-path-salesforce-administrator-1) My plan initially was to take the exam next year. But I realized I could take it earlier, and so I did.

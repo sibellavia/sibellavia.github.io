@@ -1,7 +1,7 @@
 ---
 title: 'Persistent Bugger – Code solution'
 date: '2021-09-08'
-id: 'persistent-bugger-code-solution'
+series: 'Codewars Kata – Code solutions'
 ---
 
 Hello there. I was digging in Codewars and I found a *kata* that piqued my curiosity:

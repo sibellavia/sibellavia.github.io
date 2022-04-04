@@ -1,7 +1,7 @@
 ---
 title: 'Delete occurrences of an element if it occurs more than n times – Code solution'
 date: '2021-09-13'
-id: 'delete-occurrences-n-times-code-solution'
+series: 'Codewars Kata – Code solutions'
 ---
 
 Yes, I am enjoying Codewars a lot. Here's another kata:

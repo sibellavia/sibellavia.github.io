@@ -1,11 +1,10 @@
-baseURL = "https://www.example.com/"
-title = "Hugo Theme Basic"
+baseURL = "https://www.simonebellavia.com/"
+title = "Simone Bellavia"
 theme ="basic"
 languageCode = "en-us"
-googleAnalytics = "UA-XXXXXXXXX-X"
 enableEmoji = true 
-copyright = "© 2016-19 <a href='https://github.com/siegerts/hugo-theme-basic'>Hugo Theme Basic</a>. Made by <a href='https://twitter.com/siegerts'>@siegerts</a>."
-description = "Basic personal site theme styled with minimal tachyons, syntax highlighting, and blog series configuration."
+copyright = "© 2021-22 made by <a href='https://twitter.com/simoneb1x'>@simoneb1x</a>."
+description = "Simone Bellavia. Business & Integration Arch Analyst at Accenture. Passionate MSc Data Science student at UniTn."
 
 [taxonomies]
   category = "categories"
@@ -13,9 +12,8 @@ description = "Basic personal site theme styled with minimal tachyons, syntax hi
   tag = "tags"
 
 [params]
-  titleEmoji = ":tada:"
-  # change this!
-  twitter = "siegerts"
+  titleEmoji = ":rocket:"
+  twitter = "simoneb1x"
 
 [Permalinks]
   post = "post/:slug"

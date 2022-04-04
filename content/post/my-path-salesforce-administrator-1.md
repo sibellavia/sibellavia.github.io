@@ -2,6 +2,7 @@
 title: 'My path to Salesforce Administrator Certification – 1'
 date: '2021-07-31'
 id: 'my-path-salesforce-administrator-1'
+series: 'Salesforce'
 ---
 
 I started studying for the Salesforce Administrator Certification. Actually, I've been doing their Trailheads for two weeks. The architecture of the project I am following contemplates a wide use of Salesforce and the need to deepen its details is inevitable.

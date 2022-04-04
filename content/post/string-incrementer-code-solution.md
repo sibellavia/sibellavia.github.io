@@ -1,7 +1,7 @@
 ---
 title: 'String Incrementer – Code solution'
 date: '2022-02-05'
-id: 'string-incrementer-code-solution'
+series: 'Codewars Kata – Code solutions'
 ---
 
 Hello there. Another day, another kata from Codewars. Here's *String Incrementer*:
