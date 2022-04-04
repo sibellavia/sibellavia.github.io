@@ -1,63 +1,45 @@
-baseURL = "https://simonebellavia.com/"
-# title = "Hugo Themes"
-author = "Simone Bellavia"
-copyright = "Copyright © 2008–2021, Simone Bellavia; all rights reserved."
-paginate = 10
-languageCode = "en"
-DefaultContentLanguage = "en"
-enableInlineShortcodes = true
-# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
-# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
-ignoreErrors = ["error-remote-getjson"]
-
-# ------------------------------
-theme = "paper"
-title = "Simone B."
-
-[params]
-  twitter = 'simoneb1x'
-  github = 'simoneb1x'
-  instagram = 'simone.bellavia'
-  linkedin = '/in/simone-bellavia'
-  favicon = 'img/favicon.ico'
-# ------------------------------
-
-[menu]
-
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
+baseURL = "https://www.example.com/"
+title = "Hugo Theme Basic"
+theme ="basic"
+languageCode = "en-us"
+googleAnalytics = "UA-XXXXXXXXX-X"
+enableEmoji = true 
+copyright = "© 2016-19 <a href='https://github.com/siegerts/hugo-theme-basic'>Hugo Theme Basic</a>. Made by <a href='https://twitter.com/siegerts'>@siegerts</a>."
+description = "Basic personal site theme styled with minimal tachyons, syntax highlighting, and blog series configuration."
 
 [taxonomies]
-category = "categories"
-tag = "tags"
-series = "series"
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[params]
+  titleEmoji = ":tada:"
+  # change this!
+  twitter = "siegerts"
+
+[Permalinks]
+  post = "post/:slug"
+
+[[params.menu]]
+  name = "blog"
+  url = "post/"
+
+[[params.menu]]
+  name = "post series"
+  url = "series/"
+  
+
+[[params.menu]]
+  name = "about"
+  url = "about/"
+  
 
 [privacy]
-
-  [privacy.vimeo]
-    disabled = false
-    simple = true
-
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    respectDoNotTrack = true
+    useSessionStorage = true
   [privacy.twitter]
-    disabled = false
     enableDNT = true
-    simple = true
-
-  [privacy.instagram]
-    disabled = false
-    simple = true
-
   [privacy.youtube]
-    disabled = false
     privacyEnhanced = true
-
-[services]
-
-  [services.instagram]
-    disableInlineCSS = true
-
-  [services.twitter]
-    disableInlineCSS = true
