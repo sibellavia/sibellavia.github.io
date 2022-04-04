@@ -1,5 +1,5 @@
 ---
-title: 'String Incrementer – Code solution'
+title: 'String Incrementer'
 date: '2022-02-05'
 series: 'Codewars Kata – Code solutions'
 ---

@@ -1,5 +1,5 @@
 ---
-title: 'Delete occurrences of an element if it occurs more than n times – Code solution'
+title: 'Delete occurrences of an element if it occurs more than n times'
 date: '2021-09-13'
 series: 'Codewars Kata – Code solutions'
 ---

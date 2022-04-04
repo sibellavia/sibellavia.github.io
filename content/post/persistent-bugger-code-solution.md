@@ -1,5 +1,5 @@
 ---
-title: 'Persistent Bugger – Code solution'
+title: 'Persistent Bugger'
 date: '2021-09-08'
 series: 'Codewars Kata – Code solutions'
 ---

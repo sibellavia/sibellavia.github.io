@@ -1,5 +1,5 @@
 ---
-title: 'My path to Salesforce Administrator Certification – 2'
+title: 'Just got my Salesforce Administrator certification'
 date: '2021-10-03'
 series: 'Salesforce'
 ---
