@@ -30,3 +30,11 @@ I am a data lover, and a student of the Master's Degree in Data Science at the U
 - BPM: Red Hat PAM, Camunda Modeler 
 - OS: Windows XP+, macOS 10.6+, Debian 
 - Relevant Tools: Jira, Azure DevOps, Confluence, Trello, Mural/Miro
+
+## Contact 
+
+- [linkedin](https://www.linkedin.com/in/simone-bellavia)
+- [twitter](https://www.twitter.com/simoneb1x)
+- [github](https://www.github.com/simoneb1x)
+
+I don't have any other social media.
