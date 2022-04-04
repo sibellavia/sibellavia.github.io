@@ -16,16 +16,17 @@ I have also led marketing, graphic and UX/UI design projects. I love symmetries,
 
 I am a data lover, and a student of the Master's Degree in Data Science at the University of Trento. I am very interested in Cybersecurity and everything that comes with it. I have a BSc in Psychology.
 
-## Knowledge and technologies
+## Skills
 
-- Languages: Python, JavaScript, C, SQL
-- Python libraries: Pandas, NumPy, Matplotlib
-- Front-End: React, CSS, SCSS. Angular fundamentals
-- Back-End: node.js fundamentals
-- VCS: Git
-- Agile: PSM I, PSPO I, SPS, LeSS
-- Management tools: Jira, Azure DevOps, Confluence, Trello, Mural/Miro
-- CRM: Salesforce Admin
-- BPM: Red Hat PAM, Camunda Modeler
-- Graphics & UX/UI: Photoshop, Illustrator, Xd, Figma, Sketch
-- OS: Windows XP+, macOS 10.6+, Debian
+- Programming: Python, JavaScript, C, SQL
+- Data Science: Pandas, NumPy, Matplotlib, Scikit-learn 
+- Front-End: Hugo, Jekyll, React, HTML5, SASS, Angular fundamentals 
+- Back-End: Flask, FastAPI, REST APIs, Node.js fundamentals 
+- DB: Redis, MySQL
+- DevOps: Docker, CI/CD pipelines 
+- VCS: Git 
+- Agile: PSM I, PSPO I, SPS, LeSS 
+- CRM: Salesforce Administrator 
+- BPM: Red Hat PAM, Camunda Modeler 
+- OS: Windows XP+, macOS 10.6+, Debian 
+- Relevant Tools: Jira, Azure DevOps, Confluence, Trello, Mural/Miro

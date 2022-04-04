@@ -1,5 +1,5 @@
 ---
-title: 'My path to Salesforce Administrator Certification – #2'
+title: 'My path to Salesforce Administrator Certification – 2'
 date: '2021-10-03'
 id: 'my-path-salesforce-administrator-2'
 ---
