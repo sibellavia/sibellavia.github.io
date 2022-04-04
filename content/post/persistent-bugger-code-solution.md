@@ -32,7 +32,20 @@ In our case, we have to consider not the sum, but the product of the digits.
 
 Here's how I solved the problem, in Python:
 
-![my code.](/persistent-bugger/persistent-bugger.png)
+```python
+import math
+
+def persistence(n):
+                    
+    mp = 0
+
+    while(n >= 10):
+        prod_of_digits = math.prod(int(digit) for digit in str(n))
+        n = prod_of_digits
+        mp += 1
+    
+    return mp
+```
 
 I declared a function that takes the number **n** as input. About the while loop: as long as the number **n** always has more than two digits, these are multiplied by each other. The counter **mp** (Multiplicative Persistence) increases and the loop renews **n** with the number obtained. When the fixed point is reached, then the function will return **mp**.
 

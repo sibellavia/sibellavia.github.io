@@ -16,7 +16,27 @@ Yes, I am enjoying Codewars a lot. Here's another kata:
 
 I used Python in this case too, because I'm practicing it.
 
-![first solution.](/delete-occurrences/first-solution.png)
+```python
+def delete_nth(order,max_e):
+                    
+    number_to_check = 0
+    counter = 0
+
+    for item in order:
+        number_to_check = item
+        for index, val in enumerate(order):
+            if counter == 0 and val == number_to_check:
+                counter += 1
+            elif counter < max_e and val == number_to_check:
+                counter += 1
+            elif counter == max_e and val == number_to_check:
+                del order[index]
+            else:
+                continue
+        counter = 0
+    
+    return order
+```
 
 For this first solution I have initialized two variables, **number_to_check** and **counter**.
 
@@ -26,7 +46,19 @@ That works, but we can refactor the code to make it leaner. And here comes the s
 
 ## Refactoring
 
-![second solution.](/delete-occurrences/second-solution.png)
+```python
+def delete_nth(order,max_e):
+                    
+    res = []
+
+    for item in order:
+        if res.count(item) < max_e:
+            res.append(item)
+        else:
+            continue
+
+    return res
+```
 
 Here we initialize **res** as an empty list. In the for loop the magic happens. Thanks to the **count() method** we are able to check if the occurrences of item exceed the maximum index **max_e:** if so, **item** is ignored and we move forward, otherwise **item is added to the res list.** In this way we will have a list in which there will be only elements that do not occur more than n times. Much easier!
 
