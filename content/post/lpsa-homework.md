@@ -4,6 +4,8 @@ date: '2022-05-09'
 series: 'Data Science'
 ---
 
+_Excerpt from a notebook produced for a homework of the subject Statistical Learning for the Master's degree course at the University of Trento, academic year 2021/22. It may contain errors as it was susceptible to a final evaluation._
+
 # Importing the CSV
 
 The CSV containing the dataset is imported.
