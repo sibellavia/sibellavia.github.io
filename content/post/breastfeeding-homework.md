@@ -1,7 +1,10 @@
 ---
-title: 'A homework with statistical analysis on breastfeeding dataset'
+title: 'Breastfeeding statistical analysis'
 date: '2022-04-10'
+series: 'Data Science'
 ---
+
+_Excerpt from a notebook produced for a homework of the subject Statistical Learning for the Master's degree course at the University of Trento, academic year 2021/22. It may contain errors as it was susceptible to a final evaluation._
 
 # Introduction to analysis
 
