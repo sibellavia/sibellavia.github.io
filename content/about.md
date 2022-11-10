@@ -4,17 +4,15 @@ date: '2021-04-10'
 id: 'about'
 ---
 
-Hello there! I'm a result-oriented Senior Business Analyst. In my teams I am a point of reference when it comes to solving a problem or planning tasks to be completed.
+Hi there! I am Simone Bellavia, I am 24 years old. I was born and raised in Catania, Sicily, a wonderful city overlooking the Ionian Sea and living at the foot of the volcano Etna. I am now based in Milan, another city I love, but I travel all the time. I work full-time as an IT Senior Analyst in Accenture. I study at the University of Milan-Bicocca in the Master of Science in Data Science program. I am a person who is strongly driven by passions and who looks at life with a lot of curiosity.
 
-I'm currently working as a Business & Integration Arch Sr Analyst at Accenture. I coordinate agile teams and I assist the client to achieve the requirements and goals set by the project.
+I work mainly as a Scrum Master and Software Engineer on multiple projects and multiple teams. Web programming and the DevOps world constitute two predominant interests. I enjoy delivering high-quality software, so I also continuously study Technical Agility practices that can help teams perform better. I always tend to be a servant-leader and a point of reference in my teams. I have worked in different industries: currently I am involved in the Energy one for a large Italian multinational, but I have also been in Public Services, Chemical-Cosmetic, Tobacco, and E-Commerce.
 
-I am also involved in the design, development and configuration of systems and architectures, making my knowledge of technologies, applications and methodologies available. I have experience in the Energy, Cybersecurity and Hybrid-Cloud Applications, Chemical-Cosmetic and Food sectors.
+I study Data Science because it encompasses many of my passions: programming, math and statistics, business development. My biggest dream is to make my skills available in the healthcare industry, particularly the oncology industry.
 
-In the past I took part in FE/BE development projects that required the use of Angular, Vue and React. I worked with microservices structured architectures, integrating a DevSecOps approach.
+In the past I also held a preponderant role as a UX/UI designer: it taught me to love symmetries, well-chosen typographies and good taste in design.
 
-I have also led marketing, graphic and UX/UI design projects. I love symmetries, well-chosen typographies and good taste.
-
-I am a data lover, and a student of the Master's Degree in Data Science at the University of Milano Bicocca. I am very interested in Cybersecurity and everything that comes with it. I have a BSc in Psychology.
+I am in love with the wind, the sea and its waves. In my life I have always practiced Windsurfing and SUP, sports that have taught me so much and continue to do so always.
 
 ## Skills
 
@@ -37,7 +35,10 @@ I am a data lover, and a student of the Master's Degree in Data Science at the U
 
 ## Contact 
 
-- [linkedin](https://www.linkedin.com/in/simone-bellavia)
+I am always happy to meet new people. You can contact me in any of these socials:
+
 - [twitter](https://www.twitter.com/simoneb1x)
+- [linkedin](https://www.linkedin.com/in/simone-bellavia)
 - [github](https://www.github.com/simoneb1x)
 
+Ciao! 😊
