@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'Simone Bellavia',
   author: 'Simone Bellavia',
   headerTitle: '@simoneb1x',
-  description: 'A blog created with Next.js and Tailwind.css',
+  description: 'The personal blog of Simone Bellavia, also known as simoneb1x.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://simonebellavia.com',
