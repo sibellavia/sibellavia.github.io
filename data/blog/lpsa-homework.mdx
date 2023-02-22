@@ -11,7 +11,9 @@ _Excerpt from a notebook produced for a homework of the subject Statistical Lear
 
 The CSV containing the dataset is imported.
 
-    prostate <- read.csv("prostate.csv")  # read csv file
+```
+prostate '<-' read.csv("prostate.csv")  # read csv file
+```
 
 # Data exploration
 
@@ -25,10 +27,12 @@ variables themselves.
 
 ## Basic descriptive statistics
 
+```
     names(prostate)
 
     ## [1] "lcavol"  "lweight" "age"     "lbph"    "svi"     "lcp"     "gleason"
     ## [8] "pgg45"   "lpsa"
+```
 
 The variables are:
 
@@ -58,6 +62,7 @@ analysis.
 
 A check is made on the type of variables previously mentioned.
 
+```
     str(prostate)
 
     ## 'data.frame':    97 obs. of  9 variables:
@@ -70,6 +75,7 @@ A check is made on the type of variables previously mentioned.
     ##  $ gleason: int  6 6 7 6 6 6 6 6 6 6 ...
     ##  $ pgg45  : int  0 0 20 0 0 0 0 0 0 0 ...
     ##  $ lpsa   : num  -0.431 -0.163 -0.163 -0.163 0.372 ...
+```
 
 The measurements are all numerical and are distinguished between integer
 and float. Thus, we will rely on statistical regression models.
@@ -79,10 +85,12 @@ and float. Thus, we will rely on statistical regression models.
 Another check is carried out on the presence of missing values, on
 which, if necessary, a pre-processing should be performed.
 
+```
     colSums(is.na(prostate))
 
     ##  lcavol lweight     age    lbph     svi     lcp gleason   pgg45    lpsa
     ##       0       0       0       0       0       0       0       0       0
+```
 
 Since there are no missing values, the data does not need to be
 pre-processed and can be used as is.
@@ -92,7 +100,9 @@ pre-processed and can be used as is.
 A SPLOM is generated to better investigate the relationships between
 variables and their entity.
 
+```
     pairs.panels(prostate)
+```
 
 ![](/lpsa-homework/unnamed-chunk-6-1.png)
 
@@ -107,11 +117,13 @@ An eye to the age:
 
 Data is divided into two halves for training and testing.
 
+```
     set.seed(1)
     prostate_split <- initial_split(prostate, prop=0.5)
     x_train <- training(prostate_split)
     x_test <- testing(prostate_split)
     y_test <- x_test$lpsa
+```
 
 # Decision Tree
 
@@ -119,6 +131,7 @@ Data is divided into two halves for training and testing.
 
 A Regression Tree is fitted:
 
+```
     tree_prostate <- tree(lpsa ~ ., data=prostate)
     summary(tree_prostate)
 
@@ -132,13 +145,16 @@ A Regression Tree is fitted:
     ## Distribution of residuals:
     ##      Min.   1st Qu.    Median      Mean   3rd Qu.      Max.
     ## -1.499000 -0.488000  0.003621  0.000000  0.481200  1.380000
+```
 
 It is possible to graphically visualize the development of the Decision
 Tree.
 
+```
     plot(tree_prostate)
     text(tree_prostate, pretty=0)
     title(main="Prostate: Unpruned regression tree")
+```
 
 ![](/lpsa-homework/unnamed-chunk-10-1.png)
 
@@ -147,6 +163,7 @@ Tree.
 A Cross-Validation is performed to choose the complexity of the tree and
 to decide, based on the results, if the tree will need to be pruned.
 
+```
     set.seed(1)
     cv.prostate <- cv.tree(object=tree_prostate)
     names(cv.prostate)
@@ -171,26 +188,33 @@ to decide, based on the results, if the tree will need to be pruned.
     ##
     ## attr(,"class")
     ## [1] "prune"         "tree.sequence"
+```
 
 We see that the tree with `cv.carseats$size[which.min(cv.carseats$dev)]`
 terminal nodes has the lowest CV error rate of `min(cv.carseats$dev)`.
 We can visualize the CV error as a function of either `size` and `k`:
 
+```
     op <- par(mfrow=c(1, 2))
     plot(cv.prostate$size, cv.prostate$dev, type="b")
     plot(cv.prostate$k, cv.prostate$dev, type="b")
+```
 
 ![](/lpsa-homework/unnamed-chunk-12-1.png)
 
+```
     par(op)
+```
 
 Let’s found the optimal size:
 
+```
     opt.size <- cv.prostate$size[which.min(cv.prostate$dev)]
 
     opt.size
 
     ## [1] 4
+```
 
 Now that the optimal number of terminal nodes is obtained, it is
 possible to prune the tree:
