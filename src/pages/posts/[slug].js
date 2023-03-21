@@ -17,7 +17,7 @@ export default function Post({ postData }) {
       </div>
       <h1 className="text-4xl font-semibold mb-4">{postData.title}</h1>
       <p className="text-gray-600 mb-8">{postData.date}</p>
-      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      <div className='prose dark:prose-invert max-w-none' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </Layout>
   );
 }
