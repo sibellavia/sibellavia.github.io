@@ -7,4 +7,16 @@ date: "2019-07-07"
 
 *ciao*
 
-            codice
+```js[class="line-numbers"]
+class Shape {
+  draw() {
+    console.log("Uhhh maybe override me");
+  }
+}
+
+class Circle {
+  draw() {
+    console.log("I'm a circle! :D");
+  }
+}
+```
