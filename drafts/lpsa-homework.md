@@ -1,7 +1,7 @@
 ---
 title: 'Pancreatic cancer statistical analysis'
 date: '2022-05-09'
-series: 'Data Science'
+draft: "True"
 ---
 
 _Excerpt from a notebook produced for a homework of the subject Statistical Learning for the Master's degree course at the University of Trento, academic year 2021/22. It may contain errors as it was susceptible to a final evaluation._
@@ -10,8 +10,9 @@ _Excerpt from a notebook produced for a homework of the subject Statistical Lear
 
 The CSV containing the dataset is imported.
 
+```r
     prostate <- read.csv("prostate.csv")  # read csv file 
-
+```
 # Data exploration
 
 A dataset containing a number of clinical measures taken in 97 men who
@@ -24,11 +25,12 @@ variables themselves.
 
 ## Basic descriptive statistics
 
+```r
     names(prostate)
 
     ## [1] "lcavol"  "lweight" "age"     "lbph"    "svi"     "lcp"     "gleason"
     ## [8] "pgg45"   "lpsa"
-
+```
 The variables are:
 
 -   *lpsa*: level of prostate-specific antigen, in ng/ml and log scaled
@@ -57,6 +59,7 @@ analysis.
 
 A check is made on the type of variables previously mentioned.
 
+```r
     str(prostate)
 
     ## 'data.frame':    97 obs. of  9 variables:
@@ -69,7 +72,7 @@ A check is made on the type of variables previously mentioned.
     ##  $ gleason: int  6 6 7 6 6 6 6 6 6 6 ...
     ##  $ pgg45  : int  0 0 20 0 0 0 0 0 0 0 ...
     ##  $ lpsa   : num  -0.431 -0.163 -0.163 -0.163 0.372 ...
-
+```
 The measurements are all numerical and are distinguished between integer
 and float. Thus, we will rely on statistical regression models.
 
@@ -78,11 +81,12 @@ and float. Thus, we will rely on statistical regression models.
 Another check is carried out on the presence of missing values, on
 which, if necessary, a pre-processing should be performed.
 
+```r
     colSums(is.na(prostate))
 
     ##  lcavol lweight     age    lbph     svi     lcp gleason   pgg45    lpsa 
     ##       0       0       0       0       0       0       0       0       0
-
+```
 Since there are no missing values, the data does not need to be
 pre-processed and can be used as is.
 
@@ -90,9 +94,9 @@ pre-processed and can be used as is.
 
 A SPLOM is generated to better investigate the relationships between
 variables and their entity.
-
+```r
     pairs.panels(prostate)
-
+```
 ![](/lpsa-homework/unnamed-chunk-6-1.png)
 
 An eye to the age:
