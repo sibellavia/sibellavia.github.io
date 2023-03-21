@@ -13,7 +13,7 @@ export default function Post({ postData }) {
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-semibold mb-4">{postData.title}</h1>
       <p className="text-gray-600 mb-8">{postData.date}</p>
-      <ReactMarkdown>{postData.content}</ReactMarkdown>
+      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </div>
   )
 }

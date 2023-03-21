@@ -44,7 +44,9 @@ export default function Home({ allPostsData }) {
           </div>
         </div>
 
-        <div className="space-y-4">Footer</div>
+        <div className="space-y-4">
+          <div className="text-center">Footer</div>
+        </div>
       </main>
     </div>
   );
