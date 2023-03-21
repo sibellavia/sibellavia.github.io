@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
-import ReactMarkdown from 'react-markdown'
+import Layout from "../../components/Layout"
 import { getPostData, getAllPostSlugs } from '../../../lib/posts'
+import Link from "next/link"
 
 export default function Post({ postData }) {
   const router = useRouter()
@@ -10,12 +11,15 @@ export default function Post({ postData }) {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <Layout>
+      <div className="pb-8">
+        <Link href="/">cd ../</Link>
+      </div>
       <h1 className="text-4xl font-semibold mb-4">{postData.title}</h1>
       <p className="text-gray-600 mb-8">{postData.date}</p>
       <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-    </div>
-  )
+    </Layout>
+  );
 }
 
 export async function getStaticPaths() {
