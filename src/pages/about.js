@@ -67,7 +67,7 @@ export default function About() {
           <li>Languages: English C1, French B2, Spanish A2 self-evaluated</li>
         </ul>
 
-        <h2>Let's get in touch 😊</h2>
+        <h2>Let&apos;s get in touch 😊</h2>
         <ul className="list-disc text-gray-700 dark:text-gray-300 pl-8">
           <li>Twitter: {" "} 
           <Link href="https://twitter.com/simoneb1x">
