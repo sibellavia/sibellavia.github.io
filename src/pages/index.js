@@ -20,7 +20,7 @@ export default function Home({ allPostsData }) {
 
         <p className="text-gray-700 dark:text-gray-300">
           I have experience in the Energy, Public Administration,
-          Chemical-Cosmetic and E-Commerce sectors. If you would like to learn
+          Chemical-Cosmetic and E-Commerce industries. If you would like to learn
           more about me, check out my{" "}
           <Link href="/about">
             <span className="text-blue-600 dark:text-blue-400 hover:underline">
