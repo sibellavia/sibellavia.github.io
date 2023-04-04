@@ -13,7 +13,7 @@ export default function Post({ postData }) {
   return (
     <Layout>
       <div className="pb-8">
-        <Link href="/">cd ../</Link>
+        <Link href="/" className="font-mono font-light">cd ../</Link>
       </div>
       <h1 className="text-4xl font-semibold mb-4">{postData.title}</h1>
       <p className="text-gray-600 mb-8">{postData.date}</p>

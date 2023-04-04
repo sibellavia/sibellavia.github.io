@@ -1,5 +1,5 @@
-import Link from "next/link"
-import Layout from "../components/Layout"
+import Link from "next/link";
+import Layout from "../components/Layout";
 import { getSortedPostsData } from "../../lib/posts";
 import DarkModeButton from "../components/DarkModeButton";
 
@@ -20,8 +20,8 @@ export default function Home({ allPostsData }) {
 
         <p className="text-gray-700 dark:text-gray-300">
           I have experience in the Energy, Public Administration,
-          Chemical-Cosmetic and E-Commerce industries. If you would like to learn
-          more about me, check out my{" "}
+          Chemical-Cosmetic and E-Commerce industries. If you would like to
+          learn more about me, check out my{" "}
           <Link href="/about">
             <span className="text-blue-600 dark:text-blue-400 hover:underline">
               about page
@@ -29,6 +29,40 @@ export default function Home({ allPostsData }) {
           </Link>
           .
         </p>
+      </div>
+
+      <div className="space-y-4">
+        <h1 className="text-xl">Recent things</h1>
+        <div className="grid grid-cols-1 overflow-scroll gap-6">
+          <div>
+            <a
+              href="https://github.com/simoneb1x/zen"
+              target="_blank"
+              className="text-lg font-semibold text-blue-600 dark:text-blue-400 hover:underline"
+            >
+              Zen
+            </a>
+            <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
+              A minimalist, simple and essential timer. Yet another Pomodoro app
+              for macOS, developed using Swift.
+            </p>
+          </div>
+          <div>
+            <a
+              href="https://infotumori.it/"
+              target="_blank"
+              className="text-lg font-semibold text-blue-600 dark:text-blue-400 hover:underline"
+            >
+              Infotumori.it
+            </a>
+            <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
+              A free information website accessible to anyone, which aims to
+              provide essential information and key resources for proper cancer
+              awareness. It is aimed at people who want to get informed, prevent
+              and cure. Developed for an Italian target audience.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className="space-y-4">
