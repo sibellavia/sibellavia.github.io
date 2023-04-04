@@ -33,7 +33,7 @@ export default function Home({ allPostsData }) {
 
       <div className="space-y-4">
         <h1 className="text-xl">Recent things</h1>
-        <div className="grid grid-cols-1 overflow-scroll gap-6">
+        <div className="grid grid-cols-1 gap-6">
           <div>
             <a
               href="https://github.com/simoneb1x/zen"
