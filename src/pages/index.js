@@ -63,12 +63,11 @@ export default function Home({ allPostsData }) {
             </p>
           </div>
           <div>
-            <a
-              href="/bemydoc"
-              className="text-lg font-semibold text-blue-600 dark:text-blue-400 hover:underline"
-            >
-              beMyDoc
-            </a>
+          <Link href="/bemydoc">
+            <span className="text-lg font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+            beMyDoc
+            </span>
+          </Link>
             <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
               beMyDoc is the design of an application for monitoring the health
               status of leukemia patients to whom chemotherapy protocols can be
