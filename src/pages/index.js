@@ -56,10 +56,23 @@ export default function Home({ allPostsData }) {
               Infotumori.it
             </a>
             <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
-              A free information website accessible to anyone, which aims to
-              provide essential information and key resources for proper cancer
-              awareness. It is aimed at people who want to get informed, prevent
-              and cure. Developed for an Italian target audience.
+              Infotumori aims to provide essential information and key resources
+              for proper cancer awareness. It is aimed at people who want to get
+              informed, prevent and cure. Developed for an Italian target
+              audience. Its development is still in progress.
+            </p>
+          </div>
+          <div>
+            <a
+              href="/bemydoc"
+              className="text-lg font-semibold text-blue-600 dark:text-blue-400 hover:underline"
+            >
+              beMyDoc
+            </a>
+            <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
+              beMyDoc is the design of an application for monitoring the health
+              status of leukemia patients to whom chemotherapy protocols can be
+              applied by administering oral drugs.
             </p>
           </div>
         </div>
