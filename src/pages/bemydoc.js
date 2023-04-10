@@ -18,16 +18,15 @@ export default function About() {
         ></img>
         <p className="text-gray-700 dark:text-gray-300">
           beMyDoc is the concept of an application designed during the Covid
-          pandemic in 2020. The Covid-19 pandemic, as is well known, has
-          actually made the management of frail patients by health care
-          personnel difficult. No less so is the management of that type of
-          leukemia patient to whom chemotherapy protocols can be applied by
-          administering oral drugs. This type of patient can be well managed
-          without the need for hospitalization. However, the condition must be
-          constantly monitored in order to intervene quickly if side effects or
-          reactions to therapy occur. And this is precisely the task that is
-          entrusted to the system that was requested by the Hematology
-          Department of the Polyclinic of Catania.
+          pandemic of 2020: during that year, as is well known, the management
+          of frail patients by healthcare personnel healthcare personnel was
+          difficult. One type of patients could be well managed without the need
+          for hospitalization, leukemia patients who can be given oral
+          chemotherapy drugs. However, the condition must be constantly
+          monitored in order to intervene promptly in case of side effects or
+          reactions to therapy. This was precisely the task entrusted to the
+          system required by the Hematology Department of the Catania
+          Polyclinic.
         </p>
         <img
           src="https://i.imgur.com/ah9rctj.png"
