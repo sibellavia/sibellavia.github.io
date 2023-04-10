@@ -14,7 +14,7 @@ export default function Home({ allPostsData }) {
         <h1 className="text-2xl">Simone Bellavia</h1>
         <p className="text-gray-700 dark:text-gray-300">
           Stuff orchestrator. I coordinate teams, develop products and provide
-          services in Accenture. I am strongly results-oriented and committed to
+          services @ Accenture. I am strongly results-oriented and committed to
           designing optimal solutions for complex architectures.
         </p>
 
