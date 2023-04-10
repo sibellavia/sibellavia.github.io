@@ -22,10 +22,10 @@ export default function About() {
           of frail patients by healthcare personnel healthcare personnel was
           difficult. One type of patients could be well managed without the need
           for hospitalization, leukemia patients who can be given oral
-          chemotherapy drugs. However, the condition must be constantly
-          monitored in order to intervene promptly in case of side effects or
-          reactions to therapy. This was precisely the task entrusted to the
-          system required by the Hematology Department of the Catania
+          chemotherapy drugs. However, health conditions were to be constantly
+          monitored so that action could be taken quickly in case of side
+          effects or reactions to therapy. This was precisely the task entrusted
+          to the system required by the Hematology Department of the Catania
           Polyclinic.
         </p>
         <img
