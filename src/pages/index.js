@@ -19,9 +19,8 @@ export default function Home({ allPostsData }) {
         </p>
 
         <p className="text-gray-700 dark:text-gray-300">
-          I have experience in the Energy, Public Administration,
-          Chemical-Cosmetic and E-Commerce industries. If you would like to
-          learn more about me, check out my{" "}
+          Very interested in Healthcare, Cloud, DevOps, and Cybersecurity. If
+          you would like to learn more about me, please check out my{" "}
           <Link href="/about">
             <span className="text-blue-600 dark:text-blue-400 hover:underline">
               about page
@@ -63,11 +62,11 @@ export default function Home({ allPostsData }) {
             </p>
           </div>
           <div>
-          <Link href="/bemydoc">
-            <span className="text-lg font-semibold text-blue-600 dark:text-blue-400 hover:underline">
-            beMyDoc
-            </span>
-          </Link>
+            <Link href="/bemydoc">
+              <span className="text-lg font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+                beMyDoc
+              </span>
+            </Link>
             <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
               beMyDoc is the design of an application for monitoring the health
               status of leukemia patients to whom chemotherapy protocols can be
