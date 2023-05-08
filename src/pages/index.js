@@ -19,7 +19,7 @@ export default function Home({ allPostsData }) {
         </p>
 
         <p className="text-gray-700 dark:text-gray-300">
-          Very interested in Healthcare, Cloud, DevOps, and Cybersecurity. If
+          Interested in Healthcare, Cloud, DevOps, and Cybersecurity. If
           you would like to learn more about me, please check out my{" "}
           <Link href="/about">
             <span className="text-blue-600 dark:text-blue-400 hover:underline">
