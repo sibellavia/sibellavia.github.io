@@ -43,7 +43,7 @@ export default function About() {
 
         <h2>Skills 👨🏼‍💻</h2>
         <ul className="list-disc text-gray-700 dark:text-gray-300 pl-8">
-          <li>Programming: Python, R, JavaScript, C, SQL </li>
+          <li>Programming: C, Python, JavaScript, R, SQL </li>
           <li>
             Data Science: Pandas, NumPy, Matplotlib, Scikit-learn, Tidyverse
           </li>
