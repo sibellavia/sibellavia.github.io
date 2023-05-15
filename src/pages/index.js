@@ -35,19 +35,6 @@ export default function Home({ allPostsData }) {
         <div className="grid grid-cols-1 gap-6">
           <div>
             <a
-              href="https://github.com/simoneb1x/zen"
-              target="_blank"
-              className="text-lg font-semibold text-blue-600 dark:text-blue-400 hover:underline"
-            >
-              Zen
-            </a>
-            <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
-              A minimalist, simple and essential timer. Yet another Pomodoro app
-              for macOS, developed using Swift.
-            </p>
-          </div>
-          <div>
-            <a
               href="https://infotumori.it/"
               target="_blank"
               className="text-lg font-semibold text-blue-600 dark:text-blue-400 hover:underline"
@@ -59,6 +46,19 @@ export default function Home({ allPostsData }) {
               for proper cancer awareness. It is aimed at people who want to get
               informed, prevent and cure. Developed for an Italian target
               audience. Its development is still in progress.
+            </p>
+          </div>
+          <div>
+            <a
+              href="https://github.com/simoneb1x/zen"
+              target="_blank"
+              className="text-lg font-semibold text-blue-600 dark:text-blue-400 hover:underline"
+            >
+              Zen
+            </a>
+            <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
+              A minimalist, simple and essential timer. Yet another Pomodoro app
+              for macOS, developed using Swift.
             </p>
           </div>
           <div>
