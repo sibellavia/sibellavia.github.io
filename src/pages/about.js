@@ -63,7 +63,7 @@ export default function About() {
         <ul className="list-disc text-gray-700 dark:text-gray-300 pl-8">
           <li>Agile: PAL I, PSM I, PSPO I, SPS, SAFe 5 Practitioner</li>
           <li>CRM: Salesforce Administrator</li>
-          <li>Languages: English C1, French B2, <i>Spanish A2 self-evaluated</i></li>
+          <li>Languages: English C1, French B2, <i>Spanish A2 self-evaluated</i>, Italian mother tongue</li>
         </ul>
 
         <h2>Let&apos;s get in touch 😊</h2>
