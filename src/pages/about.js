@@ -44,9 +44,11 @@ export default function About() {
           I am in love with the sea, the waves, the wind and... the gym! I train
           every day to land in the world of powerlifting. And whenever I can, I
           go into the water to surf and SUP. I am very curious. I love to read
-          and study. I am in love with math and physics. My favorite colors are
-          coral and black. My favorite flower is the sunflower. My favorite
-          fruit is the pear. I prefer morning to evening. I love to travel.
+          and study. I am in love with math, physics, coding and data. My
+          favorite colors are coral and black. My favorite flower is the
+          sunflower. Pears are my favorite fruit. I prefer morning to evening. I
+          love to travel. I want to learn a lot of languages, get to know
+          different cultures. One of my dreams is to help other people.
         </p>
 
         <h2>Skills 👨🏼‍💻</h2>
