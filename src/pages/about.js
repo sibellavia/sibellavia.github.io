@@ -14,17 +14,17 @@ export default function About() {
           I am Simone Bellavia, 25 years old. I was born and raised in Catania,
           Sicily, a beautiful city overlooking the Ionian Sea and living at the
           foot of the Mount Etna. I am now based in Milan, another city I love,
-          but I travel all the time. I work full-time as an IT Senior Analyst @
+          but I travel all the time. I work full-time as a Senior Analyst @
           Accenture. I am studying for a MSc in Data Science at the University
           of Milan-Bicocca. I am a very passionate person who looks at life with
           a lot of curiosity.
         </p>
 
         <p className="text-gray-700 dark:text-gray-300">
-          I am currently working as a Scrum Master and Software Engineer on
+          I am currently working as a Technical Coach and Software Engineer on
           several projects. Web Development and DevOps engineering have
           characterized my work experience so far: I am used to working in
-          complex contexts based on microservice architectures, where I am
+          complex contexts based on microservices architecture, where I am
           committed to coordinating my teams and participating in the design and
           development of the solutions we propose. The industries I have worked
           in are Energy, Public Administration, Chemical-Cosmetic, and
@@ -41,14 +41,14 @@ export default function About() {
         </p>
 
         <p className="text-gray-700 dark:text-gray-300">
-          I am in love with the sea, the waves, the wind and... the gym! I train
-          every day to land in the world of powerlifting. And whenever I can, I
-          go into the water to surf and SUP. I am very curious. I love to read
-          and study. I am in love with math, physics, coding and data. My
-          favorite colors are coral and black. My favorite flower is the
-          sunflower. Pears are my favorite fruit. I prefer morning to evening. I
-          love to travel. I want to learn a lot of languages, get to know
-          different cultures. One of my dreams is to help other people.
+          I am in love with the sea, the waves, the wind and the gym. Whenever I
+          can, I go into the water to surf and SUP and I train every day to land
+          in the world of powerlifting. I am very curious, I love to read and
+          study. I am in love with math, physics, coding and data. Coral and
+          black are my favorite colors, Sunflower is the flower I most love and
+          in which I reflect myself, and pears are my favorite fruit. I prefer
+          morning to evening. I love to travel. I want to learn a lot of
+          languages, get to know different cultures. One of my dreams is to help others in a concrete way.
         </p>
 
         <h2>Skills 👨🏼‍💻</h2>
@@ -57,15 +57,14 @@ export default function About() {
           <li>
             Data Science: Pandas, NumPy, Matplotlib, Scikit-learn, Tidyverse
           </li>
-          <li>Front-End: Hugo, Jekyll, React, Angular, HTML5, SASS,</li>
-          <li>Back-End: Flask, FastAPI, REST APIs, Node.js</li>
+          <li>Front-End: React, Vue.js, SCSS. Angular fundamentals</li>
+          <li>Back-End: Node.js, Flask, FastAPI</li>
           <li>DB: Redis, MySQL, MongoDB</li>
-          <li>DevOps: K8s, Docker, CI/CD scripting</li>
-          <li>VCS: Git</li>
-          <li>BPM: Red Hat PAM, Camunda</li>
+          <li>DevOps: Git, Docker, Azure DevOps, Bitbucket, Bamboo</li>
+          <li>BPM: Camunda, RHPAM</li>
           <li>OS: Windows XP+, macOS 10.6+, Debian</li>
           <li>
-            Relevant Tools: Jira, Azure DevOps, Confluence, Trello, Mural/Miro
+            Relevant Tools: Jira, Confluence, Trello, Mural/Miro, Figma, Photoshop, Illustrator, Office Suite
           </li>
         </ul>
 
@@ -74,7 +73,7 @@ export default function About() {
           <li>Agile: PAL I, PSM I, PSPO I, SPS, SAFe 5 Practitioner</li>
           <li>CRM: Salesforce Administrator</li>
           <li>
-            Languages: English C1, French B2, <i>Spanish A2 self-evaluated</i>,
+            Languages: English C1, French B2, <i>Spanish B1 self-evaluated</i>,
             Italian mother tongue
           </li>
         </ul>
