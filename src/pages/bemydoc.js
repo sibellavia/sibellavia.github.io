@@ -16,7 +16,7 @@ export default function About() {
           style={{ borderRadius: "2%" }}
           alt="beMyDoc presentation banner"
         ></img>
-        <p className="text-gray-700 dark:text-gray-300">
+        <p className="text-[#f5f5f5] dark:text-gray-300">
           beMyDoc is the concept of an application designed during the Covid
           pandemic of 2020: during that year, as is well known, the management
           of frail patients by healthcare personnel healthcare personnel was
@@ -34,7 +34,7 @@ export default function About() {
           style={{ borderRadius: "0.8%" }}
           alt="beMyDoc app"
         ></img>
-        <p className="text-gray-700 dark:text-gray-300">
+        <p className="text-[#f5f5f5] dark:text-gray-300">
           The project was entirely conceived and developed by the non-profit
           organization{" "}
           <Link href="https://www.veyes.it/" target="_blank">
@@ -52,7 +52,7 @@ export default function About() {
           having allowed me to participate in a project so important to me.
         </p>
 
-        <p className="mx-auto text-gray-700 dark:text-gray-300">
+        <p className="mx-auto text-[#f5f5f5] dark:text-gray-300">
           The app was supposed to function as a health diary, offering important
           features such as: an information section on the pathology, specific to
           each patient; reporting of illness, the most important one in my
@@ -64,7 +64,7 @@ export default function About() {
           appointments and medication intake.
         </p>
 
-        <p className="text-gray-700 dark:text-gray-300">
+        <p className="text-[#f5f5f5] dark:text-gray-300">
           I was able to take care of the branding, logo making, and the UX/UI
           part.
         </p>
@@ -75,7 +75,7 @@ export default function About() {
           alt="beMyDoc logo realization, 1"
         ></img>
 
-        <p className="mx-auto text-gray-700 dark:text-gray-300">
+        <p className="mx-auto text-[#f5f5f5] dark:text-gray-300">
           This is the concept I based the logo on. I wanted to include the
           foundational elements of the app: hematology, medical relief, and
           communication.
@@ -92,7 +92,7 @@ export default function About() {
           alt="beMyDoc logo realization, 3"
         ></img>
 
-        <p className="text-gray-700 dark:text-gray-300">
+        <p className="text-[#f5f5f5] dark:text-gray-300">
           If you speak Italian, you can learn more about the project through
           reading{" "}
           <Link

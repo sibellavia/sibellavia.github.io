@@ -129,6 +129,28 @@ export default function Home({ allPostsData }) {
         </a>
       </div>
 
+      {/* Projects */}
+      <div className="col-span-6 space-y-2 rounded-2xl bg-yellow-400 p-6 dark:bg-indigo-800 md:col-span-6">
+        <h2 className="font-title text-slate-900 text-xl font-bold">
+          Recent Things
+        </h2>
+        <p className="text-slate-900">
+          <Link href="https://infotumori.it" className="underline" target="_blank">Infotumori.it</Link>
+          <br></br>
+          Infotumori aims to provide essential information and key resources for proper cancer awareness. It is aimed at people who want to get informed, prevent and cure. Developed for an Italian target audience. Its development is still in progress.
+          <br></br>
+          <br></br>
+          <Link href="bemydoc" className="underline">beMyDoc</Link>
+          <br></br>
+          beMyDoc is the design of an application for monitoring the health status of leukemia patients to whom chemotherapy protocols can be applied by administering oral drugs.
+          <br></br>
+          <br></br>
+          <Link href="https://github.com/simoneb1x/zen" className="underline" target="_blank">Zen</Link>
+          <br></br>
+          A minimalist, simple and essential timer. Yet another Pomodoro app for macOS, developed using Swift.
+        </p>
+      </div>
+
       {/* <div className="group col-span-3 h-full md:col-span-3">
         <a
           target="_blank"
