@@ -100,16 +100,17 @@ export default function Home({ allPostsData }) {
           <span className="hidden dark:inline">⭐</span>
         </h2>
         <p className="text-[#f5f5f5]">
-          Coordinating teams, developing products and providing
-          services @ Accenture. 
+          I am a 25 y/o working at Accenture as a PMO and Software Engineer in
+          awesome international teams. I am a Data Science student at the
+          University of Milan-Bicocca.
+          <br></br>I like sports and I am in love with the sea. You can often
+          find me at the beach, even in winter. Interested in healthcare, data
+          science, software engineering, project management, Unix.
           <br></br>
-          I am strongly results-oriented and committed to
-          designing optimal solutions for complex architectures. Interested in
-          healthcare, data science, software engineering, project management,
-          Unix.
           <br></br>
-          <br></br>
-          <Link href="about" className="underline">Read more about me here!</Link>
+          <Link href="about" className="underline">
+            Read more about me here :)
+          </Link>
         </p>
       </div>
 
@@ -174,19 +175,38 @@ export default function Home({ allPostsData }) {
           Recent Things
         </h2>
         <p className="text-slate-900">
-          <Link href="https://infotumori.it" className="underline" target="_blank">Infotumori.it</Link>
+          <Link
+            href="https://infotumori.it"
+            className="underline"
+            target="_blank"
+          >
+            Infotumori.it
+          </Link>
           <br></br>
-          Infotumori aims to provide essential information and key resources for proper cancer awareness. It is aimed at people who want to get informed, prevent and cure. Developed for an Italian target audience. Its development is still in progress.
+          Infotumori aims to provide essential information and key resources for
+          proper cancer awareness. It is aimed at people who want to get
+          informed, prevent and cure. Developed for an Italian target audience.
+          Its development is still in progress.
           <br></br>
           <br></br>
-          <Link href="bemydoc" className="underline">beMyDoc</Link>
+          <Link href="bemydoc" className="underline">
+            beMyDoc
+          </Link>
           <br></br>
-          beMyDoc is the design of an application for monitoring the health status of leukemia patients to whom chemotherapy protocols can be applied by administering oral drugs.
+          beMyDoc is the design of an application for monitoring the health
+          status of leukemia patients to whom chemotherapy protocols can be
+          applied by administering oral drugs.
           <br></br>
           <br></br>
-          <Link href="https://github.com/simoneb1x/zen" className="underline" target="_blank">Zen</Link>
-          <br></br>
-          A minimalist, simple and essential timer. Yet another Pomodoro app for macOS, developed using Swift.
+          <Link
+            href="https://github.com/simoneb1x/zen"
+            className="underline"
+            target="_blank"
+          >
+            Zen
+          </Link>
+          <br></br>A minimalist, simple and essential timer. Yet another
+          Pomodoro app for macOS, developed using Swift.
         </p>
       </div>
 

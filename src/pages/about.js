@@ -1,14 +1,53 @@
-import Layout from "../components/Layout";
+import Head from "next/head";
 import Link from "next/link";
 
 export default function About() {
   return (
     <main className="mx-auto grid max-w-3xl grid-cols-6 gap-6 px-6 pb-40 pt-16">
+      <Head>
+        <title>About – Simone Bellavia</title>
+        <meta
+          name="description"
+          content="Simone Bellavia's (aka @simoneb1x) official blog."
+          key="desc"
+        />
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/android-chrome-192x192.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="256x256"
+          href="/android-chrome-256x256.png"
+        />
+      </Head>
+      
       <Link href="/">../</Link>
 
       <div className="col-span-6 space-y-2 rounded-2xl bg-[#384883] p-6 dark:bg-indigo-800 md:col-span-6">
         <h2 className="font-title text-xl font-bold">
-          Hello world <span className="inline dark:hidden">🌻</span>
+          About me <span className="inline dark:hidden">🧵</span>
         </h2>
         <p className="text-[#f5f5f5]">
           I am Simone Bellavia, 25 years old. I was born and raised in Catania,

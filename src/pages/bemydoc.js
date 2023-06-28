@@ -1,12 +1,12 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
-import Image from 'next/image'
+import Head from "next/head";
 
 export default function About() {
   return (
     <Layout>
       <div className="pb-8">
-        <Link href="/">cd ../</Link>
+        <Link href="/">../</Link>
       </div>
 
       <div className="space-y-4">
