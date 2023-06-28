@@ -52,7 +52,7 @@ export default function Home({ allPostsData }) {
             // placeholder="blur"
             height={96}
             width={96}
-            className="h-24 w-24 rounded-full border border-slate-500 object-cover"
+            className="h-24 w-24 rounded-full object-cover"
             alt="Photo of me"
           />
           <div className="space-y-1">

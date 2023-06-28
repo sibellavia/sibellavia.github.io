@@ -9,7 +9,6 @@ export default function About() {
       <div className="col-span-6 space-y-2 rounded-2xl bg-[#384883] p-6 dark:bg-indigo-800 md:col-span-6">
         <h2 className="font-title text-xl font-bold">
           Hello world <span className="inline dark:hidden">🌻</span>
-          <span className="hidden dark:inline">⭐</span>
         </h2>
         <p className="text-[#f5f5f5]">
           I am Simone Bellavia, 25 years old. I was born and raised in Catania,
