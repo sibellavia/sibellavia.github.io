@@ -1,11 +1,50 @@
 import Link from "next/link";
-import Layout from "../components/Layout";
+import Head from "next/head";
 import { getSortedPostsData } from "../../lib/posts";
 import Image from "next/image";
 
 export default function Home({ allPostsData }) {
   return (
     <main className="mx-auto grid max-w-3xl grid-cols-6 gap-6 px-6 pb-40 pt-16">
+      <Head>
+        <title>Simone Bellavia</title>
+        <meta
+          name="description"
+          content="Simone Bellavia's (aka @simoneb1x) official blog."
+          key="desc"
+        />
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/android-chrome-192x192.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="256x256"
+          href="/android-chrome-256x256.png"
+        />
+      </Head>
+
       <div className="col-span-4 flex items-center justify-center overflow-hidden rounded-2xl bg-[#ff7f50] dark:border-black-500 dark:bg-black-500/20 dark:shadow-none dark:backdrop-blur-2xl md:col-span-4 md:h-52">
         <div className="flex flex-col items-center space-y-4 px-6 py-8 md:flex-row md:space-x-4 md:space-y-0">
           <Image
