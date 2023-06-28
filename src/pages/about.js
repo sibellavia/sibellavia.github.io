@@ -48,7 +48,8 @@ export default function About() {
           black are my favorite colors, Sunflower is the flower I most love and
           in which I reflect myself, and pears are my favorite fruit. I prefer
           morning to evening. I love to travel. I want to learn a lot of
-          languages, get to know different cultures. One of my dreams is to help others in a concrete way.
+          languages, get to know different cultures. One of my dreams is to help
+          others in a concrete way.
         </p>
 
         <h2>Skills 👨🏼‍💻</h2>
@@ -64,7 +65,8 @@ export default function About() {
           <li>BPM: Camunda, RHPAM</li>
           <li>OS: Windows XP+, macOS 10.6+, Debian</li>
           <li>
-            Relevant Tools: Jira, Confluence, Trello, Mural/Miro, Figma, Photoshop, Illustrator, Office Suite
+            Relevant Tools: Jira, Confluence, Trello, Mural/Miro, Figma,
+            Photoshop, Illustrator, Office Suite
           </li>
         </ul>
 
