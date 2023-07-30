@@ -212,7 +212,7 @@ export default function Home({ allPostsData }) {
 
       {/* Blog */}
 
-      <div className="col-span-6 space-y-2 rounded-2xl bg-cyan-900 p-6 dark:bg-indigo-800 md:col-span-6">
+      {/* <div className="col-span-6 space-y-2 rounded-2xl bg-cyan-900 p-6 dark:bg-indigo-800 md:col-span-6">
         <h2 className="font-title text-[#f5f5f5] text-xl font-bold">Blog</h2>
         <div className="space-y-4">
           {allPostsData.slice(0, 5).map(({ id, date, title }) => (
@@ -224,7 +224,7 @@ export default function Home({ allPostsData }) {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }
