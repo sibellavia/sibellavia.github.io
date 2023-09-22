@@ -75,14 +75,11 @@ export default function About() {
           <li>
             Relevant Tools: Jira, Confluence, Trello, Mural/Miro, Figma,
             Photoshop, Illustrator, Office Suite
-            Relevant Tools: Jira, Confluence, Trello, Mural/Miro, Figma,
-            Photoshop, Illustrator, Office Suite
           </li>
         </ul>
 
         <h2>Certifications 📄</h2>
         <ul className="list-disc text-gray-700 dark:text-gray-300 pl-8">
-          <li>Agile: PAL I, PSM II, PSPO I, SPS, SAFe 5 Practitioner</li>
           <li>Agile: PAL I, PSM II, PSPO I, SPS, SAFe 5 Practitioner</li>
           <li>CRM: Salesforce Administrator</li>
           <li>
@@ -95,10 +92,8 @@ export default function About() {
         <ul className="list-disc text-gray-700 dark:text-gray-300 pl-8">
           <li>
             X/Twitter:{" "}
-            X/Twitter:{" "}
             <Link href="https://twitter.com/simoneb1x">
               <span className="text-blue-600 dark:text-blue-400 hover:underline">
-                @simoneblv
                 @simoneblv
               </span>
             </Link>
@@ -108,11 +103,9 @@ export default function About() {
             <Link href="https://www.linkedin.com/in/simone-bellavia/">
               <span className="text-blue-600 dark:text-blue-400 hover:underline">
                 @simone-bellavia
-                @simone-bellavia
               </span>
             </Link>
           </li>
-          <li>Email: simone.bellavia@live.it</li>
           <li>Email: simone.bellavia@live.it</li>
         </ul>
       </div>
