@@ -28,13 +28,6 @@ export default function About() {
           teams and participating in the design and development of the solutions
           we propose. The industries I have worked in are Energy, Public
           Administration, Chemical-Cosmetic, and E-Commerce.
-          I am currently working as a PMO and Software Engineer on several
-          projects. Web Development and DevOps engineering have characterized my
-          work experience so far: I am used to working in complex contexts based
-          on microservices architecture, where I am committed to coordinating my
-          teams and participating in the design and development of the solutions
-          we propose. The industries I have worked in are Energy, Public
-          Administration, Chemical-Cosmetic, and E-Commerce.
         </p>
 
         <p className="text-gray-700 dark:text-gray-300">
@@ -54,8 +47,6 @@ export default function About() {
           black are my favorite colors, Sunflower is the flower I most love and
           in which I reflect myself, and pears are my favorite fruit. I prefer
           morning to evening. I love to travel. I want to learn a lot of
-          languages, get to know different cultures. One of my dreams is to help
-          others in a concrete way.
           languages, get to know different cultures. One of my dreams is to help
           others in a concrete way.
         </p>
