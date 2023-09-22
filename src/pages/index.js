@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
 import { getSortedPostsData } from "../../lib/posts";
-import DarkModeButton from "../components/DarkModeButton";
 
 export default function Home({ allPostsData }) {
   return (
@@ -96,9 +95,9 @@ export default function Home({ allPostsData }) {
       <div className="space-y-4">
         <h1 className="text-sm text-gray-500">
           © 2019-23 made with ❤️ by{" "}
-          <Link href="https://twitter.com/simoneb1x">
+          <Link href="https://twitter.com/simoneblv">
             <span className="text-blue-600 dark:text-blue-400 hover:underline">
-              @simoneb1x
+              @simoneblv
             </span>
           </Link>
         </h1>

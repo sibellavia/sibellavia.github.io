@@ -7,7 +7,7 @@ export default function Layout({ children }) {
         <title>Simone Bellavia</title>
         <meta
           name="description"
-          content="Simone Bellavia's (aka @simoneb1x) official blog."
+          content="Simone Bellavia's (aka @simoneblv) official blog."
           key="desc"
         />
         <link rel="icon" href="/favicon.ico" />
