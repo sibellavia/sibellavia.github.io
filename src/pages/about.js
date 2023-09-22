@@ -83,7 +83,7 @@ export default function About() {
         <ul className="list-disc text-gray-700 dark:text-gray-300 pl-8">
           <li>
             X/Twitter:{" "}
-            <Link href="https://twitter.com/simoneb1x">
+            <Link href="https://twitter.com/simoneblv">
               <span className="text-blue-600 dark:text-blue-400 hover:underline">
                 @simoneblv
               </span>
