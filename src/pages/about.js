@@ -21,14 +21,13 @@ export default function About() {
         </p>
 
         <p className="text-gray-700 dark:text-gray-300">
-          I am currently working as a Technical Coach and Software Engineer on
-          several projects. Web Development and DevOps engineering have
-          characterized my work experience so far: I am used to working in
-          complex contexts based on microservices architecture, where I am
-          committed to coordinating my teams and participating in the design and
-          development of the solutions we propose. The industries I have worked
-          in are Energy, Public Administration, Chemical-Cosmetic, and
-          E-Commerce.
+          I am currently working as a PMO and Software Engineer on several
+          projects. Web Development and DevOps engineering have characterized my
+          work experience so far: I am used to working in complex contexts based
+          on microservices architecture, where I am committed to coordinating my
+          teams and participating in the design and development of the solutions
+          we propose. The industries I have worked in are Energy, Public
+          Administration, Chemical-Cosmetic, and E-Commerce.
         </p>
 
         <p className="text-gray-700 dark:text-gray-300">
@@ -48,7 +47,8 @@ export default function About() {
           black are my favorite colors, Sunflower is the flower I most love and
           in which I reflect myself, and pears are my favorite fruit. I prefer
           morning to evening. I love to travel. I want to learn a lot of
-          languages, get to know different cultures. One of my dreams is to help others in a concrete way.
+          languages, get to know different cultures. One of my dreams is to help
+          others in a concrete way.
         </p>
 
         <h2>Skills 👨🏼‍💻</h2>
@@ -64,13 +64,14 @@ export default function About() {
           <li>BPM: Camunda, RHPAM</li>
           <li>OS: Windows XP+, macOS 10.6+, Debian</li>
           <li>
-            Relevant Tools: Jira, Confluence, Trello, Mural/Miro, Figma, Photoshop, Illustrator, Office Suite
+            Relevant Tools: Jira, Confluence, Trello, Mural/Miro, Figma,
+            Photoshop, Illustrator, Office Suite
           </li>
         </ul>
 
         <h2>Certifications 📄</h2>
         <ul className="list-disc text-gray-700 dark:text-gray-300 pl-8">
-          <li>Agile: PAL I, PSM I, PSPO I, SPS, SAFe 5 Practitioner</li>
+          <li>Agile: PAL I, PSM II, PSPO I, SPS, SAFe 5 Practitioner</li>
           <li>CRM: Salesforce Administrator</li>
           <li>
             Languages: English C1, French B2, <i>Spanish B1 self-evaluated</i>,
@@ -81,10 +82,10 @@ export default function About() {
         <h2>Let&apos;s get in touch 😊</h2>
         <ul className="list-disc text-gray-700 dark:text-gray-300 pl-8">
           <li>
-            Twitter:{" "}
+            X/Twitter:{" "}
             <Link href="https://twitter.com/simoneb1x">
               <span className="text-blue-600 dark:text-blue-400 hover:underline">
-                @simoneb1x
+                @simoneblv
               </span>
             </Link>
           </li>
@@ -92,10 +93,11 @@ export default function About() {
             LinkedIn:{" "}
             <Link href="https://www.linkedin.com/in/simone-bellavia/">
               <span className="text-blue-600 dark:text-blue-400 hover:underline">
-                /in/simone-bellavia
+                @simone-bellavia
               </span>
             </Link>
           </li>
+          <li>Email: simone.bellavia@live.it</li>
         </ul>
       </div>
     </Layout>

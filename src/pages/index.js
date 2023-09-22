@@ -13,26 +13,23 @@ export default function Home({ allPostsData }) {
       <div className="space-y-4">
         <h1 className="text-2xl">Simone Bellavia</h1>
         <p className="text-gray-700 dark:text-gray-300">
-          Stuff orchestrator. I coordinate teams, develop products and provide
-          services @ Accenture. I am strongly results-oriented and committed to
-          designing optimal solutions for complex architectures.
-        </p>
-
-        <p className="text-gray-700 dark:text-gray-300">
-          Interested in healthcare, data science, software engineering, project
-          management, Unix. If you would like to learn more about me, please
-          check out my{" "}
+          Hey 🌻
+          <br></br>I am a 25 y/o working at Accenture as a PMO and Software
+          Engineer in awesome international teams. I am a Data Science student
+          at the University of Milan-Bicocca.
+          <br></br>I like sports and I am in love with the sea. You can often
+          find me at the beach, even in winter. Interested in healthcare, data
+          science, software engineering, project management, Unix.{" "}
           <Link href="/about">
             <span className="text-blue-600 dark:text-blue-400 hover:underline">
-              about page
+              Read more about me here :)
             </span>
           </Link>
-          .
         </p>
       </div>
 
       <div className="space-y-4">
-        <h1 className="text-xl">Recent things</h1>
+        <h1 className="text-xl">Side-projects</h1>
         <div className="grid grid-cols-1 gap-6">
           <div>
             <a
