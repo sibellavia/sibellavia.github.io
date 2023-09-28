@@ -21,7 +21,7 @@ export default function About() {
         </p>
 
         <p className="text-gray-700 dark:text-gray-300">
-          I am currently working as a PMO and Software Engineer on several
+          I am currently working as a Senior Analyst and Software Engineer on several
           projects. Web Development and DevOps engineering have characterized my
           work experience so far: I am used to working in complex contexts based
           on microservices architecture, where I am committed to coordinating my

@@ -13,7 +13,7 @@ export default function Home({ allPostsData }) {
         <h1 className="text-2xl">Simone Bellavia</h1>
         <p className="text-gray-700 dark:text-gray-300">
           Hey 🌻
-          <br></br>I am a 25 y/o working at Accenture as a PMO and Software
+          <br></br>I am a 25 y/o working at Accenture as a Senior Analyst and Software
           Engineer in awesome international teams. I am a Data Science student
           at the University of Milan-Bicocca.
           <br></br>I like sports and I am in love with the sea. You can often
