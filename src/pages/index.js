@@ -13,12 +13,14 @@ export default function Home({ allPostsData }) {
         <h1 className="text-2xl">Simone Bellavia</h1>
         <p className="text-gray-700 dark:text-gray-300">
           Hey 🌻
-          <br></br>I am a 25 y/o working at Accenture as a Senior Analyst and Software
-          Engineer in awesome international teams. I am a Data Science student
-          at the University of Milan-Bicocca.
+          <br></br>I am a 25 y/o working at Accenture as a Senior Analyst and
+          Software Engineer in awesome international teams. I am a Data Science
+          student at the University of Milan-Bicocca.
           <br></br>I like sports and I am in love with the sea. You can often
-          find me at the beach, even in winter. Interested in healthcare, data
-          science, software engineering, project management, Unix.{" "}
+          find me at the beach, even in winter. Interested in data science,
+          software engineering, technical agility, healthcare, project
+          management, Unix.
+          <br></br>
           <Link href="/about">
             <span className="text-blue-600 dark:text-blue-400 hover:underline">
               Read more about me here :)
@@ -27,7 +29,7 @@ export default function Home({ allPostsData }) {
         </p>
       </div>
 
-      <div className="space-y-4">
+      {/* <div className="space-y-4">
         <h1 className="text-xl">Side-projects</h1>
         <div className="grid grid-cols-1 gap-6">
           <div>
@@ -71,7 +73,7 @@ export default function Home({ allPostsData }) {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="space-y-4">
         <h1 className="text-xl">Last posts</h1>
