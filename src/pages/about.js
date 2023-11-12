@@ -107,7 +107,7 @@ export default function About() {
           </div>
           <div>
             <a
-              href="https://github.com/simoneb1x/zen"
+              href="https://github.com/simoneblv/zen"
               target="_blank"
               className="text-lg font-semibold text-blue-600 dark:text-blue-400 hover:underline"
             >
@@ -137,6 +137,14 @@ export default function About() {
           <li>
             X/Twitter:{" "}
             <Link href="https://twitter.com/simoneblv">
+              <span className="text-blue-600 dark:text-blue-400 hover:underline">
+                @simoneblv
+              </span>
+            </Link>
+          </li>
+          <li>
+            Github:{" "}
+            <Link href="https://github.com/simoneblv">
               <span className="text-blue-600 dark:text-blue-400 hover:underline">
                 @simoneblv
               </span>
