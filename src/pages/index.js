@@ -11,7 +11,7 @@ export default function Home({ allPostsData }) {
           <div className="w-full md:w-1/2 px-2 md:mt-0 mt-4 mb-8">
             <h2 className="text-xl font-bold mb-2">about</h2>
             <p className="text-gray-700 dark:text-gray-300">
-          hey I&apos;m a 25 y/o working at Accenture as a Senior Analyst and
+          hey I&apos;m Simone Bellavia, aka @simoneblv or sblv, a 25 y/o working at Accenture as a Senior Analyst and
           Software Engineer in awesome international teams. I&apos;m also a Data Science
           student at the University of Milan-Bicocca. when I&apos;m not writing code, you
           can find me at the nearest beach or in a gym. I&apos;m interested in data science,
@@ -49,5 +49,5 @@ export async function getStaticProps() {
     props: {
       allPostsData,
     },
-  };
+    }
 }
