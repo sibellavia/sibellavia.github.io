@@ -14,7 +14,7 @@ export default function Home({ allPostsData }) {
           hey I&apos;m Simone Bellavia, aka @simoneblv or sblv, a 25 y/o working at Accenture as a Senior Analyst and
           Software Engineer in awesome international teams. I&apos;m also a Data Science
           student at the University of Milan-Bicocca. when I&apos;m not writing code, you
-          can find me at the nearest beach or in a gym. I&apos;m interested in data science,
+          can find me at the nearest beach or in a gym. I&apos;m interested in
           software engineering, data science, project management, healthcare.
           <br></br>
           <Link href="/about">
