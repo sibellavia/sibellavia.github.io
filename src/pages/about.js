@@ -144,9 +144,9 @@ export default function About() {
           </li>
           <li>
             Github:{" "}
-            <Link href="https://github.com/simoneblv">
+            <Link href="https://github.com/sineblia">
               <span className="text-blue-600 dark:text-blue-400 hover:underline">
-                @simoneblv
+                @sineblia
               </span>
             </Link>
           </li>
