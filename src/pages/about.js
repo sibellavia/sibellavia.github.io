@@ -40,19 +40,18 @@ export default function About() {
 
         <h2>Skills 👨🏼‍💻</h2>
         <ul className="list-disc text-gray-700 dark:text-gray-300 pl-8">
-          <li>Programming: C, Python, JavaScript, R, SQL </li>
+          <li>Programming: C, Python, JavaScript, TypeScript, Java, R, SQL </li>
           <li>
-            Data Science: Pandas, NumPy, Matplotlib, Scikit-learn, Tidyverse
+            Data Science: Pandas, Hadoop, Spark, NumPy, Matplotlib, Scikit-learn, Tidyverse
           </li>
-          <li>Front-End: React, Vue.js, SCSS. Angular fundamentals</li>
-          <li>Back-End: Node.js, Flask, FastAPI</li>
-          <li>DB: Redis, MySQL, MongoDB</li>
-          <li>DevOps: Git, Docker, Azure DevOps, Bitbucket, Bamboo</li>
+          <li>Front-End: React, Vue.js, SCSS. Angular</li>
+          <li>Back-End: Node.js, Flask, FastAPI, Kafka</li>
+          <li>DB: MySQL, Redis, MongoDB</li>
+          <li>DevOps: Azure DevOps, Git, Docker, Jira, Bitbucket, Bamboo</li>
           <li>BPM: Camunda, RHPAM</li>
-          <li>OS: Windows XP+, macOS 10.6+, Debian</li>
+          <li>OS: Windows XP+, macOS 10.6+, Debian, Red Hat Linux</li>
           <li>
-            Relevant Tools: Jira, Confluence, Trello, Mural/Miro, Figma,
-            Photoshop, Illustrator, Office Suite
+            Relevant Tools: Azure services, PowerBI, MS Project, Visio, Office suite...
           </li>
         </ul>
 
