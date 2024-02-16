@@ -1,0 +1,1 @@
+hey I'm Simone aka @sineblia, a 26 y/o working at Accenture as a Senior Analyst and Software Engineer in awesome international teams. I'm also a MSc Data Science student at the University of Milan-Bicocca. when I'm not writing code, you can find me at the nearest beach or in a gym. I'm interested in software engineering, ai/ml, project management, healthcare.
