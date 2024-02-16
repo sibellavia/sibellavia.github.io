@@ -1,7 +1,7 @@
 +++
 title = "Recurrent Neural Networks (RNNs) explained"
 date = "2024-02-16"
-description = "rnn-explained"
+description = "A blog post on RNNs and their principles, briefly explained."
 math = true
 +++
 
