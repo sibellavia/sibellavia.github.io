@@ -5,9 +5,9 @@ menu = "main"
 
 I was born and raised in Catania, Sicily, a beautiful city overlooking the Ionian Sea and living at the foot of the Mount Etna. I am now based in Milan, another city I love, but I travel all the time. I work full-time as a Senior Analyst @ Accenture. I am studying for a MSc in Data Science at the University of Milan-Bicocca. I am a very passionate person who looks at life with a lot of curiosity.
 
-I am currently working as a Senior Analyst and Software Engineer on several projects. I am used to working in complex contexts based on microservices architecture, where I am committed to coordinating my teams and participating in the design and development of the solutions we propose. The industries I have worked in are Energy, Public Administration, Chemical-Cosmetic, and E-Commerce.
+I am currently working as a Senior Analyst and Software Engineer on several projects. The industries I have worked in are Energy, Public Administration, Chemical-Cosmetic, and E-Commerce.
 
-I study AI/ML because it is the perfect synthesis of my main passions: programming, mathematics, statistics, business development. My biggest dream is to one day work in healthcare and oncology in general. In the past I also had a prominent role as a UX/UI designer: it taught me to love symmetries, well-chosen typographies, and good taste in design.
+I study AI/ML because it is the perfect synthesis of my main passions: programming, mathematics, statistics, business development. In the past I also had a prominent role as a UX/UI designer: it taught me to love symmetries, well-chosen typographies, and good taste in design.
 
 ## Skills
 
