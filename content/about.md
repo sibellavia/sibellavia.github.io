@@ -29,7 +29,7 @@ I study AI/ML because it is the perfect synthesis of my main passions: programmi
 
 ## Get in touch
 
-- [X/Twitter](https://x.com/sineblia)
+- [X/Twitter](https://x.com/sibellavia)
 - [LinkedIn](https://www.linkedin.com/in/simone-bellavia/)
-- [Github](https://github.com/sineblia)
+- [Github](https://github.com/sibellavia)
 - [Email](simone.bellavia@live.it)
