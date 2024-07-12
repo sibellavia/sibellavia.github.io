@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Simone Bellavia&#39;s Web Page</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Simone Bellavia&#39;s Web Page</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2024, Simone Bellavia</copyright>
+    <lastBuildDate>Fri, 16 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recurrent Neural Networks (RNNs) explained</title>
+      <link>http://localhost:1313/recurrent-neural-networks-rnns-explained/</link>
+      <pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/recurrent-neural-networks-rnns-explained/</guid>
+      <description>Sources https://www.deeplearningbook.org/contents/rnn.html https://arxiv.org/abs/1506.00019 https://arxiv.org/pdf/1312.6026.pdf https://arxiv.org/pdf/1901.00434.pdf https://www.researchgate.net/publication/228394623_A_brief_review_of_feed-forward_neural_networks From Feedforward to RNNs Recurrent Neural Networks (RNNs) are a class of neural networks designed to process sequential data, such as time series, text, audio, or any other type of sequential data. RNNs were developed to overcome the limitations of feedforward networks that don&amp;rsquo;t maintain a memory of past information.&#xA;Let&amp;rsquo;s take a general look at Feedforward Networks, to then better understand RNNs.&#xA;In feedforward networks, input is processed in a single pass, from input to output, without retaining any memory of previous inputs.</description>
+    </item>
+    <item>
+      <title>I love imperfection</title>
+      <link>http://localhost:1313/i-love-imperfection/</link>
+      <pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/i-love-imperfection/</guid>
+      <description>Today I made coffee. When it was ready to be poured, I looked at the cups. Among them, I have a broken porcelain cup with the handle missing. I am in love with this cup; I do not even want to repair it. Here I thought, I love imperfection. I love it a little bit in everything: I love imperfection in people, in things. Especially in the process of creation: I&amp;rsquo;m creating something, I&amp;rsquo;m creating it slowly, step by step.</description>
+    </item>
+    <item>
+      <title>My abilities are tending toward infinity</title>
+      <link>http://localhost:1313/my-abilities-are-tending-toward-infinity/</link>
+      <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/my-abilities-are-tending-toward-infinity/</guid>
+      <description>These days I have been thinking a lot about my abilities. During this period, I was more frequently doing things that I did not know how to do completely. I didn&amp;rsquo;t even know them. I found myself in a completely new context, with unfamiliar tools and applications. As has often been the case in my life, I felt overwhelmed at first. The amount of activity was significant and I had to learn new things.</description>
+    </item>
+    <item>
+      <title>String Incrementer</title>
+      <link>http://localhost:1313/string-incrementer/</link>
+      <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/string-incrementer/</guid>
+      <description>Hello there. Another day, another kata from Codewars. Here&amp;rsquo;s String Incrementer:&#xA;Your job is to write a function which increments a string, to create a new string.&#xA;If the string already ends with a number, the number should be incremented by 1. If the string does not end with a number. the number 1 should be appended to the new string. Examples:&#xA;foo -&amp;gt; foo1&#xA;foobar23 -&amp;gt; foobar24&#xA;foo0042 -&amp;gt; foo0043</description>
+    </item>
+    <item>
+      <title>Delete occurrences of an element if it occurs more than n times</title>
+      <link>http://localhost:1313/delete-occurrences-of-an-element-if-it-occurs-more-than-n-times/</link>
+      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/delete-occurrences-of-an-element-if-it-occurs-more-than-n-times/</guid>
+      <description>Yes, I am enjoying Codewars a lot. Here&amp;rsquo;s another kata:&#xA;Given a list lst and a number N, create a new list that contains each number of lst at most N times without reordering. For example if N = 2, and the input is [1,2,3,1,2,1,2,3], you take [1,2,3,1,2], drop the next [1,2] since this would lead to 1 and 2 being in the result 3 times, and then take 3, which leads to [1,2,3,1,2,3].</description>
+    </item>
+    <item>
+      <title>Persistent Bugger</title>
+      <link>http://localhost:1313/persistent-bugger/</link>
+      <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/persistent-bugger/</guid>
+      <description>Hello there. I was digging in Codewars and I found a kata that piqued my curiosity:&#xA;Write a function, persistence, that takes in a positive parameter num and returns its multiplicative persistence, which is the number of times you must multiply the digits in num until you reach a single digit. For example:&#xA;persistence(39) # returns 3, because 3*9=27, 2*7=14, 1*4=4 # and 4 has only one digit persistence(999) # returns 4, because 9*9*9=729, 7*2*9=126, # 1*2*6=12, and finally 1*2=2` persistence(4) # returns 0, because 4 is already a one-digit number If it is not fully understandable, perhaps it is better to clarify first what multiplicative persistence is.</description>
+    </item>
+    <item>
+      <title>Applying Deep Learning to detect Rhegmatogenous Retinal Detachment</title>
+      <link>http://localhost:1313/applying-deep-learning-to-detect-rhegmatogenous-retinal-detachment/</link>
+      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/applying-deep-learning-to-detect-rhegmatogenous-retinal-detachment/</guid>
+      <description>Retinal detachment is an eye disease and is one of the most serious ocular emergencies. It occurs after a layer of the retina - essential tissue for vision - is lifted from the pigmented epithelial tissue, dragging the blood vessels that supply nutrients and the eye with it. If the retina is no longer nourished through contact with the pigment epithelium layer, cell death and a progressive and functional loss of vision or of the detached portion of the retina occur after 48 hours.</description>
+    </item>
+    <item>
+      <title>A generic introduction to Clinical Decision Support Systems</title>
+      <link>http://localhost:1313/a-generic-introduction-to-clinical-decision-support-systems/</link>
+      <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/a-generic-introduction-to-clinical-decision-support-systems/</guid>
+      <description>A Clinical Decision Support System is defined as an &amp;ldquo;active knowledge system, which uses two or more patient data elements to generate case-specific advice&amp;rdquo; (DSS, 2001). This implies that a CDSS is simply a Decision Support System focused on the use of knowledge management in order to obtain clinical advice for patient care based on multiple variables inherent to it. The main purpose of the modern CDSS, therefore, is to assist doctors in patient treatment cases or in emergency situations (Benner, 2007).</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>Born, raised (and currently based) in Catania, Sicily, a beautiful city overlooking the Ionian Sea and living at the foot of the Mount Etna. Home is behind, the world ahead, and there are many paths to thread, this is why I love to travel and do it most of the time, both for work and pleasure :) I work full-time as a Project Engineering Manager @ Leonardo in awesome international teams, creating value for common society.</description>
+    </item>
+  </channel>
+</rss>

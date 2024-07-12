@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" />
+<title>Applying Deep Learning to detect Rhegmatogenous Retinal Detachment | Simone Bellavia&#39;s Web Page</title>
+<meta name="title" content="Applying Deep Learning to detect Rhegmatogenous Retinal Detachment" />
+<meta name="description" content="deep-learning-detecting-rrd" />
+<meta name="keywords" content="" />
+
+
+<meta property="og:url" content="http://localhost:1313/applying-deep-learning-to-detect-rhegmatogenous-retinal-detachment/">
+  <meta property="og:site_name" content="Simone Bellavia&#39;s Web Page">
+  <meta property="og:title" content="Applying Deep Learning to detect Rhegmatogenous Retinal Detachment">
+  <meta property="og:description" content="deep-learning-detecting-rrd">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2020-06-20T00:00:00+00:00">
+    <meta property="article:modified_time" content="2020-06-20T00:00:00+00:00">
+    <meta property="og:image" content="http://localhost:1313/images/share.png">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/share.png">
+  <meta name="twitter:title" content="Applying Deep Learning to detect Rhegmatogenous Retinal Detachment">
+  <meta name="twitter:description" content="deep-learning-detecting-rrd">
+
+
+
+
+  <meta itemprop="name" content="Applying Deep Learning to detect Rhegmatogenous Retinal Detachment">
+  <meta itemprop="description" content="deep-learning-detecting-rrd">
+  <meta itemprop="datePublished" content="2020-06-20T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2020-06-20T00:00:00+00:00">
+  <meta itemprop="wordCount" content="824">
+  <meta itemprop="image" content="http://localhost:1313/images/share.png">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+   
+   
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Simone Bellavia&#39;s Web Page</h2>
+</a>
+<nav><a href="/">Home</a>
+
+<a href="/about/">About</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Applying Deep Learning to detect Rhegmatogenous Retinal Detachment</h1>
+<p>
+  <i>
+    <time datetime='2020-06-20' pubdate>
+      20 Jun, 2020
+    </time>
+  </i>
+</p>
+
+<content>
+  <p><strong>Retinal detachment is an eye disease and is one of the most serious ocular emergencies.</strong> It occurs after a layer of the retina - essential tissue for vision - is lifted from the pigmented epithelial tissue, dragging the blood vessels that supply nutrients and the eye with it. If the retina is no longer nourished through contact with the pigment epithelium layer, cell death and a progressive and functional loss of vision or of the detached portion of the retina occur after 48 hours.</p>
+<p>However, the retina can be re-attached surgically, resulting in ocular improvement, as long as the detachment time is not excessive (Heussen N. et al., 2012). <strong>Below it is demonstrated how machine learning and deep learning techniques can play a crucial role in quickly saving the eyes of a patient with Rhegmatogenous Retinal Detachment.</strong></p>
+<h2 id="retinal-detachment-types-and-consequences">Retinal detachment: types and consequences</h2>
+<p>There are four types of retinal detachment:</p>
+<ol>
+<li><strong>Rhegmatogenous Retinal Detachment (RRD):</strong> the most frequent, is due to a break in the retina that allows the vitreous, gelatinous liquid that is inside the eye, to enter the subretinal space, thus allowing the detachment of its adherent portion;</li>
+<li>Tractional: typical in cases of retinal ischemia, it is generated by fibro-vascular tissue bridles that exert a centrifugal traction on the retina capable of ungluing it;</li>
+<li>Exudative: it is due to the presence of fluid under the retina following inflammation or vascular lesions;</li>
+<li>Mixed forms.</li>
+</ol>
+<p>Rhegmatogenous Retinal Detachment is a serious condition that can lead to blindness, nevertheless the possibility of cure is directly proportional to the timeliness of appropriate treatment that anticipates the period of cell death of the retina. Early diagnosis and rapid intervention play a fundamental role, and in this case <strong>Deep Learning techniques represent an aid capable of meeting these needs.</strong> In the study by Ohsugi and collaborators, Machine Learning technologies are applied to detect RRD, using <strong>ultra-wide field fundus images and studying their performance</strong> (Ohsugi, H., Tabuchi, H., Enno, H. et al., 2017).</p>
+<p>These images can be realized thanks to techniques conducted by means of <strong>scanning laser ophthalmoscope (SLO),</strong> an instrument used for the evaluation of the fundus of the retina. It was designed to capture images of the retinal layers simultaneously with confocal images of the fundus (W H Woon, F W Fitzke, A C Bird, J Marshall, 1992). Wide field fundus images can be acquired easily without pupillary mydriasis and without causing medical complications, so even examiners not qualified to perform ophthalmological surgeries can acquire the images in a completely safe way, making this instrument ideal especially in cases of emergency in which ophthalmologists are not available.</p>
+<p><img src="/images/deep-learning-rrd/fundus.png" alt="Representative fundus images obtained by ultra wide field scanning laser ophthalmoscopy. Ultra wide field right fundus images without rhegmatogenous retinal detachment (RRD) (a) and with RRD (b). The arrow indicates the retinal break and the arrowheads indicate the areas of RRD.">
+<em>Representative fundus images obtained by ultra wide field scanning laser ophthalmoscopy. Ultra wide field right fundus images without rhegmatogenous retinal detachment (RRD) (a) and with RRD (b). The arrow indicates the retinal break and the arrowheads indicate the areas of RRD.</em></p>
+<h2 id="machine-learning-and-rrd-early-diagnosis">Machine Learning and RRD early diagnosis</h2>
+<p>The study evaluates precisely the ability of a deep learning technology to detect RRD using images obtained through SLO.</p>
+<p>A Machine Learning model uses a <strong>multilayer CNN capable of automatically learning the characterizing patterns of the images</strong> and making them a classification system (Deng, J. et al., 2009).</p>
+<p><img src="/images/deep-learning-rrd/ml.png" alt="CNN architecture used. The Input is represented by the RGB 96x96 pixel image. Each of the convolutional layers (Conv1–3) is followed by an activation function layer (ReLU), pooling layers (MP1–3), and two fully connected layers (FC1, FC2).">
+<em>CNN architecture used. The Input is represented by the RGB 96x96 pixel image. Each of the convolutional layers (Conv1–3) is followed by an activation function layer (ReLU), pooling layers (MP1–3), and two fully connected layers (FC1, FC2).</em></p>
+<p>The convolutional level obtains the characteristics of the input through convolutional filters, the maximum levels of pooling (MP1, MP2 and MP3) allow a more generic recognition. The last two layers (FC1, FC2) are completely connected and remove spatial information from the quantities of extracted features and statistically recognize the objective that CNN aims to achieve. For the training of the neural network, <strong>100 images were processed,</strong> in addition an optimization algorithm called AdaGrad was implemented to correctly train the network weights.</p>
+<p>411 images from 407 RRD patients and 420 images from 238 non-RRD patients were used. The deep learning model demonstrated a high sensitivity of 97.6% [95% confidence interval (CI), 94.2-100%] and a high specificity of 96.5%. <strong>The model used, therefore, can improve medical care and increase the timeliness of intervention, resulting in an early diagnosis that can prevent RRD-derived blindness.</strong></p>
+<p>Hope you found it interesting. Thanks for reading.</p>
+<h3 id="bibliography">Bibliography</h3>
+<ol>
+<li>Heussen N. et al. (2012). Scleral buckling versus primary vitrectomy in rhegmatogenous retinal detachment study (SPR study): Risk assessment of anatomical outcome. SPR study report no. 7. Acta Ophthalmologica.</li>
+<li>Ohsugi, H., Tabuchi, H., Enno, H. et al. (2017). Accuracy of deep learning, a machine-learning technology, using ultra–wide-field fundus ophthalmoscopy for detecting rhegmatogenous retinal detachment. Scientific Reports, Article number: 9425.</li>
+<li>W H Woon, F W Fitzke, A C Bird, J Marshall. (1992). Confocal imaging of the fundus using a scanning laser ophthalmoscope. British Journal of Ophthalmology.</li>
+<li>Deng, J. et al. (2009). Imagenet: a large-scale hierarchical image database. Computer Vision and Pattern Recognition. IEEE Conference on Computer Vision and Pattern Recognition, 248–255.</li>
+</ol>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer>
+</footer>
+
+    
+</body>
+
+</html>

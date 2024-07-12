@@ -105,4 +105,4 @@ Thank you for reading!
 
 If you notice any inconsistencies, please send me an email at simone.bellavia@live.it, so I can make the correction.
 
-If you enjoyed this blog post, consider following me on X/Twitter, [@sineblia](https://x.com/sineblia).
+If you enjoyed this blog post, consider following me on X/Twitter, [@sibellavia](https://x.com/sibellavia).
