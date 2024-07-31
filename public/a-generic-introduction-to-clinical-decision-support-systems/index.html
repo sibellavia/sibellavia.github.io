@@ -1,208 +1,26 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en-US" dir="ltr">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" />
-<title>A generic introduction to Clinical Decision Support Systems | Simone Bellavia&#39;s Web Page</title>
-<meta name="title" content="A generic introduction to Clinical Decision Support Systems" />
-<meta name="description" content="A Clinical Decision Support System is defined as an &ldquo;active knowledge system, which uses two or more patient data elements to generate case-specific advice&rdquo; (DSS, 2001). This implies that a CDSS is simply a Decision Support System focused on the use of knowledge management in order to obtain clinical advice for patient care based on multiple variables inherent to it. The main purpose of the modern CDSS, therefore, is to assist doctors in patient treatment cases or in emergency situations (Benner, 2007)." />
-<meta name="keywords" content="" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A generic introduction to Clinical Decision Support Systems - Simone Bellavia&#39;s Web Page</title>
+<link rel="stylesheet" href="/css/style.css">
 
-
-<meta property="og:url" content="http://localhost:1313/a-generic-introduction-to-clinical-decision-support-systems/">
-  <meta property="og:site_name" content="Simone Bellavia&#39;s Web Page">
-  <meta property="og:title" content="A generic introduction to Clinical Decision Support Systems">
-  <meta property="og:description" content="A Clinical Decision Support System is defined as an “active knowledge system, which uses two or more patient data elements to generate case-specific advice” (DSS, 2001). This implies that a CDSS is simply a Decision Support System focused on the use of knowledge management in order to obtain clinical advice for patient care based on multiple variables inherent to it. The main purpose of the modern CDSS, therefore, is to assist doctors in patient treatment cases or in emergency situations (Benner, 2007).">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="blog">
-    <meta property="article:published_time" content="2020-06-13T00:00:00+00:00">
-    <meta property="article:modified_time" content="2020-06-13T00:00:00+00:00">
-    <meta property="og:image" content="http://localhost:1313/images/share.png">
-
-
-
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/share.png">
-  <meta name="twitter:title" content="A generic introduction to Clinical Decision Support Systems">
-  <meta name="twitter:description" content="A Clinical Decision Support System is defined as an “active knowledge system, which uses two or more patient data elements to generate case-specific advice” (DSS, 2001). This implies that a CDSS is simply a Decision Support System focused on the use of knowledge management in order to obtain clinical advice for patient care based on multiple variables inherent to it. The main purpose of the modern CDSS, therefore, is to assist doctors in patient treatment cases or in emergency situations (Benner, 2007).">
-
-
-
-
-  <meta itemprop="name" content="A generic introduction to Clinical Decision Support Systems">
-  <meta itemprop="description" content="A Clinical Decision Support System is defined as an “active knowledge system, which uses two or more patient data elements to generate case-specific advice” (DSS, 2001). This implies that a CDSS is simply a Decision Support System focused on the use of knowledge management in order to obtain clinical advice for patient care based on multiple variables inherent to it. The main purpose of the modern CDSS, therefore, is to assist doctors in patient treatment cases or in emergency situations (Benner, 2007).">
-  <meta itemprop="datePublished" content="2020-06-13T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2020-06-13T00:00:00+00:00">
-  <meta itemprop="wordCount" content="787">
-  <meta itemprop="image" content="http://localhost:1313/images/share.png">
-<meta name="referrer" content="no-referrer-when-downgrade" />
-
-  <style>
-  body {
-    font-family: Verdana, sans-serif;
-    margin: auto;
-    padding: 20px;
-    max-width: 720px;
-    text-align: left;
-    background-color: #fff;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.5;
-    color: #444;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  strong,
-  b {
-    color: #222;
-  }
-
-  a {
-    color: #3273dc;
-     
-  }
-
-  .title {
-    text-decoration: none;
-    border: 0;
-  }
-
-  .title span {
-    font-weight: 400;
-  }
-
-  nav a {
-    margin-right: 10px;
-  }
-
-  textarea {
-    width: 100%;
-    font-size: 16px;
-  }
-
-  input {
-    font-size: 16px;
-  }
-
-  content {
-    line-height: 1.6;
-  }
-
-  table {
-    width: 100%;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  code {
-    padding: 2px 5px;
-    background-color: #f2f2f2;
-  }
-
-  pre code {
-    color: #222;
-    display: block;
-    padding: 20px;
-    white-space: pre-wrap;
-    font-size: 14px;
-    overflow-x: auto;
-  }
-
-  div.highlight pre {
-    background-color: initial;
-    color: initial;
-  }
-
-  div.highlight code {
-    background-color: unset;
-    color: unset;
-  }
-
-  blockquote {
-    border-left: 1px solid #999;
-    color: #222;
-    padding-left: 20px;
-    font-style: italic;
-  }
-
-  footer {
-    padding: 25px;
-    text-align: center;
-  }
-
-  .helptext {
-    color: #777;
-    font-size: small;
-  }
-
-  .errorlist {
-    color: #eba613;
-    font-size: small;
-  }
-
-   
-  ul.blog-posts {
-    list-style-type: none;
-    padding: unset;
-  }
-
-  ul.blog-posts li {
-    display: flex;
-  }
-
-  ul.blog-posts li span {
-    flex: 0 0 130px;
-  }
-
-  ul.blog-posts li a:visited {
-    color: #8b6fcb;
-  }
-
-   
-   
-
-</style>
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
 </head>
-
 <body>
-  <header><a href="/" class="title">
-  <h2>Simone Bellavia&#39;s Web Page</h2>
-</a>
-<nav><a href="/">Home</a>
-
-<a href="/about/">About</a>
-
-
-<a href="/blog">Blog</a>
-
-</nav>
+  <header>
+    <header>
+    <h1>Simone Bellavia&#39;s Web Page</h1>
 </header>
+  </header>
   <main>
-
-<h1>A generic introduction to Clinical Decision Support Systems</h1>
-<p>
-  <i>
-    <time datetime='2020-06-13' pubdate>
-      13 Jun, 2020
-    </time>
-  </i>
-</p>
-
-<content>
-  <p>A <strong>Clinical Decision Support System</strong> is defined as an &ldquo;active knowledge system, which uses two or more patient data elements to generate case-specific advice&rdquo; (DSS, 2001). This implies that a CDSS is simply a Decision Support System focused on the use of <strong>knowledge management</strong> in order to obtain <strong>clinical advice for patient care</strong> based on multiple variables inherent to it. The main purpose of the modern CDSS, therefore, is <strong>to assist doctors in patient treatment cases</strong> or in emergency situations (Benner, 2007).</p>
+    
+<article>
+    <h1>A generic introduction to Clinical Decision Support Systems</h1>
+    <p>A <strong>Clinical Decision Support System</strong> is defined as an &ldquo;active knowledge system, which uses two or more patient data elements to generate case-specific advice&rdquo; (DSS, 2001). This implies that a CDSS is simply a Decision Support System focused on the use of <strong>knowledge management</strong> in order to obtain <strong>clinical advice for patient care</strong> based on multiple variables inherent to it. The main purpose of the modern CDSS, therefore, is <strong>to assist doctors in patient treatment cases</strong> or in emergency situations (Benner, 2007).</p>
 <h2 id="cdss-an-introduction">CDSS: an introduction</h2>
 <p>As anticipated, at the beginning the CDSS were conceived to literally take important decisions, effectively replacing the figure of the doctor: the latter entered the information and waited for the CDSS to provide the &ldquo;right&rdquo; choice, so as to be able to simply act on that. However, today a CDSS only provides suggestions for the doctor, who examines and selects the informations provided, keeping the useful suggestions and discarding those he deems unsuitable (DSS, 2001). An important example of CDSS is certainly <strong>CBR, Case-based Reasoning</strong> (Shahina Begum, Mobyen Uddin Ahmed, Peter Funk, N. Xiong, Mia Folke, 2001), which uses data from previous clinical cases to <strong>indicate a specific health treatment.</strong> A CBR system was developed to facilitate radiotherapy treatment planning for brain cancer: given a new patient case, the CBR system retrieves a similar case from an archive of patients successfully treated with the suggested treatment plan, re-adapting it to meet the specific needs of the new case - the results obtained using real-world brain cancer patient cases have shown that <strong>the success rate of the new CBR recovery is higher than that of the original system</strong> (Khussainova, Gulmira; Petrovic, Sanja; Jagannathan, Rupa, 2015).</p>
 <h2 id="a-clinical-decision-support-system-for-prevention-of-venous-thromboembolism-effect-on-physician-behavior">A Clinical Decision Support System for Prevention of Venous Thromboembolism: Effect on Physician Behavior</h2>
@@ -219,16 +37,26 @@
 <li>Frederick A. Anderson, H. Brownell Wheeler, Robert J. Goldberg. (1991). A Population-Based Perspective of the Hospital Incidence and Case-Fatality Rates of Deep Vein Thrombosis and Pulmonary Embolism. JAMA, 933-938.</li>
 </ol>
 
-</content>
-<p>
-  
-</p>
+</article>
 
   </main>
   <footer>
-</footer>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+          {left: "$", right: "$", display: false},
+          {left: "\\(", right: "\\)", display: false},
+          {left: "\\[", right: "\\]", display: true}
+        ],
+        throwOnError : false
+      });
+    });
+</script>
 
-    
+<p>Copyright 2024. All rights reserved.</p>
+
+  </footer>
 </body>
-
 </html>

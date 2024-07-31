@@ -2,7 +2,7 @@
 title = "malloc() from scratch in C"
 date = "2024-07-12"
 description = "How I implemented malloc library from scratch in C, step by step and briefly explained."
-draft = true
+draft = "true"
 +++
 
 ## Sources

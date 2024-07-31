@@ -1,6 +1,7 @@
 ---
 title: 'String Incrementer'
 date: '2022-02-05'
+draft: true
 series: 'Codewars Kata – Code solutions'
 ---
 
