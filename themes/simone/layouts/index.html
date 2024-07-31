@@ -1,19 +1,23 @@
 {{ define "main" }}
-<!-- <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-        {{ range where .Site.RegularPages "Type" "projects" }}
-        <li><a href="{{ .Permalink }}">{{ .Title }}</a>
-            <br>{{ .Params.description }}</li>
-        {{ end }}
-    </ul>
-</section> -->
-<section id="posts">
-    <h2>Posts</h2>
-    <ul>
-        {{ range where (where .Site.RegularPages "Type" "blog") "Draft" "!=" true }}
-        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-        {{ end }}
-    </ul>
+<section id="about">
+  <p>@sibellavia aka blv</p>
+  <p>passionate about ai/ml, low-level engineering, hybrid cloud, project management and healthcare</p>
+  <p>currently focused on C and Assembly</p>
+  <p>I look at life with a lot of curiosity and I want to have fun in everything I do</p>
+  <ul>
+    <li>
+      <a href="{{ "/blog" | relURL }}">blog</a>
+    </li>
+    <li>
+      <a href="https://x.com/sibellavia">X</a>
+    </li>
+    <li>
+      <a href="https://github.com/sibellavia">github</a>
+    </li>
+    <li>
+      <a href="https://linkedin.com/simone-bellavia">linkedin</a>
+    </li>
+  </ul>
 </section>
+
 {{ end }}

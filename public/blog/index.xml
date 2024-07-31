@@ -7,15 +7,8 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2024, Simone Bellavia</copyright>
-    <lastBuildDate>Fri, 12 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>malloc() from scratch in C</title>
-      <link>http://localhost:1313/malloc-from-scratch-in-c/</link>
-      <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/malloc-from-scratch-in-c/</guid>
-      <description>Sources https://danluu.com/malloc-tutorial/ https://man7.org/linux/man-pages/man3/malloc.3.html https://www.gnu.org/software/libc/manual/html_node/Basic-Allocation.html https://www.ibm.com/docs/en/i/7.5?topic=functions-malloc-reserve-storage-block https://moss.cs.iit.edu/cs351/slides/slides-malloc.pdf In this article I would like to show you my malloc() implementation from scratch in C. I&amp;rsquo;ll take the chance to show the code step by step and I&amp;rsquo;ll try to cover all the didactical aspects involved.&#xA;I&amp;rsquo;m assuming you already know C at an intermediate level, so you already know what pointers are. I&amp;rsquo;m also assuming you&amp;rsquo;re already familiar with the concept of Linked List.</description>
-    </item>
     <item>
       <title>Recurrent Neural Networks (RNNs) explained</title>
       <link>http://localhost:1313/recurrent-neural-networks-rnns-explained/</link>
