@@ -6,11 +6,12 @@ draft = "true"
 +++
 
 ## Sources
-1. https://danluu.com/malloc-tutorial/
-2. https://man7.org/linux/man-pages/man3/malloc.3.html
-3. https://www.gnu.org/software/libc/manual/html_node/Basic-Allocation.html
-4. https://www.ibm.com/docs/en/i/7.5?topic=functions-malloc-reserve-storage-block
-5. https://moss.cs.iit.edu/cs351/slides/slides-malloc.pdf
+
+1. <https://danluu.com/malloc-tutorial/>
+2. <https://man7.org/linux/man-pages/man3/malloc.3.html>
+3. <https://www.gnu.org/software/libc/manual/html_node/Basic-Allocation.html>
+4. <https://www.ibm.com/docs/en/i/7.5?topic=functions-malloc-reserve-storage-block>
+5. <https://moss.cs.iit.edu/cs351/slides/slides-malloc.pdf>
 
 In this article I would like to show you my malloc() implementation from scratch in C. I'll take the chance to show the code step by step and I'll try to cover all the didactical aspects involved.
 
@@ -23,25 +24,25 @@ This article is inspired by Dan Luu's malloc tutorial[1] :-)
 Before diving into the implementation, let's briefly have a look at how a typical program's memory is laid out. Memory layout typically consists of the following sections (from bottom to top):
 
 - Text Segment (Code Segment)
-	- Contains executable instructions
-	- Typically read-only to prevent accidental modification of instructions
-	- Shared among different processes running the same program
+  - Contains executable instructions
+  - Typically read-only to prevent accidental modification of instructions
+  - Shared among different processes running the same program
 - Initialized Data Segment
-	- Contains global and static variables that are initialized with non-zero values
-	- Example: `static int i = 10;`
+  - Contains global and static variables that are initialized with non-zero values
+  - Example: `static int i = 10;`
 - Unitialized Data Segment (BSS - Block Started by Symbol)
-	- Contains global and static variables initialized to zero or not initialized
-	- Example: `static int j;`
+  - Contains global and static variables initialized to zero or not initialized
+  - Example: `static int j;`
 - Heap
-	- Used for dynamic memory allocation
-	- Grows upward (toward higher addresses)
-	- Managed by `malloc`, `free`, `realloc`, etc.
+  - Used for dynamic memory allocation
+  - Grows upward (toward higher addresses)
+  - Managed by `malloc`, `free`, `realloc`, etc.
 - Stack
-	- Used for local variables, function parameters, return addresses
-	- Grows downward (toward lower addresses)
-	- Managed automatically by the compiler
+  - Used for local variables, function parameters, return addresses
+  - Grows downward (toward lower addresses)
+  - Managed automatically by the compiler
 - Environment Variables and Command Line Arguments
-	- Highest addresses in the user space memory
+  - Highest addresses in the user space memory
 -
 
 The heap and stack grow in opposite directions to maximize the use of the available address space. This design allows both to grow as needed without immediately interfering with each other. If they grew in the same direction, they might collide more quickly, limiting the available memory for either dynamic allocation or function calls/local variables.
