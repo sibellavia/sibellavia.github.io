@@ -17,20 +17,6 @@
       <description>Sources https://www.deeplearningbook.org/contents/rnn.html https://arxiv.org/abs/1506.00019 https://arxiv.org/pdf/1312.6026.pdf https://arxiv.org/pdf/1901.00434.pdf https://www.researchgate.net/publication/228394623_A_brief_review_of_feed-forward_neural_networks From Feedforward to RNNs Recurrent Neural Networks (RNNs) are a class of neural networks designed to process sequential data, such as time series, text, audio, or any other type of sequential data. RNNs were developed to overcome the limitations of feedforward networks that don&amp;rsquo;t maintain a memory of past information.&#xA;Let&amp;rsquo;s take a general look at Feedforward Networks, to then better understand RNNs.&#xA;In feedforward networks, input is processed in a single pass, from input to output, without retaining any memory of previous inputs.</description>
     </item>
     <item>
-      <title>I love imperfection</title>
-      <link>http://localhost:1313/i-love-imperfection/</link>
-      <pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/i-love-imperfection/</guid>
-      <description>Today I made coffee. When it was ready to be poured, I looked at the cups. Among them, I have a broken porcelain cup with the handle missing. I am in love with this cup; I do not even want to repair it. Here I thought, I love imperfection. I love it a little bit in everything: I love imperfection in people, in things. Especially in the process of creation: I&amp;rsquo;m creating something, I&amp;rsquo;m creating it slowly, step by step.</description>
-    </item>
-    <item>
-      <title>My abilities are tending toward infinity</title>
-      <link>http://localhost:1313/my-abilities-are-tending-toward-infinity/</link>
-      <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/my-abilities-are-tending-toward-infinity/</guid>
-      <description>These days I have been thinking a lot about my abilities. During this period, I was more frequently doing things that I did not know how to do completely. I didn&amp;rsquo;t even know them. I found myself in a completely new context, with unfamiliar tools and applications. As has often been the case in my life, I felt overwhelmed at first. The amount of activity was significant and I had to learn new things.</description>
-    </item>
-    <item>
       <title>Applying Deep Learning to detect Rhegmatogenous Retinal Detachment</title>
       <link>http://localhost:1313/applying-deep-learning-to-detect-rhegmatogenous-retinal-detachment/</link>
       <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>

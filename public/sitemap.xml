@@ -3,19 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-08-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-08-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tinymalloc.c-my-memory-allocator/</loc>
+    <lastmod>2024-08-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/recurrent-neural-networks-rnns-explained/</loc>
     <lastmod>2024-02-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/i-love-imperfection/</loc>
-    <lastmod>2023-10-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/my-abilities-are-tending-toward-infinity/</loc>
-    <lastmod>2023-10-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/applying-deep-learning-to-detect-rhegmatogenous-retinal-detachment/</loc>
     <lastmod>2020-06-20T00:00:00+00:00</lastmod>
