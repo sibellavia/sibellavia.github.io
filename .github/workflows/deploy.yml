@@ -21,12 +21,11 @@ jobs:
 
       - name: Download and Install Zoe
         env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GH_TOKEN: ${{ secrets.ZOE_ACCESS_TOKEN }}
         run: |
-          git clone https://${GH_TOKEN}@github.com/sibellavia/zoe-experimenting.git
-          cd zoe-experimenting
+          git clone https://${GH_TOKEN}@github.com/yourusername/zoe.git
+          cd zoe
           zig build
-          # Add the built binary to PATH
           echo "${PWD}/zig-out/bin" >> $GITHUB_PATH
           cd ..
 
@@ -35,6 +34,7 @@ jobs:
           zoe build
 
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
