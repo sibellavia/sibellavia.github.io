@@ -8,13 +8,13 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      pages: write        # This is needed for deploying to Pages
+      id-token: write     # This is needed for Pages authentication
+      contents: write      # This is needed for pushing to gh-pages
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    permissions:
-      contents: write      # This is needed for pushing to gh-pages
-      pages: write        # This is needed for deploying to Pages
-      id-token: write     # This is needed for Pages authentication
     steps:
       - uses: actions/checkout@v2
       
@@ -38,12 +38,15 @@ jobs:
         run: |
           zoe build
           ls -la public
+        
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './public'
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: gh-pages
-          force_orphan: true
-          clean: true
+        id: deployment
+        uses: actions/deploy-pages@v4 
