@@ -1,0 +1,15 @@
+{
+  "site": {
+      "title": "Simone Bellavia's Web Page",
+      "description": "Simone Bellavia's personal website and blog.",
+      "base_url": "https://sibellavia.github.io"
+  },
+  "build": {
+      "input_dir": "content",
+      "output_dir": "public",
+      "templates_dir": "templates"
+  },
+  "seo": {
+      "twitter_handle": "@sibellavia"
+  }
+}
