@@ -132,6 +132,18 @@
                 --code-background: #2d3748;
             }
         }
+
+        /* Handle long URLs and text overflow */
+        p, li {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            -ms-word-break: break-all;
+            word-break: break-word;
+            -ms-hyphens: auto;
+            -moz-hyphens: auto;
+            -webkit-hyphens: auto;
+            hyphens: auto;
+        }
     </style>
     <script>
         window.MathJax = {

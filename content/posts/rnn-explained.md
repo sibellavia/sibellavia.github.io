@@ -4,10 +4,10 @@ date: 2024-02-16
 ---
 
 ## Sources
-1. https://www.deeplearningbook.org/contents/rnn.html
-2. https://arxiv.org/abs/1506.00019
-3. https://arxiv.org/pdf/1312.6026.pdf
-4. https://arxiv.org/pdf/1901.00434.pdf
+1. https://www.deeplearningbook.org/contents/rnn.html  
+2. https://arxiv.org/abs/1506.00019  
+3. https://arxiv.org/pdf/1312.6026.pdf  
+4. https://arxiv.org/pdf/1901.00434.pdf  
 5. https://www.researchgate.net/publication/228394623_A_brief_review_of_feed-forward_neural_networks
 
 ## From Feedforward to RNNs
