@@ -36,6 +36,8 @@ The convolutional level obtains the characteristics of the input through convolu
 
 411 images from 407 RRD patients and 420 images from 238 non-RRD patients were used. The deep learning model demonstrated a high sensitivity of 97.6% [95% confidence interval (CI), 94.2-100%] and a high specificity of 96.5%. **The model used, therefore, can improve medical care and increase the timeliness of intervention, resulting in an early diagnosis that can prevent RRD-derived blindness.**
 
+Hope you found it interesting. Thanks for reading.
+
 ### Bibliography
 
 1. Heussen N. et al. (2012). Scleral buckling versus primary vitrectomy in rhegmatogenous retinal detachment study (SPR study): Risk assessment of anatomical outcome. SPR study report no. 7. Acta Ophthalmologica.
