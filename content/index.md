@@ -1,6 +1,6 @@
 ---
-title: Simone Bellavia's Web Page
-date: 2025-02-16
+title: "Simone Bellavia's Web Page"
+date: "2025-02-16"
 ---
 
 @sibellavia aka blv
