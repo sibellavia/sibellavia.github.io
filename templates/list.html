@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{title}</title>
+    <title>{{title}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         :root {
@@ -103,8 +103,17 @@
 </head>
 <body>
     <article>
-        <h1>Blog Posts</h1>
-        {content}
+        <h1>{{title}}</h1>
+        {{content}}
+        
+        <div class="post-list">
+            {{#each pages}}
+            <div class="post-item">
+                <a href="{{this.url}}">{{this.title}}</a>
+                <span class="post-date">{{this.date}}</span>
+            </div>
+            {{/each}}
+        </div>
     </article>
 </body>
 </html>
