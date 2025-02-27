@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{title}}</title>
+    <title>Blog Posts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         :root {
@@ -103,15 +103,25 @@
 </head>
 <body>
     <article>
-        <h1>{{title}}</h1>
+        <h1>Blog Posts</h1>
 		
         <div class="post-list">
-            {{#each pages}}
+            
             <div class="post-item">
-                <a href="{{this.url}}">{{this.title}}</a>
-                <span class="post-date">{{this.date}}</span>
+                <a href="/posts/rnn-explained/">Recurrent Neural Networks (RNNs) explained</a>
+                <span class="post-date">2024-02-16</span>
             </div>
-            {{/each}}
+            
+            <div class="post-item">
+                <a href="/posts/what-are-clinical-decision-support-systems/">A generic introduction to Clinical Decision Support Systems</a>
+                <span class="post-date">2020-06-13</span>
+            </div>
+            
+            <div class="post-item">
+                <a href="/posts/deep-learning-detecting-rrd/">Applying Deep Learning to detect Rhegmatogenous Retinal Detachment</a>
+                <span class="post-date">2020-06-20</span>
+            </div>
+            
         </div>
     </article>
 </body>

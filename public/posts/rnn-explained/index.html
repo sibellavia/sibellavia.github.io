@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recurrent Neural Networks (RNNs) explained</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        :root {
+            --primary-color: #2d3748;
+            --secondary-color: #4a5568;
+            --accent-color: #667eea;
+            --background-color: #ffffff;
+            --code-background: #f7fafc;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--primary-color);
+            background: var(--background-color);
+            padding: 0; 
+            margin: 0;
+        }
+
+        article {
+            max-width: 42rem;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin: 2rem 0 1rem;
+            line-height: 1.3;
+            color: var(--primary-color);
+        }
+
+        h1 {
+            font-size: 2.25rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        pre {
+            background: var(--code-background);
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        blockquote {
+            border-left: 4px solid var(--accent-color);
+            margin: 1.5rem 0;
+            padding: 0.5rem 0 0.5rem 1rem;
+            color: var(--secondary-color);
+        }
+
+        ul, ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Math display styles */
+        .math.display {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            padding: 1rem 0;
+        }
+
+        .math.inline {
+            padding: 0 0.2rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            article {
+                padding: 1.5rem 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-color: #e2e8f0;
+                --secondary-color: #cbd5e0;
+                --accent-color: #7f9cf5;
+                --background-color: #1a202c;
+                --code-background: #2d3748;
+            }
+        }
+
+        /* Handle long URLs and text overflow */
+        p, li {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            -ms-word-break: break-all;
+            word-break: break-word;
+            -ms-hyphens: auto;
+            -moz-hyphens: auto;
+            -webkit-hyphens: auto;
+            hyphens: auto;
+        }
+    </style>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']],
+            },
+            options: {
+                processHtmlClass: 'math'
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+    <article>
+        <h1>Recurrent Neural Networks (RNNs) explained</h1>
+        <h2>Sources</h2>
+<ol>
+<li><a href="https://www.deeplearningbook.org/contents/rnn.html">https://www.deeplearningbook.org/contents/rnn.html</a></li>
+<li><a href="https://arxiv.org/abs/1506.00019">https://arxiv.org/abs/1506.00019</a></li>
+<li><a href="https://arxiv.org/pdf/1312.6026.pdf">https://arxiv.org/pdf/1312.6026.pdf</a></li>
+<li><a href="https://arxiv.org/pdf/1901.00434.pdf">https://arxiv.org/pdf/1901.00434.pdf</a></li>
+<li><a href="https://www.researchgate.net/publication/228394623_A_brief_review_of_feed-forward_neural_networks">https://www.researchgate.net/publication/228394623_A_brief_review_of_feed-forward_neural_networks</a></li>
+</ol>
+<h2>From Feedforward to RNNs</h2>
+<p><strong>Recurrent Neural Networks (RNNs)</strong> are a class of neural networks designed to process sequential data, such as time series, text, audio, or any other type of sequential data. RNNs were developed to overcome the limitations of feedforward networks that don't maintain a memory of past information.</p>
+<p>Let's take a general look at <strong>Feedforward Networks,</strong> to then better understand RNNs.</p>
+<p><img src="/images/rnn-explained/fnn.png" alt="A multi layer feed forward neural network" /></p>
+<p>In feedforward networks, input is processed in a single pass, from input to output, without retaining any memory of previous inputs. Each input is treated independently from the others, making feedforward networks suboptimal for tasks requiring an understanding of data sequences or temporal contexts. This behavior is a direct consequence of the structure of a feedforward network: relatively simple and linear, with layers of neurons connecting directly one after the other in one direction, without cycles. Each layer receives input only from the previous layer and sends output only to the next layer. Feedforward networks are employed in specific areas, such as classification and regression tasks where the order of inputs isn't relevant (image classification or predicting time-independent values).</p>
+<p><img src="/images/rnn-explained/rnn.png" alt="A Recurrent Neural Network" /></p>
+<p>RNNs, unlike feedforward networks with unidirectional information flow and independent layer weights, feature recurrent connections enabling each hidden layer to be shaped by both the current input and the previous hidden state's output. This creates an <strong>&quot;internal memory&quot;,</strong> useful for processing data sequences by allowing the network to consider past inputs, thus handling temporal dependencies. Ideal for tasks like language modeling, speech recognition, and sequence generation, RNNs use this memory to manage the sequence context, a key difference from the simpler feedforward approach. We will see their graphical visualization later, but first, a mathematical digression is useful to better understand how an RNN works.</p>
+<h2>RNNs Key Equations</h2>
+<p>In RNNs, there are multiple key equations and important mathematical concepts to understand. However, we will focus on the two most comprehensive equations for an RNN, which specify all the necessary calculations for computation at each time step on the forward pass in a simple recurrent neural network.
+<div class="math display">\[h^{(t)}=\sigma(W^{hx}x^{(t)}+W^{hh}h^{t-1}+b_h)\]</div>
+This equation represents how the hidden state <span class="math inline">\(h^{(t)}\)</span> is updated at time <span class="math inline">\(t\)</span>. Each hidden state is calculated based on three components:</p>
+<ol>
+<li>The product of the weight matrix between the input and the hidden layer <span class="math inline">\(W^{hx}\)</span> and the input at time <span class="math inline">\(t\)</span>, <span class="math inline">\(x^{(t)}\)</span>.</li>
+<li>The product of the recurrent weight matrix between the hidden layer and itself at adjacent time steps <span class="math inline">\(W^{hh}\)</span> and the hidden state at the previous time <span class="math inline">\(t-1\)</span>, <span class="math inline">\(h^{(t-1)}\)</span>.</li>
+<li>The bias vector <span class="math inline">\(b_h\)</span>.</li>
+</ol>
+<p>The same equation can be interpreted in a slightly different and alternative way, as follows:</p>
+<p><div class="math display">\[h^{(t)}=f(h^{(t-1)}, x^{(t)}; \theta)\]</div></p>
+<p>These three terms are summed together and then passed through an activation function <span class="math inline">\(\sigma\)</span>, such as the sigmoid function or the hyperbolic tangent, which updates the RNN's hidden state <span class="math inline">\(h^{(t)}\)</span>.</p>
+<p><img src="/images/rnn-explained/rnn-equation.png" alt="Equation plotted on the computational graph" /></p>
+<p>The purpose of the activation function is to introduce non-linearity into the model, allowing the model itself to represent complex and non-linear relationships between input and output variables.</p>
+<p>The matrices mentioned in the formula are weight matrices that connect the previous hidden state to the current hidden state, the input to the hidden state, and the hidden state to the output.
+<div class="math display">\[\hat{y}=softmax(W^{yh}h^{(t)}+b_y)\]</div>
+This equation is a typical representation of the output phase in an RNN, where the output <span class="math inline">\(\hat{y}^{(t)}\)</span> at time <span class="math inline">\(t\)</span> is calculated using the softmax function. In detail:</p>
+<ul>
+<li><span class="math inline">\(\hat{y}^{(t)}\)</span> is the output predicted by the network at time <span class="math inline">\(t\)</span>,</li>
+<li><span class="math inline">\(W^{yh}\)</span> is the weight matrix that connects the hidden state <span class="math inline">\(h^{(t)}\)</span> to the output,</li>
+<li><span class="math inline">\(h^{(t)}\)</span> is the hidden state at time <span class="math inline">\(t\)</span>,</li>
+<li><span class="math inline">\(b_y\)</span> is the bias vector associated with the output,</li>
+<li>the softmax function is an activation function used in multi-class classifications to transform scores (logits) into probabilities.</li>
+</ul>
+<p>In an RNN, the softmax output <span class="math inline">\(\hat{y}^{(t)}\)</span> is often used to determine the probability of each possible next element in a sequence, such as the next word in a text. It can be used to evaluate performance during training or to generate new sequences during the inference process.</p>
+<h2>Design Patterns and Principles</h2>
+<p>Based on the definition we have given of RNNs, and in light of their computational structure, we can identify the following principles or design patterns of RNNs:</p>
+<ol>
+<li><strong>Cyclic Structure</strong>: Each unit of the RNN receives two inputs: the current element of the data sequence and the &quot;hidden state&quot; from the previous unit, which acts as a form of memory that carries information from one element to another in the sequence.</li>
+<li><strong>Hidden State</strong>: The hidden state is the heart of RNNs, allowing the network to accumulate knowledge throughout the sequence. Recurrent hidden layers leverage a cyclic memory mechanism that makes them &quot;stateful,&quot; allowing the network to accumulate knowledge over the sequence. At each time step, the hidden state is updated based on both the current input and the previous hidden state. This feature ensures that, alongside the evolution of the hidden layers, a hidden state is also developed, which is crucial for the RNN's ability to process sequential information.</li>
+<li><strong>Shared Parameters</strong>: Unlike feedforward networks, where each layer has its own set of parameters, in an RNN, the same set of parameters (weights) is used at every time step. This concept is known as &quot;shared parameters&quot; and allows the RNN to process sequences of variable length with a fixed model.</li>
+<li><strong>Sequential Structure</strong>: RNNs are designed to work with sequential data, and their architecture reflects this characteristic. Inputs are processed one after the other, and the output from one step can influence the processing of the next.</li>
+<li><strong>Output</strong>: At each time step, the RNN can produce an output based on the current hidden state. The output can be generated at each step (for example, in language modeling) or only at the end of the sequence (for example, in sequence classification).</li>
+</ol>
+<p>With an understanding of the fundamental building blocks of RNNs, we now delve into their computational representation.</p>
+<h2>Computational Graph and Backpropagation</h2>
+<p><img src="/images/rnn-explained/rnn-unfolded.png" alt="Computational Graph with an Unfolded RNN" /></p>
+<p>It is important to delve deeper into the concept of <strong>unfolding</strong>. In the context of RNNs, the term unfolding refers to the process of transforming the recurrent network, which intrinsically has a cyclic structure due to its hidden state passing from one time step to the next, into an extended (or unfolded) version that displays the entire sequence of operations across time steps. This unfolding transforms the cyclic structure into a chain of replicas of the network, one for each time step in the sequence, making evident how information flows through the time steps.</p>
+<p>Following the concept of unfolding, it's essential to examine <strong>Backpropagation Through Time (BPTT):</strong> it is an algorithm that emerges as a variant of the standard feedforward Backpropagation algorithm, specifically designed for the training of RNNs. This variation of the standard algorithm is the necessary consequence of the recurrent nature of RNNs, which requires a different approach for the calculation of gradients and for the updating of weights during the training process.</p>
+<p>The BPTT algorithm works by following these steps:</p>
+<ol>
+<li>Unfolding the network: as we have previously seen, the RNN is unfolded over time to transform it into a feedforward network. This allows treating the temporal dependency between sequential inputs as connections within a larger network.</li>
+<li>Forward propagation: the input is fed through the unfolded network, and the output is calculated for each time step.</li>
+<li>Error calculation: the error (the difference between the expected value and the actual one) for each output in the sequence is calculated.</li>
+<li>Backward error propagation (Backpropagation): the error is propagated backward to calculate the gradients of the weights relative to the error. This is the most critical step for training, as it determines how to modify the weights to reduce the error.</li>
+<li>Weight update: finally, the weights are updated based on the calculated gradients. Stochastic Gradient Descent is typically used as the optimization algorithm.</li>
+</ol>
+<p>Stochastic Gradient Descent (SGD) is a variant of the Gradient Descent algorithm, which is a technique for minimizing the cost (or loss) function associated with a model, i.e., the measure of how &quot;far&quot; the model is from making accurate predictions. I believe I will write a dedicated blog post on the topic. For now, we mentioned it only to connect to the next paragraph, where we will address the problem of Vanishing/Exploding Gradient, the major limitation of RNNs.</p>
+<h2>Vanishing/Exploding Gradient Dilemma</h2>
+<p>The problem of vanishing gradients and exploding gradients are two significant challenges in training RNNs, especially when working with very long sequences. These issues affect an RNN's ability to learn long-term dependencies between elements in a sequence. Let's look in detail at what these problems entail and how they manifest.</p>
+<p>The vanishing gradient problem occurs when the gradient (the derivative of the loss function with respect to the network's weights) tends towards zero during the backpropagation process. In RNNs, this is particularly problematic for long-term dependencies because of the repeated multiplication of small gradients across timesteps during BPTT. This can result in a gradient that becomes extremely small. Consequently, the weight update becomes insignificant, effectively rendering the network unable to learn from inputs that are distant in time. For this reason, the network may struggle to learn and retain information from earlier parts of the sequence.</p>
+<p>Conversely, the exploding gradient problem occurs when gradients become excessively large during backpropagation. This can lead to overly large weight updates, causing instability in the network and making the training process diverge. In RNNs, this is often due to the repeated multiplication of large gradients across timesteps, which can exponentially increase the gradient's value as it is backpropagated in time.</p>
+<p>To overcome this issue, various techniques have been adopted that led to the development of new neural networks, such as Long Short-Term Memory (LSTM) networks. LSTMs were designed as a specific type of RNN cell with additional gating mechanisms, allowing them to selectively remember or forget information based on its relevance. These gating mechanisms help preserve important long-term dependencies in the hidden state vector and enable LSTMs to better handle sequences with long-term dependencies than traditional RNNs.</p>
+<h2>Ending</h2>
+<p>I've tried to explain clearly and summarize the most important points about RNNs. I dedicated a blog post to RNNs because I consider them important and foundational for the study of subsequent models, like Transformers. Anyway, even though traditional RNNs face difficulties in capturing long-term dependencies, variants like LSTM and GRU have been developed to overcome these limits. To understand and use them, I believe it's necessary to know how RNN architectures are constructed.</p>
+
+    </article>
+</body>
+</html>

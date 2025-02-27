@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A generic introduction to Clinical Decision Support Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        :root {
+            --primary-color: #2d3748;
+            --secondary-color: #4a5568;
+            --accent-color: #667eea;
+            --background-color: #ffffff;
+            --code-background: #f7fafc;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--primary-color);
+            background: var(--background-color);
+            padding: 0; 
+            margin: 0;
+        }
+
+        article {
+            max-width: 42rem;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin: 2rem 0 1rem;
+            line-height: 1.3;
+            color: var(--primary-color);
+        }
+
+        h1 {
+            font-size: 2.25rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        pre {
+            background: var(--code-background);
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        blockquote {
+            border-left: 4px solid var(--accent-color);
+            margin: 1.5rem 0;
+            padding: 0.5rem 0 0.5rem 1rem;
+            color: var(--secondary-color);
+        }
+
+        ul, ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Math display styles */
+        .math.display {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            padding: 1rem 0;
+        }
+
+        .math.inline {
+            padding: 0 0.2rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            article {
+                padding: 1.5rem 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-color: #e2e8f0;
+                --secondary-color: #cbd5e0;
+                --accent-color: #7f9cf5;
+                --background-color: #1a202c;
+                --code-background: #2d3748;
+            }
+        }
+
+        /* Handle long URLs and text overflow */
+        p, li {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            -ms-word-break: break-all;
+            word-break: break-word;
+            -ms-hyphens: auto;
+            -moz-hyphens: auto;
+            -webkit-hyphens: auto;
+            hyphens: auto;
+        }
+    </style>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']],
+            },
+            options: {
+                processHtmlClass: 'math'
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+    <article>
+        <h1>A generic introduction to Clinical Decision Support Systems</h1>
+        <p>A <strong>Clinical Decision Support System</strong> is defined as an &quot;active knowledge system, which uses two or more patient data elements to generate case-specific advice&quot; (DSS, 2001). This implies that a CDSS is simply a Decision Support System focused on the use of <strong>knowledge management</strong> in order to obtain <strong>clinical advice for patient care</strong> based on multiple variables inherent to it. The main purpose of the modern CDSS, therefore, is <strong>to assist doctors in patient treatment cases</strong> or in emergency situations (Benner, 2007).</p>
+<h2>CDSS: an introduction</h2>
+<p>As anticipated, at the beginning the CDSS were conceived to literally take important decisions, effectively replacing the figure of the doctor: the latter entered the information and waited for the CDSS to provide the &quot;right&quot; choice, so as to be able to simply act on that. However, today a CDSS only provides suggestions for the doctor, who examines and selects the informations provided, keeping the useful suggestions and discarding those he deems unsuitable (DSS, 2001). An important example of CDSS is certainly <strong>CBR, Case-based Reasoning</strong> (Shahina Begum, Mobyen Uddin Ahmed, Peter Funk, N. Xiong, Mia Folke, 2001), which uses data from previous clinical cases to <strong>indicate a specific health treatment.</strong> A CBR system was developed to facilitate radiotherapy treatment planning for brain cancer: given a new patient case, the CBR system retrieves a similar case from an archive of patients successfully treated with the suggested treatment plan, re-adapting it to meet the specific needs of the new case - the results obtained using real-world brain cancer patient cases have shown that <strong>the success rate of the new CBR recovery is higher than that of the original system</strong> (Khussainova, Gulmira; Petrovic, Sanja; Jagannathan, Rupa, 2015).</p>
+<h2>A Clinical Decision Support System for Prevention of Venous Thromboembolism: Effect on Physician Behavior</h2>
+<p>In the study by Durieux et al. <strong>the effect of a CDSS in physician behavior</strong> during clinical decisions for the prevention of venous thromboembolism was investigated (Durieux P, Nizard R, Ravaud P, Mounier N, Lepage E, 2000). In hospital clinical practice, venous thromboembolism remains a serious problem and pulmonary embolism is a leading cause of death (Frederick A. Anderson, H. Brownell Wheeler, Robert J. Goldberg, 1991). The most effective way to prevent fatal and non-fatal venous thromboembolism is to <strong>use routine prophylaxis for high-risk patients.</strong> Optimal decisions on the use of anticoagulants in the prevention of venous thromboembolism require access to a large amount of complex information to assess the degree of risk of hospitalized patients. The objective of the study was to determine whether the presentation of guidelines for the prophylaxis of venous thromboembolism using a CDSS increased the percentage of appropriate clinical practice decisions made regarding the proportion of anticoagulant prescription.</p>
+<p>The study took place in time series between December 1997 and July 1999 in an orthopedic surgery department of a university hospital located in Paris, on a sample of 1971 patients undergoing orthopedic surgery. A CDSS designed to provide immediate information related to the prevention of venous thromboembolism among surgical patients was integrated into daily medical practice during three 10-week intervention periods, alternating with four 10-week control periods, with a 4-week washout between each period. The proportion of appropriate prescriptions for anticoagulants in line with the established clinical protocols was then analyzed during the intervention periods, and then compared with the control group. <strong>The results show the importance of using the CDSS:</strong> doctors complied with the guidelines in 82.8% of cases during the control periods and in 94.9% of cases during the intervention periods. During each intervention period, <strong>the adequacy of prescribing increased significantly,</strong> and each time the CDSS was removed, the medical practice reverted to that observed prior to the intervention. It can be confirmed that the implementation of clinical guidelines for venous thromboembolism prophylaxis through a CDSS used and integrated into the hospital information system <strong>has changed physician behavior and improved compliance with the guidelines.</strong></p>
+<h3>Bibliography</h3>
+<ol>
+<li>DSS. (2001). <a href="https://web.archive.org/web/20010715105143/http:/www.openclinical.org/dss.html">Open Clinical - Knowledge Management for Medical Care</a></li>
+<li>Benner, E. (2007). Clinical Decision Support Systems. Springer.</li>
+<li>Shahina Begum, Mobyen Uddin Ahmed, Peter Funk, N. Xiong, Mia Folke. (2001). Case-Based Reasoning Systems in the Health Sciences: A Survey of Recent Trends and Developments. Systems, Man, and Cybernetics, Part C: Applications and Reviews, IEEE Transactions, 421-434.</li>
+<li>Khussainova, Gulmira; Petrovic, Sanja; Jagannathan, Rupa. (2015). Retrieval with clustering in a case-based reasoning system for radiotherapy treatment planning. Journal of Physics: Conference Series.</li>
+<li>Durieux P, Nizard R, Ravaud P, Mounier N, Lepage E. (2000). A Clinical Decision Support System for Prevention of Venous Thromboembolism: Effect on Physician Behavior. JAMA.</li>
+<li>Frederick A. Anderson, H. Brownell Wheeler, Robert J. Goldberg. (1991). A Population-Based Perspective of the Hospital Incidence and Case-Fatality Rates of Deep Vein Thrombosis and Pulmonary Embolism. JAMA, 933-938.</li>
+</ol>
+
+    </article>
+</body>
+</html>
