@@ -5,11 +5,12 @@
       "base_url": "https://sibellavia.github.io"
   },
   "build": {
-      "input_dir": "content",
       "output_dir": "public",
-      "templates_dir": "templates"
+      "assets_dir": "static"
   },
   "seo": {
-      "twitter_handle": "@sibellavia"
+      "twitter_handle": "@sibellavia",
+      "favicon": "/static/images/favicon.ico",
+      "author": "Simone Bellavia"
   }
 }
