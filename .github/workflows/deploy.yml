@@ -28,7 +28,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           git clone https://${GH_TOKEN}@github.com/sibellavia/zoe.git
-          cd zoe-experimenting
+          cd zoe
           zig build
           # Add the built binary to PATH
           echo "${PWD}/zig-out/bin" >> $GITHUB_PATH
