@@ -15,5 +15,6 @@ I look at life with a lot of curiosity and I want to have fun in everything I do
 some personal projects:
 
 * [kinoroll[dot]com](https://kinoroll.com) – a blogroll with cool cs and programming posts
+* [zoe](https://github.com/sibellavia/zoe) – a minimalist and lightweight Static Site Generator, written in Zig 
 * [tinymalloc](https://github.com/sibellavia/tinymalloc) – my C toy memory allocator
 * [tinyp2p](https://x.com/sibellavia/status/1829563673393713483) – my initial attempt to build a distributed computing project :-)
