@@ -24,10 +24,8 @@ jobs:
           version: 0.14.0
 
       - name: Download and Install Zoe
-        env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          git clone https://${GH_TOKEN}@github.com/sibellavia/zoe.git
+          git clone https://github.com/sibellavia/zoe.git
           cd zoe
           zig build
           # Add the built binary to PATH
