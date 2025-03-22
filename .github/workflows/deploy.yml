@@ -25,6 +25,7 @@ jobs:
 
       - name: Download and Install Zoe
         run: |
+          rm -rf zoe  # Remove existing directory if it exists
           git clone https://github.com/sibellavia/zoe.git
           cd zoe
           zig build
