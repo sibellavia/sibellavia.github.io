@@ -2,6 +2,8 @@
 title: "Documentation"
 ---
 
+# Documentation
+
 ## 1. Overview
 
 Lemon is a minimalist, HTTP/S web server written in Rust. It leverages asynchronous I/O with Tokio, the Hyper HTTP library, and Rustls for TLS support. The primary design goals are simplicity, efficiency, and ease of configuration, particularly for common use cases like static file serving and secure HTTPS deployment with automatic certificate management via ACME (Let's Encrypt).
