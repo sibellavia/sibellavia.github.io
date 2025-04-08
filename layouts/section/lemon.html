@@ -1,0 +1,18 @@
+{{ define "main" }}
+<header class="lemon-header">
+    <h1>lemon 🍋</h1>
+    <p>a modern, general-purpose web server</p>
+</header>
+
+<div class="lemon-links">
+    <a href="/lemon/">intro</a> •
+    <a href="/lemon/roadmap/">roadmap</a> •
+    <a href="/lemon/documentation/">documentation</a> •
+    <a href="https://github.com/sibellavia/lemon">github</a> •
+    <a href="https://github.com/sibellavia/lemon/blob/main/LICENSE">license</a>
+</div>
+
+<main class="lemon-content">
+    {{ .Content }}
+</main>
+{{ end }}

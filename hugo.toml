@@ -1,0 +1,4 @@
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+title = "Simone Bellavia's Web Page"
+disableKinds = ["taxonomy",]
