@@ -6,7 +6,7 @@ title: "Documentation"
 
 ## 1. Overview
 
-Lemon is a minimalist, HTTP/S web server written in Rust. It leverages asynchronous I/O with Tokio, the Hyper HTTP library, and Rustls for TLS support. The primary design goals are simplicity, efficiency, and ease of configuration, particularly for common use cases like static file serving and secure HTTPS deployment with automatic certificate management via ACME (Let's Encrypt).
+Lemon is a minimalist, HTTP/S web server written in Rust. It leverages asynchronous I/O with [Tokio](https://github.com/tokio-rs/tokio), [Hyper](https://github.com/hyperium/hyper) HTTP library, and [Rustls](https://github.com/rustls/rustls) for TLS support. The primary design goals are simplicity, efficiency, and ease of configuration.
 
 ## 2. Features
 
