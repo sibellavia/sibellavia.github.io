@@ -13,5 +13,4 @@ Lemon is Simone Bellavia's side project. [Consult the license here](https://gith
 ## Manifesto
 
 1. Code is a work of craftsmanship.
-2. Focused modularity is key.
-3. Ease of use and configuration is #1.
+2. Simplicity is #1.
