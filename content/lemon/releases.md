@@ -12,5 +12,9 @@ title: "Releases"
 - Health Check
 - Basic Reverse Proxy support
 - Configuration Processing and Validation through `lemon.toml`
-- [ ] Manual TLS certificate
-- [ ] Automatic certificate generation for development
+- [ ] Automatic Certificate Generation for Development
+
+## v0.1.1
+
+- [ ] Manual TLS Certificate
+- [ ] Static File Serving: Implement sendfile (OS-specific)
