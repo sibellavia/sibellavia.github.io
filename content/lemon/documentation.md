@@ -10,7 +10,7 @@ Lemon is a modern, general-purpose web server written in Rust. It leverages asyn
 
 ## 2. Features
 
-*   **HTTP/1 & HTTP/2 Support:** Automatically negotiates HTTP/1.1 or HTTP/2 based on client capabilities (ALPN for HTTPS).
+*   **HTTP/1 and HTTP/2 Support:** Automatically negotiates HTTP/1.1 or HTTP/2 based on client capabilities (ALPN for HTTPS).
 *   **HTTPS via Rustls:** Secure connections using modern TLS protocols and ciphersuites.
 *   **Automatic HTTPS (ACME):** Built-in integration with Let's Encrypt via `rustls-acme` for automatic TLS certificate acquisition and renewal.
 *   **Configurable Handlers:**
