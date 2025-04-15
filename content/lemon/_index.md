@@ -6,4 +6,6 @@ Lemon is a modern, general-purpose web server written in Rust. It leverages asyn
 
 Lemon is under active development, and it will be for a long time. Enjoy us on our journey.
 
-Lemon is Simone Bellavia's side project. [Consult the license here](https://github.com/sibellavia/lemon/blob/main/LICENSE).
+Lemon is Simone Bellavia's side project. 
+
+[LICENSE](https://github.com/sibellavia/lemon/blob/main/LICENSE)
