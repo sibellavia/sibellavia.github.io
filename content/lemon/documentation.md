@@ -195,5 +195,3 @@ Lemon is designed to be extensible:
 
 *   **New Handlers:** Add a new variant to the `HandlerConfig` enum in `config.rs`, create a corresponding struct implementing the `Handler` trait in `src/handlers/`, and update the `create_handler` factory function in `src/handlers/mod.rs`.
 *   **New TLS Types:** Add a new variant to the `TlsConfig` enum in `config.rs` and update the TLS initialization logic in `tls.rs` and `server.rs` to handle the new configuration.
-
-Refer to `LEMON_CONFIG.md` for discussions on potential future handler types and configuration enhancements. 
