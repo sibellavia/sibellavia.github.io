@@ -189,45 +189,7 @@ handler = { type = "static", www_root = "/var/www/your-domain.com" }
 # handler = { type = "static", www_root = "/var/www/http_content" }
 ```
 
-## 5. Architecture & Core Components
-
-Lemon follows a modular structure found within the `src/` directory:
-
-*   **`main.rs`:** The entry point of the application.
-    *   Sets up logging and graceful shutdown signals.
-    *   Loads and validates the `lemon.toml` configuration using `config.rs`.
-    *   Initializes ACME state using `tls.rs` if required by the configuration.
-    *   Iterates through the configured servers and spawns asynchronous tasks for each using `server.rs`.
-    *   Manages the startup of an implicit HTTP challenge server if ACME is used but no explicit port 80 server is defined.
-    *   Waits for the shutdown signal and coordinates the graceful shutdown process.
-*   **`config.rs`:** Defines the Rust structs (`LemonConfig`, `ServerConfig`, `TlsConfig`, `HandlerConfig`, etc.) that map directly to the `lemon.toml` file structure.
-    *   Uses `serde` for deserializing the TOML file.
-    *   Contains the `load_and_validate_config` function, which reads, parses, and performs validation checks on the configuration.
-*   **`server.rs`:** Handles the core server logic of listening for connections and processing them.
-    *   Uses `tokio::net::TcpListener` to bind to the specified addresses.
-    *   Manages TLS handshakes using `tokio_rustls` and the `TlsAcceptor` provided by `tls.rs` (for ACME) or potentially other TLS configurations in the future.
-    *   Uses `hyper` and `hyper-util` to handle the HTTP protocol (HTTP/1 and HTTP/2).
-    *   Defines a generic server loop (`run_server_loop`) and connection handling logic.
-    *   For each incoming connection, it determines the appropriate handler (via `handlers::create_handler`) based on the server's configuration and passes the request to the handler's `handle` method.
-    *   Implements graceful shutdown logic for active connections.
-*   **`handlers/` (Module):** Defines the request handling logic.
-    *   `mod.rs`: Defines the `Handler` trait that all request handlers must implement. Contains the `create_handler` factory function, which takes a `HandlerConfig` and returns the corresponding concrete `SharedHandler` (an `Arc<dyn Handler>`).
-    *   `static_files.rs`: Implements the `StaticFileHandler` for serving files. Includes logic for mapping request paths to file system paths, handling different HTTP methods (GET, HEAD), setting MIME types, and caching metadata.
-    *   `reverse_proxy.rs`: Implements the `ReverseProxyHandler`. Forwards requests to the configured `target_url`, copying relevant headers and the request body. Handles response streaming back to the client.
-    *   `health.rs`: Implements the `HealthCheckHandler`. Provides a simple `/` endpoint returning 200 OK.
-    *   `acme.rs`: Implements the `AcmeRedirectHandler` used by the implicit HTTP challenge server. Handles ACME challenge requests forwarded by `rustls-acme` and may optionally redirect other HTTP requests to HTTPS.
-*   **`tls.rs`:** Manages TLS configuration and state, particularly for ACME.
-    *   Uses `rustls-acme` to interact with Let's Encrypt.
-    *   Initializes the `AcmeState` based on all `TlsConfig::Acme` blocks found in the configuration.
-    *   Creates the `rustls::ServerConfig` and the `TlsAcceptor` needed by `server.rs` for handling HTTPS connections with ACME certificates.
-*   **`shutdown.rs`:** Implements graceful shutdown logic for the entire application.
-    *   Listens for OS signals (like Ctrl+C).
-    *   Uses Tokio's `watch` channel to broadcast the shutdown signal to all server tasks and connection handlers.
-    *   Waits for server tasks to complete within a timeout period.
-*   **`logging.rs`:** Configures application-wide logging using the `tracing` and `tracing-subscriber` crates.
-*   **`common.rs`:** Contains shared utilities, type aliases (like `BoxedBody`), and helper functions used across different modules.
-
-## 6. Extensibility
+## 5. Extensibility
 
 Lemon is designed to be extensible:
 
