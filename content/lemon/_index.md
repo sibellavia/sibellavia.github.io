@@ -10,7 +10,9 @@ Lemon is Simone Bellavia's side project.
 
 ## Benchmarks
 
-*Tested on Hetzner CX22 (2 vCPU, 4 GB RAM), Automatic HTTPS, serving static index.html ("lemon is running"). Tool used: `bombardier`.*
+*Tested on Hetzner CX22 (2 vCPU, 4 GB RAM), Automatic HTTPS, serving static index.html ("lemon is running").*
+ 
+*Tool used: `bombardier`.*
 
 | Scenario                  | RPS (avg) | Max RPS | Avg Latency | Max Latency | Errors |
 |---------------------------|-----------|---------|-------------|-------------|--------|
