@@ -10,14 +10,16 @@ Lemon is Simone Bellavia's side project.
 
 ## Benchmarks
 
-*Tested on Hetzner CX22 (2 vCPU, 4 GB RAM), Automatic HTTPS, serving static index.html ("lemon is running").*
+*Tested on Hetzner CX22 (2 vCPU, 4 GB RAM), full HTTPS, serving static index.html ("lemon is running").*
  
 *Tool used: `bombardier`.*
 
 | Scenario                  | RPS (avg) | Max RPS | Avg Latency | Max Latency | Errors |
 |---------------------------|-----------|---------|-------------|-------------|--------|
-| 100 connections, 10k reqs | 1,023     | 2,339   | 97 ms       | 418 ms       | 0      |
-| 500 connections, 10k reqs | 3,769     | 10,365  | 123 ms      | 970 ms       | 0      |
+| 100 connections, 10k reqs | 1,100     | 5,414   | 91 ms       | 368 ms       | 0      |
+| 500 connections, 10k reqs | 3,769     | 19,748  | 143 ms      | 651 ms       | 0      |
+| 500 connections, 20k reqs | 4,053     | 20,857  | 125 ms      | 640 ms       | 0      |
+| 1000 connections, 20k reqs | 4,583    | 18,632  | 210 ms      | 1.63 s       | 0      |
 | 100 connections, 60s run  | 1,046     | 3,093   | 95 ms       | 312 ms       | 0      |
 
 ## License
