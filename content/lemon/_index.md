@@ -14,13 +14,20 @@ Lemon is Simone Bellavia's side project.
  
 *Tool used: `bombardier`.*
 
-| Scenario                  | RPS (avg) | Max RPS | Avg Latency | Max Latency | Errors |
-|---------------------------|-----------|---------|-------------|-------------|--------|
-| 100 connections, 10k reqs | 1,100     | 5,414   | 91 ms       | 368 ms       | 0      |
-| 500 connections, 10k reqs | 3,769     | 19,748  | 143 ms      | 651 ms       | 0      |
-| 500 connections, 20k reqs | 4,053     | 20,857  | 125 ms      | 640 ms       | 0      |
-| 1000 connections, 20k reqs | 4,583    | 18,632  | 210 ms      | 1.63 s       | 0      |
-| 100 connections, 60s run  | 1,046     | 3,093   | 95 ms       | 312 ms       | 0      |
+| Scenario                         | Conns | Requests | Avg RPS | Max RPS | Avg Latency | Max Latency | Errors |
+|----------------------------------|--------|----------|---------|---------|-------------|--------------|--------|
+| Light Load (burst)              | 100    | 10,000   | 1,766   | 3,544   | 56.36 ms    | 210.72 ms   | 0      |
+| Medium Load                     | 500    | 10,000   | 5,807   | 15,132  | 85.75 ms    | 824.51 ms   | 0      |
+| Medium Load (larger sample)     | 500    | 20,000   | 6,436   | 30,791  | 78.07 ms    | 671.23 ms   | 0      |
+| Medium-Heavy (extended run)     | 500    | 50,000   | 7,744   | 23,754  | 64.74 ms    | 578.17 ms   | 0      |
+| High Load                       | 1000   | 20,000   | 5,507   | 19,821  | 156.93 ms   | 1.80 s      | 0      |
+| High Load (repeat run)          | 1000   | 20,000   | 5,563   | 24,042  | 169.09 ms   | 2.28 s      | 0      |
+| Sustained Load (60s)            | 100    | 109,116  | 1,819   | 4,661   | 55.01 ms    | 266.86 ms   | 0      |
+
+- Up to 7,744 RPS, for now :-)
+- 100% successful responses (no 5xx errors)
+- Smooth performance scaling from 100 to 1000 concurrent clients
+- Tested with full TLS
 
 ## License
 
