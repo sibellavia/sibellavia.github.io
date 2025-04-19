@@ -1,4 +1,4 @@
-name: Zoe - Deploy to GitHub Pages
+name: Hugo - Deploy to GitHub Pages
 
 on:
   push:
@@ -11,31 +11,29 @@ jobs:
     permissions:
       pages: write        # This is needed for deploying to Pages
       id-token: write     # This is needed for Pages authentication
-      contents: write      # This is needed for pushing to gh-pages
+      contents: write     # This is needed for pushing to gh-pages
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - uses: actions/checkout@v2
+    concurrency:
+      group: "pages"
+      cancel-in-progress: false
       
-      - name: Install Zig
-        uses: goto-bus-stop/setup-zig@v2
+    steps:
+      - uses: actions/checkout@v4
         with:
-          version: 0.14.0
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Download and Install Zoe
-        run: |
-          rm -rf zoe  # Remove existing directory if it exists
-          git clone https://github.com/sibellavia/zoe.git
-          cd zoe
-          zig build
-          # Add the built binary to PATH
-          echo "${PWD}/zig-out/bin" >> $GITHUB_PATH
-          cd ..
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
 
       - name: Build site
         run: |
-          zoe build
+          hugo --minify
           ls -la public
         
       - name: Setup Pages
@@ -48,4 +46,4 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        uses: actions/deploy-pages@v4

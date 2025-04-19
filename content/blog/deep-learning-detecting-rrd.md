@@ -20,7 +20,7 @@ Rhegmatogenous Retinal Detachment is a serious condition that can lead to blindn
 
 These images can be realized thanks to techniques conducted by means of **scanning laser ophthalmoscope (SLO),** an instrument used for the evaluation of the fundus of the retina. It was designed to capture images of the retinal layers simultaneously with confocal images of the fundus (W H Woon, F W Fitzke, A C Bird, J Marshall, 1992). Wide field fundus images can be acquired easily without pupillary mydriasis and without causing medical complications, so even examiners not qualified to perform ophthalmological surgeries can acquire the images in a completely safe way, making this instrument ideal especially in cases of emergency in which ophthalmologists are not available.
 
-![Representative fundus images obtained by ultra wide field scanning laser ophthalmoscopy. Ultra wide field right fundus images without rhegmatogenous retinal detachment (RRD) (a) and with RRD (b). The arrow indicates the retinal break and the arrowheads indicate the areas of RRD.](/images/deep-learning-rrd/fundus.png)
+{{< img src="/images/deep-learning-rrd/fundus.png" alt="Representative fundus images obtained by ultra wide field scanning laser ophthalmoscopy. Ultra wide field right fundus images without rhegmatogenous retinal detachment (RRD) (a) and with RRD (b). The arrow indicates the retinal break and the arrowheads indicate the areas of RRD." class="blog-image" >}}
 *Representative fundus images obtained by ultra wide field scanning laser ophthalmoscopy. Ultra wide field right fundus images without rhegmatogenous retinal detachment (RRD) (a) and with RRD (b). The arrow indicates the retinal break and the arrowheads indicate the areas of RRD.*
 
 ## Machine Learning and RRD early diagnosis
@@ -29,7 +29,7 @@ The study evaluates precisely the ability of a deep learning technology to detec
 
 A Machine Learning model uses a **multilayer CNN capable of automatically learning the characterizing patterns of the images** and making them a classification system (Deng, J. et al., 2009).
 
-![CNN architecture used. The Input is represented by the RGB 96x96 pixel image. Each of the convolutional layers (Conv1–3) is followed by an activation function layer (ReLU), pooling layers (MP1–3), and two fully connected layers (FC1, FC2).](/images/deep-learning-rrd/ml.png)
+{{< img src="/images/deep-learning-rrd/ml.png" alt="CNN architecture used. The Input is represented by the RGB 96x96 pixel image. Each of the convolutional layers (Conv1–3) is followed by an activation function layer (ReLU), pooling layers (MP1–3), and two fully connected layers (FC1, FC2)." class="blog-image" >}}
 *CNN architecture used. The Input is represented by the RGB 96x96 pixel image. Each of the convolutional layers (Conv1–3) is followed by an activation function layer (ReLU), pooling layers (MP1–3), and two fully connected layers (FC1, FC2).*
 
 The convolutional level obtains the characteristics of the input through convolutional filters, the maximum levels of pooling (MP1, MP2 and MP3) allow a more generic recognition. The last two layers (FC1, FC2) are completely connected and remove spatial information from the quantities of extracted features and statistically recognize the objective that CNN aims to achieve. For the training of the neural network, **100 images were processed,** in addition an optimization algorithm called AdaGrad was implemented to correctly train the network weights.
