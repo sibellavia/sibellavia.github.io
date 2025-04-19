@@ -15,11 +15,11 @@ date: "2024-02-16"
 
 Let's take a general look at **Feedforward Networks,** to then better understand RNNs.
 
-![A multi layer feed forward neural network](/images/rnn-explained/fnn.png)
+{{< img src="/images/rnn-explained/fnn.png" alt="A multi layer feed forward neural network" class="blog-image" >}}
 
 In feedforward networks, input is processed in a single pass, from input to output, without retaining any memory of previous inputs. Each input is treated independently from the others, making feedforward networks suboptimal for tasks requiring an understanding of data sequences or temporal contexts. This behavior is a direct consequence of the structure of a feedforward network: relatively simple and linear, with layers of neurons connecting directly one after the other in one direction, without cycles. Each layer receives input only from the previous layer and sends output only to the next layer. Feedforward networks are employed in specific areas, such as classification and regression tasks where the order of inputs isn't relevant (image classification or predicting time-independent values).
 
-![A Recurrent Neural Network](/images/rnn-explained/rnn.png)
+{{< img src="/images/rnn-explained/rnn.png" alt="A Recurrent Neural Network" class="blog-image" >}}
 
 RNNs, unlike feedforward networks with unidirectional information flow and independent layer weights, feature recurrent connections enabling each hidden layer to be shaped by both the current input and the previous hidden state's output. This creates an **"internal memory",** useful for processing data sequences by allowing the network to consider past inputs, thus handling temporal dependencies. Ideal for tasks like language modeling, speech recognition, and sequence generation, RNNs use this memory to manage the sequence context, a key difference from the simpler feedforward approach. We will see their graphical visualization later, but first, a mathematical digression is useful to better understand how an RNN works.
 
@@ -40,7 +40,7 @@ $$h^{(t)}=f(h^{(t-1)}, x^{(t)}; \theta)$$
 
 These three terms are summed together and then passed through an activation function $\sigma$, such as the sigmoid function or the hyperbolic tangent, which updates the RNN's hidden state $h^{(t)}$.
 
-![Equation plotted on the computational graph](/images/rnn-explained/rnn-equation.png)
+{{< img src="/images/rnn-explained/rnn-equation.png" alt="Equation plotted on the computational graph" class="blog-image" >}}
 
 The purpose of the activation function is to introduce non-linearity into the model, allowing the model itself to represent complex and non-linear relationships between input and output variables.
 
@@ -69,7 +69,7 @@ Based on the definition we have given of RNNs, and in light of their computation
 With an understanding of the fundamental building blocks of RNNs, we now delve into their computational representation.
 
 ## Computational Graph and Backpropagation
-![Computational Graph with an Unfolded RNN](/images/rnn-explained/rnn-unfolded.png)
+{{< img src="/images/rnn-explained/rnn-unfolded.png" alt="Computational Graph with an Unfolded RNN" class="blog-image" >}}
 
 It is important to delve deeper into the concept of **unfolding**. In the context of RNNs, the term unfolding refers to the process of transforming the recurrent network, which intrinsically has a cyclic structure due to its hidden state passing from one time step to the next, into an extended (or unfolded) version that displays the entire sequence of operations across time steps. This unfolding transforms the cyclic structure into a chain of replicas of the network, one for each time step in the sequence, making evident how information flows through the time steps.
 

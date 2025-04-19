@@ -1,0 +1,15 @@
+{{/* layouts/shortcodes/img.html */}}
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default (.Get "src") }} {{/* Use src as fallback alt text */}}
+{{ $class := .Get "class" }}
+
+{{ if not $src }}
+{{ errorf "Missing 'src' parameter for img shortcode in %s" .Page.File.Path }}
+{{ else }}
+<img src="{{ $src | absURL }}" 
+     alt="{{ $alt }}" 
+     {{ with $class }} class="{{ . }}"{{ end }} 
+     loading="lazy" {{/* Add lazy loading for performance */}}
+     style="display: block; margin: auto;" {{/* Basic centering */}}
+>
+{{ end }} 
