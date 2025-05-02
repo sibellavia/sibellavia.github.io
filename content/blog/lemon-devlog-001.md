@@ -1,47 +1,203 @@
 ---
 title: "Lemon Devlog 001"
-date: "2025-05-01"
+date: "2025-05-02"
 ---
 
-Eccoci per il primo Devlog di lemon 🍋. Lemon è il web server a cui mi sto dedicando nel tempo libero. Diciamo che è diventato il mio side-project e che sto utilizzando come laboratorio per i miei esperimenti personali e per le mie idee. Mi sta dando inoltre l'opportunità di scrivere il mio primo devlog.
+Here we are for the first Devlog of lemon 🍋. lemon is the web server I’m working on in my spare time. Let’s say it’s become my side project and I’m using it as a lab for my personal experiments and ideas. It’s also giving me the chance to write my very first devlog.
 
-Premessa: tutti i devlogs afferenti allo sviluppo di lemon saranno scritti in modo casuale e randomico. Copriranno di tutto, ma principalmente mi dedicherò a condividere funzionalità che verranno introdotte, bug, curiosità, ... Molte cose saranno (quasi sempre) prodotto della mia ignoranza. 
+**Foreword:** all devlogs related to the development of lemon will be written in a casual, random way. They’ll cover everything, but mostly I’ll share features that get introduced, bugs, curiosities… A lot of things will (almost always) be the product of my own ignorance.
 
-Ma veniamo al dunque! Parliamo dello stack tecnologico.
+But let’s get to it! Let’s talk about the tech stack.
+
+---
 
 ## Tech Stack
 
-- Rust: Perché amo profondamente i linguaggi low-level: il mio preferito è C. Ma per questo progetto, ho pensato che potesse essere una buona occasione per imparare meglio Rust e approfondirlo. Fino ad ora mi sta piacendo. Le ragioni tecniche sono relative alle performances. E anche perché non esistono molti stand-alone web server come Nginx o Caddy.
-- Tokio: De facto standard async runtime in the Rust ecosystem. We utilize its task scheduling, non-blocking I/O primitives, and synchronization tools to build the server's concurrent architecture.
-- Hyper: La trovo un'ottima libreria HTTP. Non mi sembrava il caso di riscriverla da zero. E poi funziona molto bene.
-- Rustls: Per il TLS.
-- TOML/Serde: Clear configuration.
-- E poi abbiamo Moka per high-performance caching e async-compression per Brotli/Zstd/Gzip. 
+* **Rust:** because I deeply love low‑level languages. My favorite is C. But for this project, I thought it’d be a great chance to learn Rust more thoroughly. So far, I’m enjoying it. The technical reasons are performance‑related. And also because there aren’t many stand‑alone web servers like Nginx or Caddy written in Rust.
+* **Tokio:** de facto standard async runtime in the Rust ecosystem. We use its task scheduling, non‑blocking I/O primitives, and synchronization tools to build the server’s concurrent architecture.
+* **Hyper:** I find it an excellent HTTP library. It didn’t make sense to rewrite it from scratch, and besides—it works really well.
+* **Rustls:** for TLS.
+* **TOML/Serde:** for clear configuration.
+* And then we have **Moka** for high‑performance caching and **async-compression** for Brotli/Zstd/Gzip.
 
-Ci sono anche altre dipendenze. Alcune sono complementari. Lo anticipo: man mano che sviluppo mi rendo conto delle cose che non mi piacciono di Rust. Una di queste è la cosiddetta "dependency hell". In lemon, sto cercando di gestire questo fattore quanto meglio possibile. Cercherò di non aumentare le dipendenze, e di scrivere le mie logiche ove possibile. 
+There are other dependencies too, some of them are complementary. Spoiler: as I develop, I realize things I don’t like about Rust. One of those is the so‑called "dependency hell". In lemon, I’m trying to manage that factor as well as possible. I’ll try not to increase dependencies, and to write my own logic where I can.
 
-## Come l'architettura è cambiata
+---
 
-Sono un grande amante del design del software. Lemon mi permetterà di sperimentare varie idee che ho in mente. Il principio cardine è e sarà la semplicità. Inoltre, uno dei miei obiettivi è anche quello di minimizzare le copie user-space. 
+## How the architecture has changed
 
-La versione 0.1 di lemon adottava una soluzione banale, basata su un modello implicito di concorrenza dettato da Tokio. Con la versione 0.2, ho voluto introdurre un'identità architetturale più chiara. La prima opzione a cui avevo pensato era il classico *Core-Sharded Reactor*, ma non rispecchiava la semplicità a cui ambivo. Quindi ho ricercato un compromesso fra qualità, potenziale di performance e miglioramento incrementale. L'attuale visione è quella di uno Shared Acceptor completato da un Tokio Runtime Pool. 
+I’m a big fan of software design. lemon will allow me to experiment with various ideas I have in mind. The core principle is and will remain **simplicity**. Also, one of my goals is to minimize user‑space copies.
 
-Il modello concettuale è quindi composto da un singolo, dedicato Acceptor Thread: ispirato al concetto di *master process* di Nginx (anche se in lemon è solo un thread), la sua sola responsabilità è quella di possedere tutti i listening socket e di runnare in maniera efficiente `accept` loop. Non performa le logiche dell'applicazione né i TLS handshakes.
+Version 0.1 of lemon adopted a trivial solution, based on an implicit concurrency model dictated by Tokio. With version 0.2, I wanted to introduce a clearer architectural identity. The first option I considered was a model based on the idea of a *Core‑Sharded Reactor*, but it didn’t match the simplicity I was aiming for. So I looked for a compromise between quality, performance potential, and incremental improvement. The current vision is that of a **Shared Acceptor** complemented by a **Tokio Runtime Pool**.
 
-Al suo fianco, a standard Tokio Multi-Threaded Runtime Pool: This is Tokio's default, highly optimized, work-stealing runtime. It handles all connection processing, including TLS handshakes, HTTP parsing (Hyper), request routing, and executing Lemon's handlers.
+The conceptual model thus consists of a single dedicated **Acceptor Thread**: inspired by Nginx’s *master process* concept (though in lemon it’s only a thread), the Acceptor is simply a separate OS thread that owns all configured listening sockets (e.g., `0.0.0.0:80`, `0.0.0.0:443`, etc.) and loops quickly and non‑blockingly on the `accept()` calls for those sockets.
 
-Veniamo alle caratteristiche di tale architettura, e le motivazioni per le quali l'ho scelta. Innanzitutto, rispetto al modello implicito iniziale, qui abbiamo una separazione chiara dei ruoli. Establishes a distinct boundary between accepting connections (Acceptor) and processing them (Worker Pool). This is a clear architectural pattern, easier to reason about than having accept calls potentially scattered across worker threads.
+Everything else from the TLS handshake, to HTTP parsing, all the way to executing handler logic—happens elsewhere: in Tokio’s multi‑threaded runtime pool. This isolates the latency‑critical part (`accept()`) from the "heavier" parts (TLS handshake, file I/O, proxying, etc.) and lets workers focus exclusively on handshake, parsing, handler execution, and sending the response, without having to worry about opening new sockets.
 
-Fully utilizes the battle-tested, efficient work-stealing scheduler of Tokio's default runtime for the complex task of connection processing. Questo mi permette di beneficiare delle sue ottimizzazioni senza dover necessariamente reinventare la ruota (per adesso). 
+All the "acceptor thread" logic lives in `src/lib.rs`, inside the `start_services` function:
 
-Evitiamo la complessità. Avoids the immediate need for manual current_thread runtimes, CPU pinning, lock-free queues, and complex backpressure logic between acceptor and workers. The handoff is simply tokio::spawn. 
+```rust
+let acceptor = thread::Builder::new()
+    .name("lemon-acceptor".into())
+    .spawn(move || -> Result<()> {
+        let acceptor_rt = tokio::runtime::Builder::new_current_thread()
+            .enable_io()
+            .build()?;
+        acceptor_rt.block_on(async {
+            for listener in listeners {
+                loop {
+                    match listener.accept().await {
+                        Ok((socket, addr)) => {
+                            tokio::spawn(handle_connection(socket));
+                        }
+                        Err(e) => error!("Accept error: {}", e),
+                    }
+                }
+            }
+        });
+        Ok(())
+    })?;
+```
 
-Per queste prime iterazioni, mi sembra il compromesso migliore fra qualità, performance e velocità di sviluppo. Naturalmente, iterazioni successive porteranno a cambiamenti e miglioramenti architetturali. Per adesso, questo è sufficiente per le funzionalità che lemon offre!
+This way, the "acceptor" thread never does TLS handshakes or HTTP parsing: it simply takes new connections and hands them off very lightly to the worker pool running on the main Tokio multi‑threaded runtime.
 
-## Cosa lemon offre
+Let’s look at the characteristics of this architecture, and why I chose it. First off, compared to the initial implicit model, here we have a clear separation of roles. It establishes a distinct boundary between accepting connections (Acceptor) and processing them (Worker Pool). This is a clear architectural pattern, easier to reason about than having accept calls potentially scattered across worker threads. It fully leverages Tokio’s battle‑tested, efficient work‑stealing scheduler for the complex task of connection processing. This lets me benefit from its optimizations without reinventing the wheel (for now). We also avoid complexity in these early iterations: no need for manual current_thread runtimes, CPU pinning, lock‑free queues, or complex backpressure logic between acceptor and workers. The handoff is simply `tokio::spawn`.
 
-Automatically negotiates HTTP/1.1 or HTTP/2 based on client capabilities (via ALPN for HTTPS connections). Automatic HTTPS, even offline. If you want, you can also bring your manually provisioned TLS certificate and key files. 
+It seems like the best compromise between quality, performance, and development speed. Of course, future iterations will bring architectural changes and improvements (I can't wait to optimize, but I have to be patient 😆). For now, this is sufficient for what lemon offers!
 
-Lemon è disegnato per poter essere modulare, e al momento i moduli esistenti (che nel codice vengono definiti come `handlers`) sono lo *static file serving* e un supporto iniziale come *reverse proxy*. Nuovi moduli verranno aggiunti in nuove iterazioni, ma prima punto a ottimizzare e rendere stabili quanto più possibile quelli già esistenti.
+---
 
-Per quanto riguarda la configurazione.
+## What `lemon` offers
+
+Let's talk about the concrete things now! What does lemon offer? 
+
+Note that this refers to v0.2.3, which is the latest on GitHub.
+
+First of all, lemon supports a clear, declarative config, which I will call `lemonConfig`. In a nutshell: TOML + `serde` for easy, human-readable server setup. Non so se è troppo essenziale. Su Twitter ho letto alcune discussioni di utenti che vorrebbero una configurazione più estendibile, ad esempio in Lua. Si potrebbe fare, ma non ora. 
+
+When lemon boots it looks for a single `lemon.toml` in the working directory. That file is the source of truth: every listener, cert, redirect, cache limit, log format... all in one human‑readable place. 
+
+Design mantra: "simple cases stay simple, complex cases stay possible". Let's do a fast tour of the grammar:
+
+```toml
+# every server lives in its own table
+[server.blog]
+
+# networking is explicit
+listen_addr = "0.0.0.0:443"
+
+# TLS is pluggable: acme | manual | local_dev
+# you can also avoid declaring it if you wish a plain http server
+tls = { type = "acme", domains = ["blog.example.com"], contact = "mailto:admin@example.com" }
+
+# handlers express what to do with each request
+handler = { type = "static", www_root = "./public" }
+
+# hardening tweaks are opt‑in but one‑liner
+security = { frame_options = "SAMEORIGIN" }
+```
+
+When you save the file, lemon gets it and runs it through `serde` intro a strongly-typed `lemonConfig` struct hierarchy. A validation phase checks everything. Any violation is a compile‑grade error at runtime (lemon refuses to start). I chose TOML because hits the "sweet spot" between expressiveness, safety, and ergonomics. It's simple, and that's exactly what lemonConfig needs to be. But hey, in the future it could become something else :-)
+
+lemonConfig can be as complete as you want. Let me show you a *full* example of what it could be:
+
+```toml
+# 🍋 lemonConfig
+#
+# This file demonstrates **every first‑class feature** the server knows today.
+# Every stanza is optional except one [server.*] table and its `handler`.
+
+###############################################################################
+#  GLOBAL LOGGING
+###############################################################################
+[logging]
+level  = "debug"                         # trace | debug | info | warn | error
+format = "json"                          # text  | json
+output = { type = "file", path = "./logs/lemon.log" }   # stdout | file { path }
+
+###############################################################################
+#  PRODUCTION STATIC SITE WITH ACME TLS
+###############################################################################
+[server.blog]
+listen_addr = "0.0.0.0:443"
+
+tls = {                                    # Automatic Let's Encrypt certificates
+  type      = "acme",
+  domains   = ["blog.example.com", "www.blog.example.com"],
+  contact   = "mailto:ops@example.com",
+  cache_dir = "./acme-cache",              # where certs are stored on disk
+  staging   = false                        # flip to true to test against LE staging
+}
+
+handler = {                                # Optimised static file server
+  type                         = "static",
+  www_root                     = "./public",
+  content_cache_max_file_bytes = 1_048_576,    # optional: 1 MiB per file
+  content_cache_max_total_bytes = 536_870_912  # optional: 512 MiB total cache
+}
+
+security = {                               # HTTP hardening tweaks
+  add_default_headers    = true,            # Server, X‑Content‑Type‑Options, etc.
+  hsts_max_age           = 63_072_000,      # 2 years
+  hsts_include_subdomains = true,
+  hsts_preload           = true,
+  frame_options          = "SAMEORIGIN"     # DENY | SAMEORIGIN | NONE
+}
+
+###############################################################################
+#  ADMIN API REVERSE‑PROXY WITH MANUAL CERT
+###############################################################################
+[server.api]
+listen_addr = "0.0.0.0:8443"
+
+tls = {                                    # bring‑your‑own PEM pair
+  type              = "manual",
+  certificate_file  = "./certs/api.crt",
+  key_file          = "./certs/api.key"
+}
+
+handler = { type = "reverse_proxy", target_url = "http://127.0.0.1:3000" }
+
+security = {                               # tighter framing for admin
+  add_default_headers = true,
+  hsts_max_age        = 31_536_000,        # 1 year
+  frame_options       = "DENY"
+}
+
+###############################################################################
+#  INTERNAL HEALTH CHECK ENDPOINT (NO TLS)
+###############################################################################
+[server.internal_health]
+listen_addr = "127.0.0.1:8081"
+handler     = { type = "health_check" }
+
+# minimal hardening
+security = { add_default_headers = false }
+
+###############################################################################
+#  HTTP‑>HTTPS REDIRECTOR
+###############################################################################
+[server.redirector]
+listen_addr = "0.0.0.0:80"
+handler     = { type = "redirect_https", target_base = "https://blog.example.com" }
+security    = { add_default_headers = false }   # no body, so no headers needed
+
+###############################################################################
+#  LOCAL DEV SERVER WITH SELF‑SIGNED CERT
+###############################################################################
+[server.localdev]
+listen_addr = "127.0.0.1:3443"
+
+tls     = { type = "local_dev" }           # generates a throw‑away cert on boot
+handler = { type = "static", www_root = "./sandbox" }
+security = { frame_options = "SAMEORIGIN" }
+```
+
+Generally speaking, what do we have? Automatic negotiation of HTTP/1.1 or HTTP/2 based on client capabilities (via ALPN for HTTPS connections) and automatic HTTPS. lemon offers a way to achieve automatic HTTPS for offline or local development scenarios. You can configure a server block with `tls = { type = "local_dev" }`. The `generate_local_dev_tls` function in `src/server.rs` implements this: lemon automatically generates a temporary, self-signed TLS certificate using the `rcgen` crate upon starting. This certificate includes SANs for `localhost` and `127.0.0.1`. This process doesn't require any internet connection, making it suitable for offline development and testing.
+
+Talking about what the server can do, effectively: lemon is designed to be modular, and currently the existing modules (defined in the code as `handlers`) are static file serving and an initial reverse proxy support. Not only! We also have minor handlers like a `health_check` endpoint and a HTTP->HTTPS redirect. I’ll be adding more modules over time, but the current focus is on stabilizing and optimizing the ones that already exist.
+
+## That's it for now
+
+I'm not a fan of long blogposts. I have tried to make a very concentrated summary of what is lemon for now, the choices I have made, and some reasons why I have adopted certain solutions. There are so many other things I can share, so this is an introductory overview for today!
+
