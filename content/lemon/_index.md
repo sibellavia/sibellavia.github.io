@@ -8,24 +8,15 @@ title: "lemon"
 
 ## Benchmarks
 
-*Tested on Hetzner CX22 (2 vCPU, 4 GB RAM), full HTTPS, serving static index.html ("lemon is running").*
- 
-*Tool used: `bombardier`.*
+Benchmarked with [bombardier](https://github.com/codesenberg/bombardier) over HTTPS (no staging). Hosted on Hetzner CX22 (2 vCPU, 4 GB RAM). Tested from MacBook Pro M1 (Italy) to Germany.
 
-| Scenario                         | Conns | Requests | Avg RPS | Max RPS | Avg Latency | Max Latency | Errors |
-|----------------------------------|--------|----------|---------|---------|-------------|--------------|--------|
-| Light Load (burst)              | 100    | 10,000   | 1,766   | 3,544   | 56.36 ms    | 210.72 ms   | 0      |
-| Medium Load                     | 500    | 10,000   | 5,807   | 15,132  | 85.75 ms    | 824.51 ms   | 0      |
-| Medium Load (larger sample)     | 500    | 20,000   | 6,436   | 30,791  | 78.07 ms    | 671.23 ms   | 0      |
-| Medium-Heavy (extended run)     | 500    | 50,000   | 7,744   | 23,754  | 64.74 ms    | 578.17 ms   | 0      |
-| High Load                       | 1000   | 20,000   | 5,507   | 19,821  | 156.93 ms   | 1.80 s      | 0      |
-| High Load (repeat run)          | 1000   | 20,000   | 5,563   | 24,042  | 169.09 ms   | 2.28 s      | 0      |
-| Sustained Load (60s)            | 100    | 109,116  | 1,819   | 4,661   | 55.01 ms    | 266.86 ms   | 0      |
-
-- Up to 7,744 RPS, for now :-)
-- 100% successful responses (no 5xx errors)
-- Smooth performance scaling from 100 to 1000 concurrent clients
-- Tested with full TLS
+| Scenario                         | Conns | Requests | Avg RPS | Max RPS | Avg Latency | Max Latency | Errors | Throughput  |
+|----------------------------------|--------|----------|---------|---------|-------------|--------------|--------|--------------|
+| Light Load (burst)              | 100    | 10,000   | 1,614   | 2,542   | 61.49 ms    | 373.30 ms   | 0      | 3.07 MB/s    |
+| Medium Load                     | 500    | 10,000   | 5,729   | 43,478  | 91.03 ms    | 884.00 ms   | 0      | 10.62 MB/s   |
+| Medium Load (larger sample)     | 500    | 50,000   | 6,963   | 33,009  | 73.09 ms    | 854.00 ms   | 0      | 12.94 MB/s   |
+| High Load                       | 1000   | 20,000   | 3,444   | 24,365  | 206.29 ms   | 2.24 s      | 19 TLS handshake timeouts | 6.65 MB/s    |
+| Sustained Load (60s test)       | 100    | 101,178  | 1,686   | 3,306   | 59.33 ms    | 333.29 ms   | 0      | 3.16 MB/s    |
 
 ## License
 
