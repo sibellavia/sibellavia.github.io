@@ -106,11 +106,8 @@ header p {
 }
 
 .lemon-content pre {
-    background-color: #f5f5f5;
-    padding: 1rem;
+    margin: 1.5rem 0;
     overflow-x: auto;
-    border: 1px solid #ddd;
-    margin: 1rem 0;
 }
 
 .lemon-content code {
@@ -119,11 +116,6 @@ header p {
     border-radius: 3px;
     font-family: monospace;
     font-size: 0.9em;
-}
-
-.lemon-content pre code {
-    padding: 0;
-    background-color: transparent;
 }
 
 /* Table styles */
@@ -159,3 +151,45 @@ th {
   height: auto; /* Maintain aspect ratio */
   /* The shortcode already adds display: block; margin: auto; for centering */
 }
+
+/* --- General Code Block Styles --- */
+/* Style the outer container Chroma generates */
+div.highlight {
+    border-radius: 6px;  /* Adjust radius as desired */
+    padding: 1rem;       /* Add internal padding */
+    /* Ensure the div itself doesn't overflow unexpectedly */
+    overflow: hidden;
+}
+
+/* We still need overflow-x on the pre for code scrolling */
+/* Also adjust the general 'pre' rule below */
+div.highlight pre {
+    margin: 0 !important; /* Remove margin from pre, as padding is on the div */
+    border-radius: 0 !important; /* Remove radius from pre if any */
+    padding: 0 !important; /* Remove padding from pre, it's on the div */
+    overflow-x: auto !important; /* Keep for code scrolling */
+    /* Ensure Chroma's background on pre doesn't interfere */
+    background-color: transparent !important; 
+}
+
+pre {
+    /* background-color: #f5f5f5; */ /* Handled by Chroma's div.highlight */
+    /* padding: 1rem; */             /* Handled by div.highlight */
+    margin: 1.5rem 0;          /* Keep: Space around the block */
+    overflow-x: auto;          /* Keep: Enable horizontal scrolling */
+    /* border: 1px solid #ddd; */    /* Handled by Chroma's div.highlight */
+    /* border-radius: 4px; */        /* Handled by div.highlight */
+    /* white-space: pre; */          /* Chroma might handle this */
+}
+
+/* Ensure code within pre blocks uses monospace font */
+/* Remove this rule, let Chroma handle internal styling */
+/* pre > code { */
+/*    font-family: monospace; */
+/*    font-size: 0.9em; */
+/*    background-color: transparent; */ /* Avoid double background */
+/*    padding: 0;                */ /* Padding is handled by pre */
+/*    border: none;              */ /* Border is handled by pre */
+/*    border-radius: 0;          */ /* Radius is handled by pre */
+/* } */
+/* --- End General Code Block Styles --- */
