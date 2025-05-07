@@ -15,7 +15,7 @@ But let’s get to it! Let’s talk about the tech stack.
 
 * **Rust:** because I deeply love low‑level languages. My favorite is C. But for this project, I thought it’d be a great chance to learn Rust more thoroughly. So far, I’m enjoying it. The technical reasons are performance‑related. And also because there aren’t many stand‑alone web servers like Nginx or Caddy written in Rust.
 * **Tokio:** de facto standard async runtime in the Rust ecosystem. We use its task scheduling, non‑blocking I/O primitives, and synchronization tools to build the server’s concurrent architecture.
-* **Hyper:** I find it an excellent HTTP library. It didn’t make sense to rewrite it from scratch, and besides—it works really well.
+* **Hyper:** I find it an excellent HTTP library. It didn’t make sense to rewrite it from scratch, and besides it works really well.
 * **Rustls:** for TLS.
 * **TOML/Serde:** for clear configuration.
 * And then we have **Moka** for high‑performance caching and **async-compression** for Brotli/Zstd/Gzip.
@@ -73,7 +73,7 @@ Let's talk about the concrete things now! What does lemon offer?
 
 Note that this refers to v0.2.3, which is the latest on GitHub.
 
-First of all, lemon supports a clear, declarative config, which I will call `lemonConfig`. In a nutshell: TOML + `serde` for easy, human-readable server setup. Non so se è troppo essenziale. Su Twitter ho letto alcune discussioni di utenti che vorrebbero una configurazione più estendibile, ad esempio in Lua. Si potrebbe fare, ma non ora. 
+First of all, lemon supports a clear, declarative config, which I will call `lemonConfig`. In a nutshell: TOML + `serde` for easy, human-readable server setup. I don't know if it is too "essential". I read some discussions on Twitter where users would like a more extendible configuration for such a web server, perhaps in Lua. I could do it, but now now.  
 
 When lemon boots it looks for a single `lemon.toml` in the working directory. That file is the source of truth: every listener, cert, redirect, cache limit, log format... all in one human‑readable place. 
 
