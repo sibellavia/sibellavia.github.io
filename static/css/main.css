@@ -155,21 +155,23 @@ th {
 /* --- General Code Block Styles --- */
 /* Style the outer container Chroma generates */
 div.highlight {
-    border-radius: 6px;  /* Adjust radius as desired */
-    padding: 1rem;       /* Add internal padding */
+    /* border-radius: 6px; */  /* Removed - will be on pre.chroma */
+    /* padding: 1rem; */       /* Removed - will be on pre.chroma */
     /* Ensure the div itself doesn't overflow unexpectedly */
-    overflow: hidden;
+    /* overflow: hidden; */    /* Removed */
+    margin: 1.5rem 0; /* Add standard margin for code blocks */
 }
 
 /* We still need overflow-x on the pre for code scrolling */
 /* Also adjust the general 'pre' rule below */
 div.highlight pre {
     margin: 0 !important; /* Remove margin from pre, as padding is on the div */
-    border-radius: 0 !important; /* Remove radius from pre if any */
-    padding: 0 !important; /* Remove padding from pre, it's on the div */
+    border-radius: 6px; /* Add border-radius to the pre element */
+    padding: 1rem; /* Add padding to the pre element */
     overflow-x: auto !important; /* Keep for code scrolling */
+    overflow-y: hidden; /* Prevent vertical scrollbars, clip content to rounded corners */
     /* Ensure Chroma's background on pre doesn't interfere */
-    background-color: transparent !important; 
+    /* background-color: transparent !important; */ /* REMOVED - Let theme apply background to pre.chroma */
 }
 
 pre {
@@ -193,3 +195,26 @@ pre {
 /*    border-radius: 0;          */ /* Radius is handled by pre */
 /* } */
 /* --- End General Code Block Styles --- */
+
+/* Horizontal navigation list */
+.nav-links-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.nav-links-list li {
+    display: inline-block;
+    /* margin-right: 1rem; */ /* Spacing will be handled by the pseudo-element's margin */
+}
+
+.nav-links-list li + li::before {
+    content: "·";
+    margin-left: 0.5rem;
+    margin-right: 0.75rem; /* Adjust spacing as needed */
+    color: #666; /* Optional: color for the bullet */
+}
+
+.nav-links-list li:last-child {
+    margin-right: 0; /* No margin for the last item */
+}

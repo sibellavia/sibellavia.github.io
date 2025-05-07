@@ -6,6 +6,6 @@ disableKinds = ["taxonomy",]
 [markup.highlight]
   codeFences = true         # Enable highlighting for ``` blocks
   guessSyntax = true        # Try to guess syntax if not specified
-  style = "dracula"         # Use the dracula theme
+  style = "monokai"         # Use the monokai theme
   noClasses = false         # Use CSS classes (recommended)
   # lineNos = true          # Uncomment to add line numbers
