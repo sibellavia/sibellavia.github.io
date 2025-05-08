@@ -22,3 +22,6 @@ This is my digital library. List doesn't follow a particular order, but the firs
 - Exploratory Data Analysis. John W. Tukey
 - The Hundred-Page Machine Learning Book. Andriy Burkov
 - Machine Learning Design Patterns, Solution to Common Challenges in Data Preparation, Model Building, and MLOps. 
+- Linux Pocket Guide, Essential Commands. Daniel J. Barrett
+- The DevOps Handbook. Gene Kim et al.
+- Cloud Native DevOps with Kubernetes. Building, Deploying, and Scaling Modern Applications in the Cloud. Justin Domingus, John Arundel
