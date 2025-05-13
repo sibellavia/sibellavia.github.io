@@ -1,9 +1,9 @@
 ---
-title: "About Lemon"
+title: "Lemon Devlog 001"
 date: "2025-05-02"
 ---
 
-Lemon is the web server I’m working on in my spare time. Let’s say it’s become my side project and I’m using it as a lab for my personal experiments and ideas. It’s also giving me the chance to write my very first devlog.
+Here we are for the first Devlog of [lemon 🍋](https://sibellavia.github.io/lemon). lemon is the web server I’m working on in my spare time. Let’s say it’s become my side project and I’m using it as a lab for my personal experiments and ideas. It’s also giving me the chance to write my very first devlog.
 
 **Foreword:** all devlogs related to the development of lemon will be written in a casual, random way. They’ll cover everything, but mostly I’ll share features that get introduced, bugs, curiosities… A lot of things will (almost always) be the product of my own ignorance.
 
