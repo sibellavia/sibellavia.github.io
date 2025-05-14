@@ -63,7 +63,7 @@ This way, the "acceptor" thread never does TLS handshakes or HTTP parsing: it si
 
 Let’s look at the characteristics of this architecture, and why I chose it. First off, compared to the initial implicit model, here we have a clear separation of roles. It establishes a distinct boundary between accepting connections (Acceptor) and processing them (Worker Pool). This is a clear architectural pattern, easier to reason about than having accept calls potentially scattered across worker threads. It fully leverages Tokio’s battle‑tested, efficient work‑stealing scheduler for the complex task of connection processing. This lets me benefit from its optimizations without reinventing the wheel (for now). We also avoid complexity in these early iterations: no need for manual current_thread runtimes, CPU pinning, lock‑free queues, or complex backpressure logic between acceptor and workers. The handoff is simply `tokio::spawn`.
 
-It seems like the best compromise between quality, performance, and development speed. Of course, future iterations will bring architectural changes and improvements (I can't wait to optimize, but I have to be patient 😆). For now, this is sufficient for what lemon offers!
+It seems like the best compromise between quality, performance, and development speed. Of course, future iterations will bring architectural changes and improvements. For now, this is sufficient for what lemon offers!
 
 ---
 
