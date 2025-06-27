@@ -1,5 +1,5 @@
 ---
-title: "Helm: what I like and what I don't like"
+title: "Helm: what I like and dislike"
 date: "2025-06-22"
 ---
 
