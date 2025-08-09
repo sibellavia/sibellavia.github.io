@@ -21,7 +21,7 @@ I don't know if I am the only one, but I miss some kind of Drift detection logic
 
 Helm's approach to secrets is "just base64 encode it and hope for the best." Tools like Helm Secrets exist, but they feel like band-aids on a fundamental design issue. 
 
-Helm is purely client-side and imperative, even if we consider it as partially-declarative. This goes back to point 3. Helm fires commands and just trusts that what it thinks is deployed actually matches reality. Also, everything requires manual intervention. In fact, many teams end up with (imho) awkward combinations: ArgoCD + Helm, Flux + Helm, or just Helm + CI/CD. The fact that we're retrofitting declarative behavior onto an imperative tool shows just how much the ecosystem has evolved past Helm's original assumption. 
+Helm is purely client-side and imperative**, even if we consider it as partially-declarative. This goes back to point 3. Helm fires commands and just trusts that what it thinks is deployed actually matches reality. Also, everything requires manual intervention. In fact, many teams end up with (imho) awkward combinations: ArgoCD + Helm, Flux + Helm, or just Helm + CI/CD. The fact that we're retrofitting declarative behavior onto an imperative tool shows just how much the ecosystem has evolved past Helm's original assumption. 
 
 Helm doesn't manage an install order or readiness. Helm simply ensures the sub-charts are included in the final rendered manifests. There is absolutely no guarantee of install order or readiness. As I said in point 3 I think, you usually solve this with hacks like init containers, complex readiness probes, or by running multiple `helm install` commands in a specific order. I don't like it. 
 
