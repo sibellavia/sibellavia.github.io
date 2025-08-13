@@ -1,24 +1,24 @@
 ---
-title: "I am Sicilian and I am in favor of Strait of Messina Bridge"
+title: "I am Sicilian and I support Strait of Messina Bridge"
 date: "2025-08-11"
 ---
 
-I’m Sicilian, and I support building the Bridge over the Strait of Messina.
+I’m Sicilian, and I support building the Strait of Messina Bridge.
 
-Premise: I don’t vote for Matteo Salvini, the current Minister of Infrastructure and Transport and promoter of the project — even though, to be fair, many before him have tried to start construction on the Bridge, since it’s been discussed ever since the post–World War II era. In modern times, both Silvio Berlusconi and Matteo Renzi (two politicians from opposing sides) have pushed the idea. So my support doesn’t come from political or ideological alignment, but from a pragmatic standpoint.
+Premise: I don’t vote for Matteo Salvini, the current Minister of Infrastructure and Transport and promoter of the project. Even though, to be fair, many before him have tried to start construction on the Bridge, since it’s been discussed ever since the post–World War II era. In modern times, both Silvio Berlusconi and Matteo Renzi (two politicians from opposing sides) have pushed the idea. So my support doesn’t come from political or ideological alignment, but from a pragmatic standpoint.
 
 I’m in favor of building the Bridge because I’m in favor of progress. We’re talking about a world-class engineering project: a suspension bridge with a single span of 3,300 meters (over two miles), the longest in the world. Naturally, it will bring together some of the brightest minds to contribute to its construction. We’re daring to attempt something unprecedented and structurally thrilling, and we’re doing it between two Italian regions, Sicily and Calabria, that have historically been intellectual and cultural cradles not only for Italy, but for the entire world. That excites me.
 
 It’s also an investment currently estimated at 13 billion euros. With projects of this scale, I doubt the final figure will really stay there, because you have to factor in circumstances and unforeseen events. So, to that number, you can probably add another 17 or 18 billion euros. On paper, it has all the potential to generate new jobs and opportunities, both for companies in the sector and beyond.
 
-A bridge means greater connectivity and logistical efficiency. Right now, traveling from Sicily to Calabria happens via ferry, something that has practically become an icon for us Sicilians. Yes, this system could be improved and strengthened. But it’s also true that it still represents an obstacle to the continuous flow of rail traffic between regions. That problem could be solved with the Bridge, which, according to the plan, will have two highway lanes and, in the middle, two railway tracks. This would allow high-speed trains to reach Sicily.
+A bridge means greater connectivity and logistical efficiency. Right now, traveling from Sicily to Calabria happens via ferry, something that has become an icon for us Sicilians. Yes, this system could be improved and strengthened. But it’s also true that it still represents an obstacle to the continuous flow of rail traffic between regions. That problem could be solved with the Bridge, which, according to the plan, will have two highway lanes and, in the middle, two railway tracks. This would allow high-speed trains to reach Sicily.
 
-These are some of the advantages that lead me to support the construction of the bridge, regardless of my political ideology, which has no influence on my opinion here. But what are the counterarguments from the public? The ones I read most often are:
+These are some of the advantages that lead me to support the construction of the bridge, regardless of my political ideology, which has no influence on my opinion here. But what are the counterarguments from the public? Below the ones I read most often, with some of my thoughts.
 
-1. Seismic risk. According to the plan, the bridge will have to withstand earthquakes up to a certain level on the Richter scale. I expect the design to largely incorporate structural and tolerance systems for such events.
+Seismic risk: according to the plan, the bridge will have to withstand earthquakes up to a certain level on the Richter scale. I expect the design to largely incorporate structural and tolerance systems for such events.
 
-2. Environmental impact. This factor would definitely need to be monitored, even though it has been overlooked in the construction of other major public works, not only in Italy but around the world. Speaking from ignorance, I imagine the terrain will need to be modified for the creation of the towers’ supporting foundations. I expect this to be done in compliance with existing environmental risk regulations.
+Environmental impact: this factor would definitely need to be monitored, even though it has been overlooked in the construction of other major public works, not only in Italy but around the world. Speaking from ignorance, I imagine the terrain will need to be modified for the creation of the towers’ supporting foundations. I expect this to be done in compliance with existing environmental risk regulations.
 
-3. High costs. This is undeniably a very expensive project. What’s often not taken into account, however, are the long-term returns and the economic flow generated by indirect effects: creation of new businesses, jobs, and so on.
+High costs: this is undeniably a very expensive project. What’s often not taken into account, however, are the long-term returns and the economic flow generated by indirect effects: creation of new businesses, jobs, and so on.
 
 I’m genuinely enthusiastic about the project. Above all, the concept of “connection” fascinates me and sparks my imagination.
