@@ -5,7 +5,7 @@ date: "2025-08-11"
 
 I’m Sicilian, and I support building the Strait of Messina Bridge.
 
-Premise: I don’t vote for Matteo Salvini, the current Minister of Infrastructure and Transport and promoter of the project. Even though, to be fair, many before him have tried to start construction on the Bridge, since it’s been discussed ever since the post–World War II era. In modern times, both Silvio Berlusconi and Matteo Renzi (two politicians from opposing sides) have pushed the idea. So my support doesn’t come from political or ideological alignment, but from a pragmatic standpoint.
+Premise: I don’t vote for Matteo Salvini, the current Minister of Infrastructure and Transport and promoter of the project. Even though, to be fair, many before him have tried to start construction on the Bridge, since it’s been discussed ever since the post-World War II era. In modern times, both Silvio Berlusconi and Matteo Renzi (two politicians from opposing sides) have pushed the idea. So my support doesn’t come from political or ideological alignment, but from a pragmatic standpoint.
 
 I’m in favor of building the Bridge because I’m in favor of progress. We’re talking about a world-class engineering project: a suspension bridge with a single span of 3,300 meters (over two miles), the longest in the world. Naturally, it will bring together some of the brightest minds to contribute to its construction. We’re daring to attempt something unprecedented and structurally thrilling, and we’re doing it between two Italian regions, Sicily and Calabria, that have historically been intellectual and cultural cradles not only for Italy, but for the entire world. That excites me.
 
