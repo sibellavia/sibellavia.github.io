@@ -3,7 +3,7 @@ title: "Fil-C, a memory safe implementation of C and C++"
 date: "2025-09-06"
 ---
 
-Yesterday, [Fil-C](https://fil-c.org/programs_that_work) popped up to the top of [Hacker News](https://news.ycombinator.com/item?id=45133938). This time the submission got a fair amount of traction, sparking a lot of interest in the community, including a comment from Andrew Kelley. In fact, I’ve been interested in Fil-C for about a year already: my first submission on Hacker News was eight months ago. So I can say I’ve been actively following the project’s progress, also thanks to the activity of its creator, @filpizlo, on Twitter.
+Yesterday, [Fil-C](https://fil-c.org/) popped up to the top of [Hacker News](https://news.ycombinator.com/item?id=45133938). This time the submission got a fair amount of traction, sparking a lot of interest in the community, including a comment from Andrew Kelley. In fact, I’ve been interested in Fil-C for about a year already: my first submission on Hacker News was eight months ago. So I can say I’ve been actively following the project’s progress, also thanks to the activity of its creator, @filpizlo, on Twitter.
 
 Fil-C is a compiler that implements the C and C++ languages with a memory-safe approach. Recently, Filip has published more documentation about the Garbage Collector and about the capabilities he calls "InvisiCaps", which are more related to pointer safety.
 
