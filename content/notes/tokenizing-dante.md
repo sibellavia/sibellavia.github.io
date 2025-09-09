@@ -1,9 +1,7 @@
 ---
-title: "Tokenizing Dante at the byte level"
+title: "Morphing the Divina Commedia into byte tokens with Zig"
 date: "2025-08-18"
 ---
-
-*Morphing the Divina Commedia into byte tokens with Zig.*
 
 Nothing fancy. I just dumped the Divina Commedia into a contiguous `u16` slice.
 

@@ -3,10 +3,9 @@ title: "Recurrent Neural Networks (RNNs) explained"
 date: "2024-02-16"
 ---
 
-
+**Recurrent Neural Networks (RNNs)** are a class of neural networks designed to process sequential data, such as time series, text, audio, or any other type of sequential data. RNNs were developed to overcome the limitations of feedforward networks that don't maintain a memory of past information.
 
 ## From Feedforward to RNNs
-**Recurrent Neural Networks (RNNs)** are a class of neural networks designed to process sequential data, such as time series, text, audio, or any other type of sequential data. RNNs were developed to overcome the limitations of feedforward networks that don't maintain a memory of past information.
 
 Let's take a general look at **Feedforward Networks,** to then better understand RNNs.
 
