@@ -1,15 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Site.LanguageCode }}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+    {{ $description := "" }}
+    {{ if .Description }}
+        {{ $description = .Description }}
+    {{ else if .Summary }}
+        {{ $description = .Summary | plainify | truncate 160 }}
+    {{ else }}
+        {{ $description = .Site.Params.description }}
+    {{ end }}
+    <meta name="description" content="{{ $description }}">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ .Permalink }}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+    <meta property="og:description" content="{{ $description }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    {{ if not .IsHome }}
+    <meta property="article:author" content="{{ .Site.Params.author }}">
+    <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+    {{ range .Params.tags }}
+    <meta property="article:tag" content="{{ . }}">
+    {{ end }}
+    {{ end }}
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="{{ .Permalink }}">
+    <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+    <meta name="twitter:description" content="{{ $description }}">
+    {{ with .Site.Params.twitter }}
+    <meta name="twitter:site" content="@{{ . }}">
+    <meta name="twitter:creator" content="@{{ . }}">
+    {{ end }}
+    
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="{{ "css/syntax-monokai.css" | absURL }}">
+    
+    {{ if or (in .Content "$$") (in .Content "\\(") (in .Content "\\[") }}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+                throwOnError : false
+            });
+        });
+    </script>
+    {{ end }}
+    
+    {{ with .OutputFormats.Get "RSS" }}
+    <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .Permalink }}">
+    {{ end }}
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "{{ if .IsHome }}WebSite{{ else }}{{ if eq .Section "posts" }}BlogPosting{{ else }}WebPage{{ end }}{{ end }}",
+        "url": "{{ .Permalink }}",
+        "name": "{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}",
+        {{ if not .IsHome }}"headline": "{{ .Title }}",{{ end }}
+        "description": "{{ $description }}",
+        {{ if not .IsHome }}
+        "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+        "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+        {{ end }}
+        "author": {
+            "@type": "Person",
+            "name": "{{ .Site.Params.author }}"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "{{ .Site.Title }}"
+        }{{ if .IsHome }},
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{{ .Site.BaseURL }}/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }{{ end }}
+    }
+    </script>
 </head>
 <body>
     <div class="container">
-        {{ block "main" . }}{{ end }}
+        <header>
+            <h1 class="site-title"><a href="/">{{ .Site.Title }}</a></h1>
+            <nav class="main-nav">
+                {{ range .Site.Menus.main }}
+                {{ if eq .Name "Home" }}
+                {{ else }}
+                <a href="{{ .URL }}" class="nav-link {{ if eq $.Section (lower .Name) }}active{{ end }}">{{ .Name }}</a>
+                {{ end }}
+                {{ end }}
+                <a href="/index.xml" class="nav-link rss-link" title="RSS Feed">RSS</a>
+            </nav>
+        </header>
+        
+        <main>
+            {{ block "main" . }}{{ end }}
+        </main>
+        
+        <footer>
+            <p>&copy; {{ now.Year }} {{ .Site.Params.author }}. Built with Hugo.</p>
+        </footer>
     </div>
 </body>
 </html>

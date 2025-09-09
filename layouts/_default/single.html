@@ -1,13 +1,30 @@
 {{ define "main" }}
-<header>
-    <h1>{{ .Title }}</h1>
-    <p>{{ .Date.Format "2006-01-02" }}</p>
-    <p><a href="/blog">← All Posts</a></p>
-</header>
-
-<main>
-    <article>
+<article>
+    <header>
+        <h1>{{ .Title }}</h1>
+        {{ if not (eq .Title "About") }}
+        <div class="post-meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+            {{ if .Params.categories }}
+            <span> • </span>
+            {{ range .Params.categories }}
+            <span>{{ . }}</span>
+            {{ end }}
+            {{ end }}
+        </div>
+        {{ end }}
+    </header>
+    
+    <div class="content">
         {{ .Content }}
-    </article>
-</main>
+    </div>
+    
+    {{ if .Params.tags }}
+    <div class="tags">
+        {{ range .Params.tags }}
+        <a href="/tags/{{ . | urlize }}/" class="tag">{{ . }}</a>
+        {{ end }}
+    </div>
+    {{ end }}
+</article>
 {{ end }}

@@ -1,15 +1,17 @@
-{{/* layouts/shortcodes/img.html */}}
-{{ $src := .Get "src" }}
-{{ $alt := .Get "alt" | default (.Get "src") }} {{/* Use src as fallback alt text */}}
-{{ $class := .Get "class" }}
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default (.Get "title") | default "Image" -}}
+{{- $title := .Get "title" -}}
+{{- $class := .Get "class" -}}
+{{- $width := .Get "width" -}}
+{{- $height := .Get "height" -}}
+{{- $caption := .Get "caption" -}}
 
-{{ if not $src }}
-{{ errorf "Missing 'src' parameter for img shortcode in %s" .Page.File.Path }}
-{{ else }}
-<img src="{{ $src | absURL }}" 
-     alt="{{ $alt }}" 
-     {{ with $class }} class="{{ . }}"{{ end }} 
-     loading="lazy" {{/* Add lazy loading for performance */}}
-     style="display: block; margin: auto;" {{/* Basic centering */}}
->
-{{ end }} 
+<figure{{ with $class }} class="{{ . }}"{{ end }}>
+    <img src="{{ $src | relURL }}"
+         alt="{{ $alt }}"
+         {{ with $title }}title="{{ . }}"{{ end }}
+         {{ with $width }}width="{{ . }}"{{ end }}
+         {{ with $height }}height="{{ . }}"{{ end }}
+         loading="lazy">
+    {{ with $caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>

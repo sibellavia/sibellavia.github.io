@@ -1,0 +1,75 @@
+{{ define "main" }}
+<div class="kinoroll">
+    <h1>Kinoroll</h1>
+    <p class="kinoroll-intro">A collection of interesting links and resources.</p>
+    
+    {{ $allTags := slice }}
+    {{ range .Pages }}
+        {{ range .Params.tags }}
+            {{ $allTags = $allTags | append . }}
+        {{ end }}
+    {{ end }}
+    {{ $uniqueTags := $allTags | uniq | sort }}
+    
+    {{ if $uniqueTags }}
+    <div class="kinoroll-filters">
+        <button class="filter-btn active" data-filter="all">All ({{ len .Pages }})</button>
+        {{ range $tag := $uniqueTags }}
+        {{ $tagCount := 0 }}
+        {{ range $.Pages }}
+            {{ range .Params.tags }}
+                {{ if eq . $tag }}
+                    {{ $tagCount = add $tagCount 1 }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        <button class="filter-btn" data-filter="{{ $tag | urlize }}">{{ $tag }} ({{ $tagCount }})</button>
+        {{ end }}
+    </div>
+    {{ end }}
+    
+    <ul class="kinoroll-list">
+        {{ range .Pages.ByTitle }}
+        <li class="kinoroll-item" data-tags="{{ range .Params.tags }}{{ . | urlize }} {{ end }}">
+            <a href="{{ .Params.link }}" target="_blank" rel="noopener">{{ .Title }}</a>
+            {{ if .Params.tags }}
+            <span class="kinoroll-tags">
+                {{ range .Params.tags }}
+                <span class="kinoroll-tag">{{ . }}</span>
+                {{ end }}
+            </span>
+            {{ end }}
+        </li>
+        {{ end }}
+    </ul>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.filter-btn');
+    const items = document.querySelectorAll('.kinoroll-item');
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filter = this.dataset.filter;
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            items.forEach(item => {
+                if (filter === 'all') {
+                    item.style.display = 'flex';
+                } else {
+                    const tags = item.dataset.tags;
+                    if (tags && tags.includes(filter)) {
+                        item.style.display = 'flex';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }
+            });
+        });
+    });
+});
+</script>
+{{ end }}

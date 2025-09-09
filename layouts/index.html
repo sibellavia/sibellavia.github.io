@@ -1,25 +1,68 @@
 {{ define "main" }}
-<header>
-    <p>@sibellavia aka blv</p>
-</header>
-
-<main>
-    <p>software engineering, deep learning, distributed systems, project management, healthcare. I look at life with a lot of curiosity and I want to have fun in everything I do.</p>
+<div class="home">
+    {{ $posts := where .Site.RegularPages "Section" "posts" }}
+    {{ $notes := where .Site.RegularPages "Section" "notes" }}
+    {{ $links := where .Site.RegularPages "Section" "links" }}
     
-    <ul class="nav-links-list">
-        <li><a href="/blog">blog</a></li>
-        <li><a href="/digital-library">digital library</a></li>
-        <li><a href="https://github.com/sibellavia">github</a></li>
-    </ul>
-
-    you can find me on <a href="https://twitter.com/sibellavia">twitter</a>.   
+    {{ $allContent := slice }}
+    {{ $allContent = $allContent | append $posts }}
+    {{ $allContent = $allContent | append $notes }}
+    {{ $allContent = $allContent | append $links }}
+    {{ $allContent = sort $allContent "Date" "desc" }}
     
-    <p>personal projects:</p>
+    <div class="home-stream">
+        {{ range first 30 $allContent }}
+        <article class="stream-item stream-{{ .Section }}">
+            <div class="stream-meta">
+                <time class="stream-time" datetime="{{ .Date.Format "2006-01-02" }}">
+                    {{ .Date.Format "Jan 2, 2006" }}
+                </time>
+                <span class="content-type">{{ .Section | title | singularize }}</span>
+            </div>
+            
+            <div class="stream-content">
+                {{ if eq .Section "posts" }}
+                    <h2 class="stream-title">
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </h2>
+                    {{ with .Summary }}
+                    <p class="stream-summary">{{ . | truncate 280 }}</p>
+                    {{ end }}
+                    {{ with .Params.tags }}
+                    <div class="stream-tags">
+                        {{ range . }}
+                        <span class="mini-tag">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                    
+                {{ else if eq .Section "notes" }}
+                    <div class="stream-note">
+                        {{ .Content }}
+                    </div>
+                    <a href="{{ .Permalink }}" class="permalink">Permalink</a>
+                    
+                {{ else if eq .Section "links" }}
+                    <h3 class="stream-link-title">
+                        <a href="{{ .Params.link }}" target="_blank" rel="noopener">{{ .Title }} →</a>
+                    </h3>
+                    <div class="stream-link-url">{{ .Params.link | replaceRE "^https?://(www\\.)?" "" | truncate 50 }}</div>
+                    {{ with .Content }}
+                    <div class="stream-note">{{ . }}</div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </article>
+        {{ end }}
+    </div>
     
-    <ul>
-        <li><a href="https://kinoroll.com">kinoroll[dot]com</a> – a blogroll with cool cs and programming posts</li>
-        <li><a href="https://github.com/sibellavia/tinymalloc">tinymalloc</a> – my C toy memory allocator</li>
-        <li><a href="https://x.com/sibellavia/status/1829563673393713483">tinyp2p</a> – my distributed computing project</li>
-    </ul>
-</main>
+    {{ if gt (len $allContent) 30 }}
+    <div class="load-more">
+        <p>Showing 30 most recent entries</p>
+        <a href="/posts/" class="btn">All Posts</a>
+        <a href="/notes/" class="btn">All Notes</a>
+        <a href="/links/" class="btn">All Links</a>
+    </div>
+    {{ end }}
+</div>
 {{ end }}

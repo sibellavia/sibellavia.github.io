@@ -1,11 +1,63 @@
-baseURL = "http://sibellavia.github.io"
-languageCode = "en-us"
+baseURL = 'https://sibellavia.lol'
+languageCode = 'en-us'
 title = "Simone Bellavia's Web Page"
-disableKinds = ["taxonomy",]
 
-[markup.highlight]
-  codeFences = true         # Enable highlighting for ``` blocks
-  guessSyntax = true        # Try to guess syntax if not specified
-  style = "monokai"         # Use the monokai theme
-  noClasses = false         # Use CSS classes (recommended)
-  # lineNos = true          # Uncomment to add line numbers
+[params]
+  author = "Simone Bellavia"
+  description = "Thoughts on software engineering, deep learning, and what inspires me."
+  twitter = "sibellavia"  # Twitter username without @
+  
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    codeFences = true
+    lineNos = false
+    lineNumbersInTable = false
+    noClasses = false
+    style = "github"
+    tabWidth = 2
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[permalinks]
+  posts = "/posts/:year/:month/:slug/"
+  notes = "/notes/:year/:month/:day/:slug/"
+  links = "/links/:year/:month/:slug/"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "Notes"
+    url = "/notes/"
+    weight = 3
+  [[menu.main]]
+    name = "Links"
+    url = "/links/"
+    weight = 4
+  [[menu.main]]
+    name = "Archive"
+    url = "/archive/"
+    weight = 5
+  [[menu.main]]
+    name = "Kinoroll"
+    url = "/kinoroll/"
+    weight = 6
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 7

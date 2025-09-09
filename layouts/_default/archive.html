@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="archive">
+    <h1>Archive</h1>
+    
+    {{ $pages := where .Site.RegularPages "Type" "in" (slice "posts" "notes" "links") }}
+    {{ $grouped := $pages.GroupByDate "2006" }}
+    
+    {{ range $grouped }}
+    <h2 class="archive-year">{{ .Key }}</h2>
+    <ul class="archive-list">
+        {{ range .Pages.ByDate.Reverse }}
+        <li class="archive-item">
+            <time class="archive-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2" }}</time>
+            <span class="content-type">{{ .Section | title | singularize }}</span>
+            {{ if eq .Section "links" }}
+            <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a>
+            {{ else }}
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ end }}
+        </li>
+        {{ end }}
+    </ul>
+    {{ end }}
+</div>
+{{ end }}
