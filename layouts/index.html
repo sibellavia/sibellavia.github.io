@@ -10,6 +10,8 @@
     {{ $allContent = $allContent | append $links }}
     {{ $allContent = sort $allContent "Date" "desc" }}
     
+    <h2 class="section-header">Recent</h2>
+    
     <div class="home-stream">
         {{ range first 30 $allContent }}
         <article class="stream-item stream-{{ .Section }}">
