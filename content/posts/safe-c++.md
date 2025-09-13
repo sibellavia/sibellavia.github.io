@@ -29,10 +29,12 @@ Reading comments here and there, there is visible resistance in the community to
 
 In my opinion, considering the preferences of the committee and the entire C++ community, although I appreciated the Safe C++ proposal and was looking forward to seeing concrete results, considering the C++ context I believe that standardizing and integrating the Profiles as proposed is a much more realistic approach. Profiles might not be perfect, but they are better than nothing. They will likely be uneven in enforcement and weaker than Safe C++ in principle. They won't give us silver-bullet guarantees, but they are a realistic path forward. 
 
-[1] [C++ Profiles: The Framework](https://open-std.org/jtc1/sc22/wg21/docs/papers/2025/p3589r0.pdf)
+[1] [Core safety profiles for C++26](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2025/p3081r1.pdf)
 
-[2] [What are profiles?](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2025/p3704r0.pdf)
+[2] [C++ Profiles: The Framework](https://open-std.org/jtc1/sc22/wg21/docs/papers/2025/p3589r0.pdf)
 
-[3] [Note to the C++ standards committee members](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2025/p3651r0.pdf)
+[3] [What are profiles?](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2025/p3704r0.pdf)
 
-[4] [Core safety profiles for C++26](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2025/p3081r1.pdf)
+[4] [Note to the C++ standards committee members](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2025/p3651r0.pdf)
+
+
