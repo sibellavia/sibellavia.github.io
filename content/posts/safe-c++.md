@@ -3,7 +3,7 @@ title: "Safe C++ proposal is not being continued"
 date: 2025-09-13
 ---
 
-One year ago, the [Safe C++ proposal](https://safecpp.org/draft.html) was made. The goal was to add a safe subset/context into C++ that would give strong guarantees (memory safety, type safety, thread safety) similar to what Rust provides, without breaking existing C++ code. It was an extension or superset of C++. The opt-in was marking parts of the code explicitly by explicitly marking parts of the code to delineate the *safe context*. The authors even state: 
+One year ago, the [Safe C++ proposal](https://safecpp.org/draft.html) was made. The goal was to add a safe subset/context into C++ that would give strong guarantees (memory safety, type safety, thread safety) similar to what Rust provides, without breaking existing C++ code. It was an extension or superset of C++. The opt-in mechanism was to explicitly mark parts of the code that belong to the safe context. The authors even state: 
 
 > Code in the safe context exhibits the same strong safety guarantees as code written in Rust.
 
