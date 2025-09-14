@@ -37,4 +37,7 @@ In my opinion, considering the preferences of the committee and the entire C++ c
 
 [4] [Note to the C++ standards committee members](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2025/p3651r0.pdf)
 
+---
+
+Join the conversation on [Hacker News](https://news.ycombinator.com/item?id=45234460) and [Reddit](https://www.reddit.com/r/cpp/comments/1ngjemb/safe_c_proposal_is_not_being_continued/). 
 
