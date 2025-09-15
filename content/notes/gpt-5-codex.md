@@ -1,6 +1,6 @@
 ---
 title: "GPT-5-Codex and Codex improvements"
-date: "2025-09-15"
+date: "2025-09-15T23:30:00+02:00"
 ---
 
 New model in town! [GPT-5-Codex](https://openai.com/index/introducing-upgrades-to-codex/) is a version of GPT-5 specifically realized for agentic coding in Codex. Here's what you need to know:
