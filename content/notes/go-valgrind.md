@@ -1,10 +1,9 @@
 ---
 title: "Go has added Valgrind support"
 date: 2025-09-23T15:28:00+02:00
-draft: false
-link: "https://go-review.googlesource.com/c/go/+/674077"
-tags: ["golang", "valgrind"]
 ---
+
+[Go has added Valgrind support.](https://go-review.googlesource.com/c/go/+/674077) While reading the commit, I saw this:
 
 > Instead of adding the Valgrind headers to the tree, and using cgo to
 call the various Valgrind client request macros, we just add an assembly
