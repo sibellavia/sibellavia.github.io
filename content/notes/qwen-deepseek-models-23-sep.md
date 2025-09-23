@@ -1,6 +1,6 @@
 ---
 title: "New Qwen and DeepSeek models"
-date: 2025-09-23
+date: 2025-09-23T09:02:00+02:00
 ---
 
 A lot of activities from Qwen team, and DeepSeek is starting to go out from their temporary stealth mode. Following is a summary with the updates that I found most interesting from them.
