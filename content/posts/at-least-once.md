@@ -1,5 +1,5 @@
 ---
-title: "At-Least-Once Delivery"
+title: "At-Least-Once"
 date: 2025-10-28T23:00:00+01:00
 ---
 
