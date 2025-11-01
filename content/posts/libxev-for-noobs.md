@@ -641,16 +641,6 @@ pub const Options = struct { entries: u32 = 256, thread_pool: ?*xev.ThreadPool =
 
 This section only documents deltas from Core loop model. If something isn't mentioned, it follow Core. Be advised: some parts may be redundant. Nevertheless, I included them anyway to emphasize some technical details for my own understanding. If you're just using libxev, you can skip this. This section explores internals for those curious about how completions map to OS primitives.
 
-At a high level, the loop is a state machine that:
-
-- accepts requests (completions),
-- turns them into kernel registrations or immediate actions,
-- drives them to completion,
-- invokes your callback with a Result,
-- and repeats or stops per your intent.
-
-This is represented by the `loop.zig`. Let's walk the phases.
-
 ### 1. Accepts requests (completions)
 
 You enqueue work by handing a `Completion` to the loop. The loop marks it and either places it into a user-space FIFO or directly prepares a kernel submission. This is the same idea across backends, but mechanics vary:
@@ -833,7 +823,7 @@ I imagine that this amortizes syscalls and ensures completions are processed con
 
 ### 4. Invoking the callback with a Result
 
-The loop constructs a backend-specific `Result` (success/error payloads) and calls your callback. The callback only deals with final outcomes (bytes, EOF, errors), never readiness.
+The loop constructs a backend-specific `Result` (success/error payloads) and calls your callback. The callback deals with final outcomes (bytes, EOF, errors).
 
 Examples: kqueue calls the callback after building or staging `Result`, io_uring builds `Result` in `Completion.invoke`:
 
