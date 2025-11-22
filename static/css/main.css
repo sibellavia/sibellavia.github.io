@@ -21,6 +21,7 @@ body {
   color: var(--text-color);
   background: white;
   padding: 20px;
+  overflow-x: hidden;
 }
 
 .container {
@@ -489,6 +490,14 @@ hr {
 .btn:hover {
   background: var(--border-color);
   text-decoration: none;
+}
+
+/* Ensure homepage images never overflow on small screens */
+@media (max-width: 600px) {
+  .home img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 @media (max-width: 600px) {
