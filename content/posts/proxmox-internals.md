@@ -1,5 +1,5 @@
 ---
-title: "Proxmox: Object Management and Storage"
+title: "Proxmox internals: from pmxcfs to the VM lifecycle"
 date: 2025-11-30T19:25:00+01:00
 ---
 
