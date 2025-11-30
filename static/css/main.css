@@ -596,3 +596,35 @@ hr {
     margin-right: 0;
   }
 }
+
+/* Table of Contents */
+.toc {
+  background: var(--code-bg);
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.toc h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.toc ul {
+  margin-bottom: 0;
+  padding-left: 1.5rem;
+}
+
+.toc li {
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.toc a {
+  color: var(--text-color);
+}
+
+.toc a:hover {
+  color: var(--link-color);
+}

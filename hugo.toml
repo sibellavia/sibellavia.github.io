@@ -8,6 +8,10 @@ title = "Simone Bellavia's Web Page"
   twitter = "sibellavia"  # Twitter username without @
   
 [markup]
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = false
+    startLevel = 2
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
