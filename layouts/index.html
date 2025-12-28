@@ -2,7 +2,7 @@
 <div class="home">
     {{ $posts := sort (where .Site.RegularPages "Section" "posts") "Date" "desc" }}
     {{ $notes := sort (where .Site.RegularPages "Section" "notes") "Date" "desc" }}
-    {{ $links := sort (where .Site.RegularPages "Section" "links") "Date" "desc" }}
+    {{ $links := sort .Site.Data.links "date" "desc" }}
 
     <section class="home-section">
         <h2 class="section-header">Posts</h2>
@@ -47,26 +47,26 @@
     </section>
 
     <section class="home-section">
-        <h2 class="section-header">Links</h2>
+        <h2 class="section-header">Kinoroll</h2>
         <div class="home-stream">
             {{ range first 5 $links }}
             {{ $linkPage := . }}
             <article class="stream-item stream-links">
                 <div class="stream-meta">
-                    <time class="stream-time" datetime="{{ .Date.Format "2006-01-02" }}">
-                        {{ .Date.Format "2006-01-02" }}
+                    <time class="stream-time" datetime="{{ $linkPage.date }}">
+                        {{ time $linkPage.date | dateFormat "2006-01-02" }}
                     </time>
                 </div>
 
                 <div class="stream-content">
-                    {{ with $linkPage.Params.link }}
+                    {{ with $linkPage.link }}
                     <h3 class="stream-link-title">
-                        <a href="{{ . }}" target="_blank" rel="noopener">{{ $linkPage.Title }} →</a>
+                        <a href="{{ . }}" target="_blank" rel="noopener">{{ $linkPage.title }} →</a>
                     </h3>
                     <div class="stream-link-url">{{ . | replaceRE "^https?://(www\\.)?" "" | truncate 50 }}</div>
                     {{ end }}
-                    {{ with $linkPage.Content }}
-                    <div class="stream-note">{{ . }}</div>
+                    {{ with $linkPage.note }}
+                    <div class="stream-note">{{ . | markdownify }}</div>
                     {{ end }}
                 </div>
             </article>

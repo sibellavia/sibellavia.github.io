@@ -50,7 +50,7 @@ title = "Simone Bellavia's Web Page"
     url = "/notes/"
     weight = 3
   [[menu.main]]
-    name = "Links"
+    name = "Kinoroll"
     url = "/links/"
     weight = 4
   [[menu.main]]
@@ -58,10 +58,6 @@ title = "Simone Bellavia's Web Page"
     url = "/archive/"
     weight = 5
   [[menu.main]]
-    name = "Kinoroll"
-    url = "/kinoroll/"
-    weight = 6
-  [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 7
+    weight = 6

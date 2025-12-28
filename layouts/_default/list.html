@@ -33,19 +33,18 @@
     </ul>
     
     {{ else if eq .Section "links" }}
+    {{ $links := sort .Site.Data.links "date" "desc" }}
     <ul class="link-list">
-        {{ range .Pages.ByDate.Reverse }}
+        {{ range $links }}
         <li class="link-item">
             <div class="link-meta">
-                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+                <time datetime="{{ .date }}">{{ time .date | dateFormat "January 2, 2006" }}</time>
             </div>
-            <h3><a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a></h3>
-            {{ if .Params.link }}
-            <div class="link-url">{{ .Params.link }}</div>
-            {{ end }}
-            {{ if .Content }}
+            <h3><a href="{{ .link }}" target="_blank" rel="noopener">{{ .title }}</a></h3>
+            <div class="link-url">{{ .link }}</div>
+            {{ with .note }}
             <div class="note-content">
-                {{ .Content }}
+                {{ . | markdownify }}
             </div>
             {{ end }}
         </li>

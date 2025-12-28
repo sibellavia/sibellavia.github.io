@@ -1,0 +1,3206 @@
+[
+  {
+    "title": "No Graphics API",
+    "link": "https://www.sebastianaaltonen.com/blog/no-graphics-api",
+    "date": "2025-12-17T09:58:00+01:00",
+    "tags": [
+      "graphics",
+      "vulkan",
+      "api",
+      "webgpu",
+      "vulkan",
+      "directx"
+    ]
+  },
+  {
+    "title": "We built our house for LAN parties",
+    "link": "https://lanparty.house/",
+    "date": "2025-12-03T10:05:00+01:00",
+    "tags": [
+      "lan",
+      "homelab"
+    ]
+  },
+  {
+    "title": "Anthropic acquires Bun, the JavaScript runtime",
+    "link": "https://bun.com/blog/bun-joins-anthropic",
+    "date": "2025-12-03T09:12:00+01:00",
+    "tags": [
+      "anthropic",
+      "claude",
+      "javascript"
+    ]
+  },
+  {
+    "title": "DeepSeek-v3.2: Pushing the frontier of open large language models [pdf]",
+    "link": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2/resolve/main/assets/paper.pdf",
+    "date": "2025-12-01T21:27:00+01:00",
+    "tags": [
+      "deepseek",
+      "llm",
+      "open-source"
+    ]
+  },
+  {
+    "title": "Cheating the Reaper in Go (Arena Allocators)",
+    "link": "https://mcyoung.xyz/2025/04/21/go-arenas/",
+    "date": "2025-11-23T12:05:00+01:00",
+    "tags": [
+      "golang",
+      "arena-allocators",
+      "memory-management"
+    ],
+    "note": "It's a repost, actually. But worth reading again."
+  },
+  {
+    "title": "NATS as broker for my home server",
+    "link": "https://simonevellei.com/en/nats-as-broker-for-my-home-server/",
+    "date": "2025-11-22T11:14:00+01:00",
+    "tags": [
+      "message-broker",
+      "nats"
+    ]
+  },
+  {
+    "title": "Scaling HNSWs",
+    "link": "https://antirez.com/news/156",
+    "date": "2025-11-11T14:35:00+01:00",
+    "tags": [
+      "hnsw",
+      "c",
+      "redis"
+    ]
+  },
+  {
+    "title": "Rationale: Or why am I bothering to rewrite nanomsg?",
+    "link": "https://nng.nanomsg.org/RATIONALE.html",
+    "date": "2025-11-09T21:48:00+01:00",
+    "tags": [
+      "message-broker",
+      "c"
+    ]
+  },
+  {
+    "title": "Kafka is fast -- I'll use Postgres. HN thread",
+    "link": "https://news.ycombinator.com/item?id=45747018",
+    "date": "2025-10-30T08:53:00+02:00",
+    "tags": [
+      "kafka",
+      "postgres",
+      "queues"
+    ]
+  },
+  {
+    "title": "An Open Letter to Everyone I've Butted Heads With",
+    "link": "https://andrewkelley.me/post/open-letter-everyone-butted-heads.html",
+    "date": "2025-10-26T09:47:00+01:00",
+    "tags": [
+      "zig",
+      "open-source"
+    ]
+  },
+  {
+    "title": "'The G in GPU is for Graphics damnit!': Adventures in Triton Kernels, Profiling, Parallelism and More",
+    "link": "https://ut21.github.io/blog/triton.html",
+    "date": "2025-10-06T10:52:00+02:00",
+    "tags": [
+      "gpu",
+      "triton",
+      "kernels"
+    ]
+  },
+  {
+    "title": "Heap-overflowing Llama.cpp to RCE",
+    "link": "https://retr0.blog/blog/llama-rpc-rce",
+    "date": "2025-10-05T23:28:00+02:00",
+    "tags": [
+      "llama.cpp",
+      "rce"
+    ]
+  },
+  {
+    "title": "Zig Builds Are Getting Faster",
+    "link": "https://mitchellh.com/writing/zig-builds-getting-faster",
+    "date": "2025-10-05T10:12:00+02:00",
+    "tags": [
+      "zig"
+    ]
+  },
+  {
+    "title": "SimpleFold: Folding proteins is simpler than you think",
+    "link": "https://github.com/apple/ml-simplefold",
+    "date": "2025-09-27",
+    "tags": [
+      "folding",
+      "proteins",
+      "apple",
+      "machine-learning"
+    ],
+    "note": "([via](https://news.ycombinator.com/item?id=45389267)). The Github repository accompanies the research paper, [SimpleFold: Folding Proteins is Simpler than You Think](https://arxiv.org/abs/2509.18480) (Arxiv 2025)."
+  },
+  {
+    "title": "Sj.h: A tiny little JSON parsing library in ~150 lines of C99",
+    "link": "https://github.com/rxi/sj.h",
+    "date": "2025-09-22T09:00:00+02:00",
+    "tags": [
+      "c",
+      "json",
+      "parsing",
+      "library"
+    ]
+  },
+  {
+    "title": "TernFS: an exabyte scale, multi-region distributed filesystem",
+    "link": "https://www.xtxmarkets.com/tech/2025-ternfs/",
+    "date": "2025-09-19",
+    "tags": [
+      "distributed",
+      "filesystem",
+      "ternfs"
+    ],
+    "note": "Sharing for the love of distributed filesystems."
+  },
+  {
+    "title": "KDE is now my favorite desktop",
+    "link": "https://kokada.dev/blog/kde-is-now-my-favorite-desktop/",
+    "date": "2025-09-18",
+    "tags": [
+      "kde",
+      "desktop-environment",
+      "linux"
+    ],
+    "note": "I agree with OP. KDE is nice, snappy, and simple. During the last years it focused on bug fixing and improvements rather than introducing major redesigns, and I appreciate that. Unfortunately, I can't say the same for macOS."
+  },
+  {
+    "title": "Nepal has chosen their next interim Prime Minister via vote on Discord, per NYT",
+    "link": "https://x.com/rachinkalakheti/status/1966314602251301138",
+    "date": "2025-09-12",
+    "tags": [
+      "nepal",
+      "discord",
+      "gen-z"
+    ],
+    "note": "Sushila Karki has officially taken office as Prime Minister of Nepal after becoming the first world leader to be elected via a poll on Discord. \n\nOne for the books."
+  },
+  {
+    "title": "Defeating Nondeterminism in LLM Inference",
+    "link": "https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/",
+    "date": "2025-09-11",
+    "tags": [
+      "llm",
+      "inference",
+      "nondeterminism"
+    ]
+  },
+  {
+    "title": "Using Claude Code to modernize a 25-year-old kernel driver",
+    "link": "https://dmitrybrant.com/2025/09/07/using-claude-code-to-modernize-a-25-year-old-kernel-driver",
+    "date": "2025-09-09",
+    "tags": [
+      "claude",
+      "kernel",
+      "driver"
+    ],
+    "note": "This inspires me to do something similar with an old printer that I have, a Canon MG3500, which does not work anymore because it's not supported by last OS versions."
+  },
+  {
+    "title": "Let's Learn x86-64 Assembly",
+    "link": "https://gpfault.net/posts/asm-tut-0.txt.html",
+    "date": "2025-07-14",
+    "tags": [
+      "assembly"
+    ]
+  },
+  {
+    "title": "An Ultra Opinionated Guide to Reinforcement Learning",
+    "link": "https://x.com/jsuarez5341/status/1943692998975402064",
+    "date": "2025-07-11",
+    "tags": [
+      "machine-learning"
+    ]
+  },
+  {
+    "title": "The Era of Exploration",
+    "link": "https://yidingjiang.github.io/blog/post/exploration/",
+    "date": "2025-07-08",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "I Write Type Safe Generic Data Structures in C",
+    "link": "https://danielchasehooper.com/posts/typechecked-generic-c-data-structures/",
+    "date": "2025-07-04",
+    "tags": [
+      "c"
+    ]
+  },
+  {
+    "title": "The Evolution of Caching Libraries in Go",
+    "link": "https://maypok86.github.io/otter/blog/cache-evolution/#otter-v1",
+    "date": "2025-07-03",
+    "tags": [
+      "golang"
+    ]
+  },
+  {
+    "title": "Solving Passport Application with Haskell",
+    "link": "https://jameshaydon.github.io/passport/",
+    "date": "2025-06-29",
+    "tags": [
+      "haskell"
+    ]
+  },
+  {
+    "title": "Can your terminal do emojis? How big?",
+    "link": "https://dgl.cx/2025/06/can-your-terminal-do-emojis",
+    "date": "2025-06-24",
+    "tags": [
+      "terminal"
+    ]
+  },
+  {
+    "title": "How I use my terminal",
+    "link": "https://jyn.dev/how-i-use-my-terminal/",
+    "date": "2025-06-24",
+    "tags": [
+      "terminal"
+    ]
+  },
+  {
+    "title": "What Would a Kubernetes 2.0 Look Like",
+    "link": "https://matduggan.com/what-would-a-kubernetes-2-0-look-like/",
+    "date": "2025-06-20",
+    "tags": [
+      "cloud"
+    ]
+  },
+  {
+    "title": "Game Hacking - Valve Anti-Cheat (VAC)",
+    "link": "https://codeneverdies.github.io/posts/gh-2/",
+    "date": "2025-06-19",
+    "tags": [
+      "reverse-engineering"
+    ]
+  },
+  {
+    "title": "Start your own Internet Resiliency Club",
+    "link": "https://bowshock.nl/irc/",
+    "date": "2025-06-16",
+    "tags": [
+      "network"
+    ]
+  },
+  {
+    "title": "Wrong ways to use the databases, when the pendulum swung too far",
+    "link": "https://www.luu.io/posts/2025-database-pendulum",
+    "date": "2025-06-15",
+    "tags": [
+      "database"
+    ]
+  },
+  {
+    "title": "SIMD-friendly algorithms for substring searching",
+    "link": "http://0x80.pl/notesen/2016-11-28-simd-strfind.html",
+    "date": "2025-06-14",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "How I program with Agents",
+    "link": "https://crawshaw.io/blog/programming-with-agents",
+    "date": "2025-06-12",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "The curious case of shell commands, or how 'this bug is required by POSIX'",
+    "link": "https://notes.volution.ro/v1/2021/01/notes/502e747f/",
+    "date": "2025-06-12",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Demystifying Debuggers",
+    "link": "https://www.rfleury.com/p/demystifying-debuggers-part-1-a-busy",
+    "date": "2025-06-11",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Denuvo Analysis",
+    "link": "https://connorjaydunn.github.io/blog/posts/denuvo-analysis/",
+    "date": "2025-06-11",
+    "tags": [
+      "reverse-engineering"
+    ]
+  },
+  {
+    "title": "Analyzing IPv4 trades with gnuplot",
+    "link": "https://ipv4a-5539ad.gitlab.io/",
+    "date": "2025-06-09",
+    "tags": [
+      "network"
+    ]
+  },
+  {
+    "title": "Building an AI Server on a budget",
+    "link": "https://www.informationga.in/blog/building-an-ai-server-on-a-budget",
+    "date": "2025-06-09",
+    "tags": [
+      "homelab"
+    ]
+  },
+  {
+    "title": "Gaussian integration is cool",
+    "link": "https://rohangautam.github.io/blog/chebyshev_gauss/",
+    "date": "2025-06-09",
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "title": "Generating Pixels One by One",
+    "link": "https://tunahansalih.github.io/blog/autoregressive-vision-generation-part-1/",
+    "date": "2025-06-09",
+    "tags": [
+      "machine-learning"
+    ]
+  },
+  {
+    "title": "Self-Host & Tech Independence: The Joy of Building Your Own",
+    "link": "https://www.ssp.sh/blog/self-host-self-independence/",
+    "date": "2025-06-09",
+    "tags": [
+      "homelab"
+    ]
+  },
+  {
+    "title": "Self-Hosted x86 Backend is Now Default in Debug Mode",
+    "link": "https://ziglang.org/devlog/2025/#2025-06-08",
+    "date": "2025-06-09",
+    "tags": [
+      "zig"
+    ]
+  },
+  {
+    "title": "Software is About Promises",
+    "link": "https://www.bramadams.dev/software-is-about-promises/",
+    "date": "2025-06-09",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "A year of funded FreeBSD",
+    "link": "https://www.daemonology.net/blog/2025-06-06-A-year-of-funded-FreeBSD.html",
+    "date": "2025-06-08",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Highly efficient matrix transpose in Mojo",
+    "link": "https://veitner.bearblog.dev/highly-efficient-matrix-transpose-in-mojo/",
+    "date": "2025-06-08",
+    "tags": [
+      "machine-learning"
+    ]
+  },
+  {
+    "title": "Optimizations with Zig",
+    "link": "https://alloc.dev/2025/06/07/zig_optimization",
+    "date": "2025-06-08",
+    "tags": [
+      "zig"
+    ]
+  },
+  {
+    "title": "Sharing everything I could understand about gradient noise",
+    "link": "https://blog.pkh.me/p/42-sharing-everything-i-could-understand-about-gradient-noise.html",
+    "date": "2025-06-08",
+    "tags": [
+      "machine-learning"
+    ]
+  },
+  {
+    "title": "My AI Skeptic Friends Are All Nuts",
+    "link": "https://fly.io/blog/youre-all-nuts/",
+    "date": "2025-06-03",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "How I like to install NixOS (declaratively)",
+    "link": "https://michael.stapelberg.ch/posts/2025-06-01-nixos-installation-declarative/",
+    "date": "2025-06-02",
+    "tags": [
+      "linux"
+    ]
+  },
+  {
+    "title": "How to post when no one is reading",
+    "link": "https://www.jeetmehta.com/posts/thrive-in-obscurity",
+    "date": "2025-06-02",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Root Shell on Credit Card Terminal",
+    "link": "https://stefan-gloor.ch/yomani-hack",
+    "date": "2025-06-02",
+    "tags": [
+      "reverse-engineering"
+    ]
+  },
+  {
+    "title": "Atomics And Concurrency",
+    "link": "https://redixhumayun.github.io/systems/2024/01/03/atomics-and-concurrency.html",
+    "date": "2025-05-30",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Compiling a Neural Net to C for a 1,744x speedup",
+    "link": "https://slightknack.dev/blog/difflogic/",
+    "date": "2025-05-29",
+    "tags": [
+      "c"
+    ]
+  },
+  {
+    "title": "HTAP is Dead",
+    "link": "https://www.mooncake.dev/blog/htap-is-dead",
+    "date": "2025-05-29",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Porting Terraria and Celeste to WebAssembly",
+    "link": "https://velzie.rip/blog/celeste-wasm",
+    "date": "2025-05-29",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "The 3 Gurus of 90s Web Design: Zeldman, Siegel, Nielsen",
+    "link": "https://cybercultural.com/p/web-design-1997/",
+    "date": "2025-05-29",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Unlocking Ractors: class instance variables",
+    "link": "https://byroot.github.io/ruby/performance/2025/05/24/unlocking-ractors-class-variables.html",
+    "date": "2025-05-29",
+    "tags": [
+      "ruby"
+    ]
+  },
+  {
+    "title": "Look ma, no bubbles designing a low-latency megakernel for Llama-1B",
+    "link": "https://hazyresearch.stanford.edu/blog/2025-05-27-no-bubbles",
+    "date": "2025-05-28",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "Negotiating PoE+ Power in the Pre\u2011Boot Environment",
+    "link": "https://roderickkhan.com/posts/2025-05-16-poe-uefi-solution",
+    "date": "2025-05-28",
+    "tags": [
+      "hardware"
+    ]
+  },
+  {
+    "title": "What is System Programming, Really?",
+    "link": "https://willcrichton.net/notes/systems-programming/",
+    "date": "2025-05-27",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Zig defer Patterns",
+    "link": "https://matklad.github.io/2024/03/21/defer-patterns.html",
+    "date": "2025-05-27",
+    "tags": [
+      "zig"
+    ]
+  },
+  {
+    "title": "Claude 4 System Card",
+    "link": "https://simonwillison.net/2025/May/25/claude-4-system-card/",
+    "date": "2025-05-26",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "An almost pointless exercise in GPU optimization",
+    "link": "https://blog.speechmatics.com/pointless-gpu-optimization-exercise",
+    "date": "2025-05-25",
+    "tags": [
+      "gpu"
+    ]
+  },
+  {
+    "title": "I used o3 to find a remote zeroday in the Linux SMB implementation",
+    "link": "https://sean.heelan.io/2025/05/22/how-i-used-o3-to-find-cve-2025-37899-a-remote-zeroday-vulnerability-in-the-linux-kernels-smb-implementation/",
+    "date": "2025-05-25",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "On File Formats",
+    "link": "https://solhsa.com/oldernews2025.html#ON-FILE-FORMATS",
+    "date": "2025-05-25",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Fast Allocations in Ruby 3.5",
+    "link": "https://railsatscale.com/2025-05-21-fast-allocations-in-ruby-3-5/",
+    "date": "2025-05-23",
+    "tags": [
+      "ruby"
+    ]
+  },
+  {
+    "title": "Making the rav1d Video Decoder 1% Faster",
+    "link": "https://ohadravid.github.io/posts/2025-05-rav1d-faster/",
+    "date": "2025-05-23",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Gemini Diffusion",
+    "link": "https://simonwillison.net/2025/May/21/gemini-diffusion/",
+    "date": "2025-05-22",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "The Lost Decade of Small Data?",
+    "link": "https://duckdb.org/2025/05/19/the-lost-decade-of-small-data.html",
+    "date": "2025-05-22",
+    "tags": [
+      "database"
+    ]
+  },
+  {
+    "title": "Convolutions, Polynomials and Flipped Kernels",
+    "link": "https://eli.thegreenplace.net/2025/convolutions-polynomials-and-flipped-kernels/",
+    "date": "2025-05-21",
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "title": "GPU-driven clustered forward renderer",
+    "link": "https://logdahl.net/p/gpu-driven",
+    "date": "2025-05-21",
+    "tags": [
+      "gpu"
+    ]
+  },
+  {
+    "title": "Writing into unitialized buffers in Rust",
+    "link": "https://blog.sunfishcode.online/writingintouninitializedbuffersinrust/",
+    "date": "2025-05-21",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Memory Consistency Models: A Tutorial",
+    "link": "https://jamesbornholt.com/blog/memory-models/",
+    "date": "2025-05-20",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Ditching Obsidian and building my own",
+    "link": "https://amberwilliams.io/blogs/building-my-own-pkms",
+    "date": "2025-05-19",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "The principles of database design, or, the Truth is out there",
+    "link": "https://ebellani.github.io/blog/2025/the-principles-of-database-design-or-the-truth-is-out-there/",
+    "date": "2025-05-19",
+    "tags": [
+      "database"
+    ]
+  },
+  {
+    "title": "How to Supercharge your Java Project with Rust",
+    "link": "https://medium.com/@greptime/how-to-supercharge-your-java-project-with-rust-a-practical-guide-to-jni-integration-with-a-86f60e9708b8",
+    "date": "2025-05-18",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Returning to my roots in hardware",
+    "link": "https://dancrimp.nz/2025/03/31/hardware/",
+    "date": "2025-05-17",
+    "tags": [
+      "hardware"
+    ]
+  },
+  {
+    "title": "Slabs, sheaves, and barns",
+    "link": "https://lwn.net/Articles/1010667",
+    "date": "2025-05-15",
+    "tags": [
+      "data-structures"
+    ]
+  },
+  {
+    "title": "How I ruined my vacation by reverse engineering WSC",
+    "link": "https://blog.es3n1n.eu/posts/how-i-ruined-my-vacation/",
+    "date": "2025-05-12",
+    "tags": [
+      "reverse-engineering"
+    ]
+  },
+  {
+    "title": "Reverse engineering the 386 processor's prefetch queue circuitry",
+    "link": "https://www.righto.com/2025/05/386-prefetch-circuitry-reverse-engineered.html",
+    "date": "2025-05-11",
+    "tags": [
+      "reverse-engineering"
+    ]
+  },
+  {
+    "title": "Rust Dependencies Scare Me",
+    "link": "https://vincents.dev/blog/rust-dependencies-scare-me/?",
+    "date": "2025-05-10",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Flattening Rust's Learning Curve",
+    "link": "https://corrode.dev/blog/flattening-rusts-learning-curve/",
+    "date": "2025-05-08",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "How linear regression works intuitively and how it leads to gradient descent",
+    "link": "https://briefer.cloud/blog/posts/least-squares/",
+    "date": "2025-05-08",
+    "tags": [
+      "machine-learning"
+    ]
+  },
+  {
+    "title": "Inheritance was invented as a performance hack",
+    "link": "https://catern.com/inheritance.html",
+    "date": "2025-05-08",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Faster sorting with SIMD CUDA intrinsics",
+    "link": "https://winwang.blog/posts/bitonic-sort/",
+    "date": "2025-05-06",
+    "tags": [
+      "gpu"
+    ]
+  },
+  {
+    "title": "Replacing Kubernetes with systemd",
+    "link": "https://blog.yaakov.online/replacing-kubernetes-with-systemd/",
+    "date": "2025-05-06",
+    "tags": [
+      "cloud"
+    ]
+  },
+  {
+    "title": "Understanding Memory Management, Part 5: Fighting with Rust",
+    "link": "https://educatedguesswork.org/posts/memory-management-5/",
+    "date": "2025-05-06",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Linux Kernel Exploitation CVE-2025-21756: Attack of the Vsock",
+    "link": "https://hoefler.dev/articles/vsock.html",
+    "date": "2025-05-01",
+    "tags": [
+      "hacking"
+    ]
+  },
+  {
+    "title": "Finding Paths of Least Action with Gradient Descent",
+    "link": "https://greydanus.github.io/2023/03/05/ncf-tutorial/",
+    "date": "2025-04-30",
+    "tags": [
+      "machine-learning"
+    ]
+  },
+  {
+    "title": "I use Zip bombs to Protect my Server",
+    "link": "https://idiallo.com/blog/zipbomb-protection",
+    "date": "2025-04-30",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Packed Data Support in Haskell",
+    "link": "https://arthi-chaud.github.io/posts/packed/",
+    "date": "2025-04-29",
+    "tags": [
+      "haskell"
+    ]
+  },
+  {
+    "title": "How to program a text adventure in C",
+    "link": "https://helderman.github.io/htpataic/htpataic01.html",
+    "date": "2025-04-27",
+    "tags": [
+      "c"
+    ]
+  },
+  {
+    "title": "Advanced Python Features",
+    "link": "https://blog.edward-li.com/tech/advanced-python-features/",
+    "date": "2025-04-23",
+    "tags": [
+      "python"
+    ]
+  },
+  {
+    "title": "The Architecture of Open Source Applications: nginx",
+    "link": "https://aosabook.org/en/v2/nginx.html",
+    "date": "2025-04-23",
+    "tags": [
+      "software-architecture"
+    ]
+  },
+  {
+    "title": "Attacking My Landlord's Boiler",
+    "link": "https://blog.videah.net/attacking-my-landlords-boiler/",
+    "date": "2025-04-22",
+    "tags": [
+      "hacking"
+    ]
+  },
+  {
+    "title": "This blog is hosted on a Nintendo Wii",
+    "link": "https://blog.infected.systems/posts/2025-04-21-this-blog-is-hosted-on-a-nintendo-wii/",
+    "date": "2025-04-22",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Rust's Ugly Syntax",
+    "link": "https://matklad.github.io/2023/01/26/rusts-ugly-syntax.html",
+    "date": "2025-04-21",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Things Zig comptime Won't Do",
+    "link": "https://matklad.github.io/2025/04/19/things-zig-comptime-wont-do.html",
+    "date": "2025-04-21",
+    "tags": [
+      "zig"
+    ]
+  },
+  {
+    "title": "Async Rust can be a pleasure to work with (without Send + Sync + 'static)",
+    "link": "https://emschwartz.me/async-rust-can-be-a-pleasure-to-work-with-without-send-sync-static/",
+    "date": "2025-04-18",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "An Intro to DeepSeek's Distributed File System",
+    "link": "https://maknee.github.io/blog/2025/3FS-Performance-Journal-1/",
+    "date": "2025-04-17",
+    "tags": [
+      "distributed-systems"
+    ]
+  },
+  {
+    "title": "Development On Apple Silicon with UTM",
+    "link": "https://rkiselenko.dev/blog/development-on-mac-with-utm/development-on-mac-with-lima/",
+    "date": "2025-04-17",
+    "tags": [
+      "linux"
+    ]
+  },
+  {
+    "title": "Zig's new LinkedList API (it's time to learn @fieldParentPtr)",
+    "link": "https://www.openmymind.net/Zigs-New-LinkedList-API/",
+    "date": "2025-04-16",
+    "tags": [
+      "zig"
+    ]
+  },
+  {
+    "title": "Two Years of Rust",
+    "link": "https://borretti.me/article/two-years-of-rust",
+    "date": "2025-04-15",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "I bought a Mac",
+    "link": "https://loganius.org/2025/04/i-bought-a-mac/",
+    "date": "2025-04-14",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Shadertoys ported to Rust GPU",
+    "link": "https://rust-gpu.github.io/blog/2025/04/10/shadertoys/",
+    "date": "2025-04-14",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "The Best Programmers I Know",
+    "link": "https://endler.dev/2025/best-programmers/",
+    "date": "2025-04-09",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Writing C for cURL",
+    "link": "https://daniel.haxx.se/blog/2025/04/07/writing-c-for-curl/",
+    "date": "2025-04-07",
+    "tags": [
+      "c"
+    ]
+  },
+  {
+    "title": "Apple\u2019s Darwin OS and XNU Kernel Deep Dive",
+    "link": "https://tansanrao.com/blog/2025/04/xnu-kernel-and-darwin-evolution-and-architecture/",
+    "date": "2025-04-06",
+    "tags": [
+      "hardware"
+    ]
+  },
+  {
+    "title": "Faster interpreters in Go: Catching up with C++",
+    "link": "https://planetscale.com/blog/faster-interpreters-in-go-catching-up-with-cpp",
+    "date": "2025-04-06",
+    "tags": [
+      "golang"
+    ]
+  },
+  {
+    "title": "Go Optimization Guide",
+    "link": "https://goperf.dev/",
+    "date": "2025-04-01",
+    "tags": [
+      "golang"
+    ]
+  },
+  {
+    "title": "Towards Fearless SIMD",
+    "link": "https://linebender.org/blog/towards-fearless-simd/",
+    "date": "2025-03-30",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Golang on the PlayStation 2",
+    "link": "https://rgsilva.com/blog/ps2-go-part-1/",
+    "date": "2025-03-28",
+    "tags": [
+      "golang"
+    ]
+  },
+  {
+    "title": "Tracing the thoughts of a large language model",
+    "link": "https://www.anthropic.com/research/tracing-thoughts-language-model",
+    "date": "2025-03-28",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "Modern C",
+    "link": "https://gustedt.gitlabpages.inria.fr/modern-c/",
+    "date": "2025-03-27",
+    "tags": [
+      "c"
+    ]
+  },
+  {
+    "title": "A (Long) Peek into Reinforcement Learning",
+    "link": "https://lilianweng.github.io/posts/2018-02-19-rl-overview/",
+    "date": "2025-03-26",
+    "tags": [
+      "machine-learning"
+    ]
+  },
+  {
+    "title": "Ruby, Ractors, and Lock-Free Data Structures",
+    "link": "https://iliabylich.github.io/ruby-ractors-and-lock-free-data-structures/",
+    "date": "2025-03-26",
+    "tags": [
+      "ruby"
+    ]
+  },
+  {
+    "title": "How to create value objects in Ruby, the idiomatic way",
+    "link": "https://allaboutcoding.ghinda.com/how-to-create-value-objects-in-ruby-the-idiomatic-way",
+    "date": "2025-03-24",
+    "tags": [
+      "ruby"
+    ]
+  },
+  {
+    "title": "Improving Recommendation Systems and Search in the Age of LLMs",
+    "link": "https://eugeneyan.com/writing/recsys-llm/",
+    "date": "2025-03-24",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "Concise Machine Learning",
+    "link": "https://people.eecs.berkeley.edu/~jrs/papers/machlearn.pdf",
+    "date": "2025-03-22",
+    "tags": [
+      "machine-learning"
+    ]
+  },
+  {
+    "title": "MySQL transactions per second vs fsyncs per second",
+    "link": "https://sirupsen.com/napkin/problem-10-mysql-transactions-per-second",
+    "date": "2025-03-22",
+    "tags": [
+      "database"
+    ]
+  },
+  {
+    "title": "PyTorch internals",
+    "link": "https://blog.ezyang.com/2019/05/pytorch-internals/",
+    "date": "2025-03-22",
+    "tags": [
+      "python"
+    ]
+  },
+  {
+    "title": "The little book about OS development",
+    "link": "https://littleosbook.github.io/",
+    "date": "2025-03-22",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Sync Engines are the Future",
+    "link": "https://www.instantdb.com/essays/sync_future",
+    "date": "2025-03-21",
+    "tags": [
+      "database"
+    ]
+  },
+  {
+    "title": "Diagrams AI Can, and Cannot, Generate",
+    "link": "https://www.ilograph.com/blog/posts/diagrams-ai-can-and-cannot-generate/",
+    "date": "2025-03-20",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "How to get to that European cloud?",
+    "link": "https://berthub.eu/articles/posts/now-how-to-get-that-european-cloud/",
+    "date": "2025-03-18",
+    "tags": [
+      "cloud"
+    ]
+  },
+  {
+    "title": "Stupid Smart Pointers in C",
+    "link": "https://blog.kevinalbs.com/stupid_smart_pointers",
+    "date": "2025-03-18",
+    "tags": [
+      "c"
+    ]
+  },
+  {
+    "title": "Artificial photosynthesis directed toward organic synthesis",
+    "link": "https://www.nature.com/articles/s41467-025-56374-z",
+    "date": "2025-03-17",
+    "tags": [
+      "science"
+    ]
+  },
+  {
+    "title": "Going down the rabbit hole of Git's new bundle-uri",
+    "link": "https://blog.gitbutler.com/going-down-the-rabbit-hole-of-gits-new-bundle-uri/",
+    "date": "2025-03-17",
+    "tags": [
+      "git"
+    ]
+  },
+  {
+    "title": "zlib-rs is faster than C",
+    "link": "https://trifectatech.org/blog/zlib-rs-is-faster-than-c/",
+    "date": "2025-03-17",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "RubyLLM: A delightful Ruby way to work with AI",
+    "link": "https://paolino.me/rubyllm-1-0/",
+    "date": "2025-03-15",
+    "tags": [
+      "ruby"
+    ]
+  },
+  {
+    "title": "Exploring Polymorphism in C: Lessons from Linux and FFmpeg's Code Design",
+    "link": "https://leandromoreira.com/2019/08/02/linux-ffmpeg-source-internals-a-good-software-design/",
+    "date": "2025-03-13",
+    "tags": [
+      "c"
+    ]
+  },
+  {
+    "title": "Performance of the Python 3.14 tail-call interpreter",
+    "link": "https://blog.nelhage.com/post/cpython-tail-call/",
+    "date": "2025-03-13",
+    "tags": [
+      "python"
+    ]
+  },
+  {
+    "title": "Why I stopped everything and started writing C again",
+    "link": "https://www.kmx.io/blog/why-stopped-everything-and-started-writing-C-again",
+    "date": "2025-03-13",
+    "tags": [
+      "c"
+    ]
+  },
+  {
+    "title": "Reverse Engineering OpenAI Code Execution to make it run C + JavaScript",
+    "link": "https://x.com/benswerd/status/1899853533761200300",
+    "date": "2025-03-12",
+    "tags": [
+      "reverse-engineering"
+    ]
+  },
+  {
+    "title": "Differentiable Logic Cellular Automata",
+    "link": "https://google-research.github.io/self-organising-systems/difflogic-ca/?hn",
+    "date": "2025-03-07",
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "title": "Some Thoughts on Autoregressive Models",
+    "link": "https://wonderfall.dev/autoregressive/",
+    "date": "2025-03-07",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "Succinct Data Structures",
+    "link": "https://blog.startifact.com/posts/succinct/",
+    "date": "2025-03-07",
+    "tags": [
+      "data-structures"
+    ]
+  },
+  {
+    "title": "ARC-AGI without pretraining",
+    "link": "https://iliao2345.github.io/blog_posts/arc_agi_without_pretraining/arc_agi_without_pretraining.html",
+    "date": "2025-03-05",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "Bayleaf Wireless Keyboard",
+    "link": "https://www.graz.io/articles/bayleaf-wireless-keyboard",
+    "date": "2025-03-05",
+    "tags": [
+      "hardware"
+    ]
+  },
+  {
+    "title": "The Cost of Go's Panic and Recovery",
+    "link": "https://jub0bs.com/posts/2025-02-28-cost-of-panic-recover/",
+    "date": "2025-03-05",
+    "tags": [
+      "golang"
+    ]
+  },
+  {
+    "title": "Tmux: The Essentials",
+    "link": "https://davidwinter.dev/2019/03/14/tmux-the-essentials",
+    "date": "2025-03-05",
+    "tags": [
+      "terminal"
+    ]
+  },
+  {
+    "title": "Writing an LLM from scratch, part 8 -- trainable self-attention",
+    "link": "https://www.gilesthomas.com/2025/03/llm-from-scratch-8-trainable-self-attention",
+    "date": "2025-03-05",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "API design note: Beware of adding an \u201cOther\u201d enum value",
+    "link": "https://devblogs.microsoft.com/oldnewthing/20250217-00/?p=110873",
+    "date": "2025-03-03",
+    "tags": [
+      "software-architecture"
+    ]
+  },
+  {
+    "title": "Hallucinations in code are the least dangerous form of LLM mistakes",
+    "link": "https://simonwillison.net/2025/Mar/2/hallucinations-in-code/",
+    "date": "2025-03-03",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "Why do we have both CSRF protection and CORS?",
+    "link": "https://smagin.fyi/posts/cross-site-requests/",
+    "date": "2025-03-03",
+    "tags": [
+      "network"
+    ]
+  },
+  {
+    "title": "Zen 5's AVX-512 Frequency Behavior",
+    "link": "https://chipsandcheese.com/p/zen-5s-avx-512-frequency-behavior",
+    "date": "2025-03-01",
+    "tags": [
+      "hardware"
+    ]
+  },
+  {
+    "title": "Distributed Systems Programming Has Stalled",
+    "link": "https://www.shadaj.me/writing/distributed-programming-stalled",
+    "date": "2025-02-27",
+    "tags": [
+      "distributed-systems"
+    ]
+  },
+  {
+    "title": "There Isn't Much Point to HTTP/2 Past The Load Balancer",
+    "link": "https://byroot.github.io/ruby/performance/2025/02/24/http2-past-the-load-balancer.html",
+    "date": "2025-02-27",
+    "tags": [
+      "ruby"
+    ]
+  },
+  {
+    "title": "Blogging in the age of AI",
+    "link": "https://www.gilesthomas.com/2025/02/blogging-in-the-age-of-ai",
+    "date": "2025-02-25",
+    "tags": [
+      "blogging"
+    ]
+  },
+  {
+    "title": "It is not a compiler error",
+    "link": "https://blog.plover.com/2017/11/12/",
+    "date": "2025-02-24",
+    "tags": [
+      "compilers"
+    ]
+  },
+  {
+    "title": "Tokio + prctl = nasty bug",
+    "link": "https://kobzol.github.io/rust/2025/02/23/tokio-plus-prctl-equals-nasty-bug.html",
+    "date": "2025-02-24",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "OpenBSD: innovations",
+    "link": "https://www.openbsd.org/innovations.html",
+    "date": "2025-02-23",
+    "tags": [
+      "linux"
+    ]
+  },
+  {
+    "title": "Why Ruby on Rails still matters",
+    "link": "https://www.contraption.co/rails-versus-nextjs/",
+    "date": "2025-02-22",
+    "tags": [
+      "ruby"
+    ]
+  },
+  {
+    "title": "Introduction to CUDA Programming for Python Developers",
+    "link": "https://www.pyspur.dev/blog/introduction_cuda_programming",
+    "date": "2025-02-21",
+    "tags": [
+      "cuda"
+    ]
+  },
+  {
+    "title": "Debugging Hetzner: Uncovering Failures with Powerstat, Sensors, and Dmidecode",
+    "link": "https://www.ubicloud.com/blog/debugging-hetzner-uncovering-failures-with-powerstat-sensors-and-dmidecode",
+    "date": "2025-02-20",
+    "tags": [
+      "hardware"
+    ]
+  },
+  {
+    "title": "Softmax Forever, or Why I Like Softmax",
+    "link": "https://kyunghyuncho.me/softmax-forever-or-why-i-like-softmax/",
+    "date": "2025-02-20",
+    "tags": [
+      "machine-learning"
+    ]
+  },
+  {
+    "title": "The Ultra-Scale Playbook: Training LLMs on GPU Clusters",
+    "link": "https://huggingface.co/spaces/nanotron/ultrascale-playbook",
+    "date": "2025-02-20",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "TinyCompiler: a compiler in a week-end",
+    "link": "https://ssloy.github.io/tinycompiler/",
+    "date": "2025-02-20",
+    "tags": [
+      "compilers"
+    ]
+  },
+  {
+    "title": "Zig Build System Internals",
+    "link": "https://mitchellh.com/zig/build-internals",
+    "date": "2025-02-20",
+    "tags": [
+      "zig"
+    ]
+  },
+  {
+    "title": "Implementing LLaMA3 in 100 Lines of Pure Jax",
+    "link": "https://saurabhalone.com/blogs/llama3/web",
+    "date": "2025-02-19",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "One year after switching from Java to Go",
+    "link": "https://glasskube.dev/blog/from-java-to-go/",
+    "date": "2025-02-19",
+    "tags": [
+      "golang"
+    ]
+  },
+  {
+    "title": "Parsing JSON in 500 lines of Rust",
+    "link": "https://www.krish.gg/blog/json-parser-in-rust",
+    "date": "2025-02-19",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Rethinking LoRA Initialization for Faster Convergence",
+    "link": "https://datta0.github.io/posts/rethink-lora-init/",
+    "date": "2025-02-19",
+    "tags": [
+      "machine-learning"
+    ]
+  },
+  {
+    "title": "Vision Transformer in pure JAX",
+    "link": "https://alessiodevoto.github.io/ViT-in-pure-JAX/",
+    "date": "2025-02-19",
+    "tags": [
+      "python"
+    ]
+  },
+  {
+    "title": "XOR",
+    "link": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/xor/",
+    "date": "2025-02-19",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "How I helped fix sleep-wake hangs on Linux with AMD GPUs",
+    "link": "https://nyanpasu64.gitlab.io/blog/amdgpu-sleep-wake-hang/",
+    "date": "2025-02-18",
+    "tags": [
+      "gpu"
+    ]
+  },
+  {
+    "title": "MySQL at Uber",
+    "link": "https://www.uber.com/en-IT/blog/mysql-at-uber/",
+    "date": "2025-02-17",
+    "tags": [
+      "database"
+    ]
+  },
+  {
+    "title": "A calculator app? Anyone could make that",
+    "link": "https://x.com/ChadNauseam/status/1890889465322786878",
+    "date": "2025-02-16",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Introduction to Zig",
+    "link": "https://pedropark99.github.io/zig-book/",
+    "date": "2025-02-16",
+    "tags": [
+      "zig"
+    ]
+  },
+  {
+    "title": "IPv6 is hard",
+    "link": "https://techlog.jenslink.net/posts/ipv6-is-hard/",
+    "date": "2025-02-16",
+    "tags": [
+      "network"
+    ]
+  },
+  {
+    "title": "Rethinking The C Time API",
+    "link": "https://oliverkwebb.github.io/articles/newtime/",
+    "date": "2025-02-16",
+    "tags": [
+      "c"
+    ]
+  },
+  {
+    "title": "We were wrong about GPUs",
+    "link": "https://fly.io/blog/wrong-about-gpu/",
+    "date": "2025-02-16",
+    "tags": [
+      "gpu"
+    ]
+  },
+  {
+    "title": "Generalized Transformers from Applicative Functors",
+    "link": "https://cybercat.institute/2025/02/12/transformers-applicative-functors/",
+    "date": "2025-02-14",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "Is NixOS Truly Reproducible?",
+    "link": "https://luj.fr/blog/is-nixos-truly-reproducible.html",
+    "date": "2025-02-13",
+    "tags": [
+      "linux"
+    ]
+  },
+  {
+    "title": "WASM will replace containers",
+    "link": "https://creston.blog/wasm-will-replace-containers/",
+    "date": "2025-02-12",
+    "tags": [
+      "wasm"
+    ]
+  },
+  {
+    "title": "Fun with C++26 reflection - Keyword Arguments",
+    "link": "https://pydong.org/posts/KwArgs/",
+    "date": "2025-02-11",
+    "tags": [
+      "c++"
+    ]
+  },
+  {
+    "title": "Zig Bits 0x4: Building an HTTP client/server from scratch",
+    "link": "https://blog.orhun.dev/zig-bits-04/",
+    "date": "2025-02-11",
+    "tags": [
+      "zig"
+    ]
+  },
+  {
+    "title": "7 Common Mistakes in Architecture Diagrams",
+    "link": "https://www.ilograph.com/blog/posts/diagram-mistakes/",
+    "date": "2025-02-10",
+    "tags": [
+      "software-architecture"
+    ]
+  },
+  {
+    "title": "Exotic Data Structures",
+    "link": "https://concatenative.org/wiki/view/Exotic%20Data%20Structures",
+    "date": "2025-02-10",
+    "tags": [
+      "data-structures"
+    ]
+  },
+  {
+    "title": "How Does Ada's Memory Safety Compare Against Rust?",
+    "link": "https://ajxs.me/blog/How_Does_Adas_Memory_Safety_Compare_Against_Rust.html",
+    "date": "2025-02-10",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Go Data Structures: Interfaces",
+    "link": "https://research.swtch.com/interfaces",
+    "date": "2025-02-09",
+    "tags": [
+      "golang"
+    ]
+  },
+  {
+    "title": "Easy 6502",
+    "link": "https://skilldrick.github.io/easy6502/",
+    "date": "2025-02-07",
+    "tags": [
+      "assembly"
+    ]
+  },
+  {
+    "title": "Deep Reinforcement Learning: Pong from Pixels",
+    "link": "http://karpathy.github.io/2016/05/31/rl/",
+    "date": "2025-02-06",
+    "tags": [
+      "machine-learning"
+    ]
+  },
+  {
+    "title": "Software development topics I've changed my mind on after 10 years in the industry",
+    "link": "https://chriskiehl.com/article/thoughts-after-10-years",
+    "date": "2025-02-06",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Go Data Structures",
+    "link": "https://research.swtch.com/godata",
+    "date": "2025-02-05",
+    "tags": [
+      "golang"
+    ]
+  },
+  {
+    "title": "A computer can never be held accountable",
+    "link": "https://simonwillison.net/2025/Feb/3/a-computer-can-never-be-held-accountable/",
+    "date": "2025-02-04",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "I Wrote a Wasm Interpreter in C",
+    "link": "https://irreducible.io/blog/my-wasm-interpreter/",
+    "date": "2025-02-04",
+    "tags": [
+      "c"
+    ]
+  },
+  {
+    "title": "No-Panic Rust: A Nice Technique for Systems Programming",
+    "link": "https://blog.reverberate.org/2025/02/03/no-panic-rust.html",
+    "date": "2025-02-04",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "A short introduction to RLHF and post-training focused on language models",
+    "link": "https://rlhfbook.com/",
+    "date": "2025-02-02",
+    "tags": [
+      "machine-learning"
+    ]
+  },
+  {
+    "title": "Analyzing the codebase of Caffeine: a high performance caching library",
+    "link": "https://adriacabeza.github.io/2024/07/12/caffeine-cache.html",
+    "date": "2025-02-02",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Pointers Are Complicated II, or: We need better language specs",
+    "link": "https://www.ralfj.de/blog/2020/12/14/provenance.html",
+    "date": "2025-02-02",
+    "tags": [
+      "c"
+    ]
+  },
+  {
+    "title": "Reverse-engineering and analysis of SanDisk High Endurance microSDXC card",
+    "link": "https://ripitapart.com/2020/07/16/reverse-engineering-and-analysis-of-sandisk-high-endurance-microsdxc-card/",
+    "date": "2025-02-02",
+    "tags": [
+      "reverse-engineering"
+    ]
+  },
+  {
+    "title": "Mini-R1: Reproduce Deepseek R1 \u201eaha moment\u201c a RL tutorial",
+    "link": "https://www.philschmid.de/mini-deepseek-r1",
+    "date": "2025-01-31",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "An analysis of DeepSeek's R1-Zero and R1",
+    "link": "https://arcprize.org/blog/r1-zero-r1-results-analysis",
+    "date": "2025-01-30",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "Decompiling 2024: A Year of Resurgance in Decompilation Research",
+    "link": "https://mahaloz.re/dec-progress-2024",
+    "date": "2025-01-30",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Hard Mode Rust",
+    "link": "https://matklad.github.io/2022/10/06/hard-mode-rust.html",
+    "date": "2025-01-30",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Parsing PDFs (and more) in Elixir using Rust",
+    "link": "https://www.chriis.dev/opinion/parsing-pdfs-in-elixir-using-rust",
+    "date": "2025-01-30",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Composable SQL",
+    "link": "https://borretti.me/article/composable-sql",
+    "date": "2025-01-29",
+    "tags": [
+      "sql"
+    ]
+  },
+  {
+    "title": "Discovery Coding",
+    "link": "https://jimmyhmiller.github.io/discovery-coding",
+    "date": "2025-01-29",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Speculative attacks on Apple CPUs (SLAP and FLOP)",
+    "link": "https://predictors.fail/",
+    "date": "2025-01-29",
+    "tags": [
+      "hacking"
+    ]
+  },
+  {
+    "title": "What's OAuth2 Anyway?",
+    "link": "https://www.romaglushko.com/blog/whats-aouth2/",
+    "date": "2025-01-29",
+    "tags": [
+      "auth"
+    ]
+  },
+  {
+    "title": "Zig running on the Nintendo 64",
+    "link": "https://fsl.yellowapple.us/zig64/doc/trunk/README.md",
+    "date": "2025-01-29",
+    "tags": [
+      "zig"
+    ]
+  },
+  {
+    "title": "DeepSeek-R1 with Dynamic 1.58-bit Quantization",
+    "link": "https://unsloth.ai/blog/deepseekr1-dynamic",
+    "date": "2025-01-28",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "ggml : x2 speed for WASM by optimizing SIMD",
+    "link": "https://simonwillison.net/2025/Jan/27/llamacpp-pr/",
+    "date": "2025-01-28",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "Go 1.24's go tool is one of the best additions to the ecosystem in years",
+    "link": "https://www.jvt.me/posts/2025/01/27/go-tools-124/",
+    "date": "2025-01-28",
+    "tags": [
+      "golang"
+    ]
+  },
+  {
+    "title": "Machine Learning in Production (CMU Course)",
+    "link": "https://mlip-cmu.github.io/s2025/",
+    "date": "2025-01-28",
+    "tags": [
+      "machine-learning"
+    ]
+  },
+  {
+    "title": "My failed attempt to shrink all npm packages by 5%",
+    "link": "https://evanhahn.com/my-failed-attempt-to-shrink-all-npm-packages-by-5-percent/",
+    "date": "2025-01-28",
+    "tags": [
+      "optimization"
+    ]
+  },
+  {
+    "title": "Open-R1: a fully open reproduction of DeepSeek-R1",
+    "link": "https://huggingface.co/blog/open-r1",
+    "date": "2025-01-28",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "Reinforcement Learning \u2013 A Reference",
+    "link": "https://jakubhalmes.substack.com/p/reinforcement-learning-a-reference",
+    "date": "2025-01-28",
+    "tags": [
+      "machine-learning"
+    ]
+  },
+  {
+    "title": "The Illustrated DeepSeek-R1",
+    "link": "https://newsletter.languagemodels.co/p/the-illustrated-deepseek-r1",
+    "date": "2025-01-28",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "Turning the database inside-out",
+    "link": "https://martin.kleppmann.com/2015/11/05/database-inside-out-at-oredev.html",
+    "date": "2025-01-28",
+    "tags": [
+      "database"
+    ]
+  },
+  {
+    "title": "Using AI for Coding: My Journey with Cline and Large Language Models",
+    "link": "https://pgaleone.eu/ai/coding/2025/01/26/using-ai-for-coding-my-experience/",
+    "date": "2025-01-28",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "Hard numbers in the Wayland vs X11 input latency discussion",
+    "link": "https://mort.coffee/home/wayland-input-latency/",
+    "date": "2025-01-27",
+    "tags": [
+      "linux"
+    ]
+  },
+  {
+    "title": "Qwen2.5-1M: Deploy Your Own Qwen with Context Length up to 1M Tokens",
+    "link": "https://qwenlm.github.io/blog/qwen2.5-1m/",
+    "date": "2025-01-27",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "So you wanna write Kubernetes controllers?",
+    "link": "https://ahmet.im/blog/controller-pitfalls/",
+    "date": "2025-01-27",
+    "tags": [
+      "cloud"
+    ]
+  },
+  {
+    "title": "Supercharge SQLite with Ruby Functions",
+    "link": "https://blog.julik.nl/2025/01/supercharge-sqlite-with-ruby-functions",
+    "date": "2025-01-27",
+    "tags": [
+      "ruby"
+    ]
+  },
+  {
+    "title": "Using the most unhinged AVX-512 instruction to make the fastest phrase search algo",
+    "link": "https://gab-menezes.github.io/2025/01/13/using-the-most-unhinged-avx-512-instruction-to-make-the-fastest-phrase-search-algo.html",
+    "date": "2025-01-27",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Emerging reasoning with reinforcement learning",
+    "link": "https://hkust-nlp.notion.site/simplerl-reason",
+    "date": "2025-01-26",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "Building a full-text search engine in 150 lines of Python code",
+    "link": "https://bart.degoe.de/building-a-full-text-search-engine-150-lines-of-code/",
+    "date": "2025-01-24",
+    "tags": [
+      "python"
+    ]
+  },
+  {
+    "title": "Hacking Subaru: Tracking and Controlling Cars via the STARLINK Admin Panel",
+    "link": "https://samcurry.net/hacking-subaru",
+    "date": "2025-01-24",
+    "tags": [
+      "hacking"
+    ]
+  },
+  {
+    "title": "How I wrote my own 'proper' programming language",
+    "link": "https://mukulrathi.com/create-your-own-programming-language/intro-to-compiler/",
+    "date": "2025-01-24",
+    "tags": [
+      "programming-languages"
+    ]
+  },
+  {
+    "title": "Life pro tip: Oracle Linux is the best local VM for MacBooks",
+    "link": "https://xeiaso.net/notes/2025/k8s-dev-mac-oracle-linux/",
+    "date": "2025-01-24",
+    "tags": [
+      "linux"
+    ]
+  },
+  {
+    "title": "Susctl CVE-2024-54507: A particularly 'sus' sysctl in the XNU kernel",
+    "link": "https://jprx.io/cve-2024-54507/",
+    "date": "2025-01-24",
+    "tags": [
+      "hacking"
+    ]
+  },
+  {
+    "title": "Foundations of Large Language Models",
+    "link": "https://arxiv.org/abs/2501.09223",
+    "date": "2025-01-23",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "I made a multiplayer shooter game in Lisp",
+    "link": "https://ertu.dev/posts/i-made-an-online-shooter-game-in-lisp/",
+    "date": "2025-01-23",
+    "tags": [
+      "lisp"
+    ]
+  },
+  {
+    "title": "I made an open-source laptop from scratch",
+    "link": "https://www.byran.ee/posts/creation/",
+    "date": "2025-01-23",
+    "tags": [
+      "hardware"
+    ]
+  },
+  {
+    "title": "Simple CPU design",
+    "link": "http://simplecpudesign.com/",
+    "date": "2025-01-23",
+    "tags": [
+      "hardware"
+    ]
+  },
+  {
+    "title": "Reverse Engineering Call Of Duty Anti-Cheat",
+    "link": "https://ssno.cc/posts/reversing-tac-1-4-2025/",
+    "date": "2025-01-21",
+    "tags": [
+      "reverse-engineering"
+    ]
+  },
+  {
+    "title": "Stop saying Rust is Complicated",
+    "link": "https://rust-on-nails.com/blog/rust-complicated/",
+    "date": "2025-01-21",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Build a Tiny Certificate Authority For Your Homelab",
+    "link": "https://smallstep.com/blog/build-a-tiny-ca-with-raspberry-pi-yubikey/",
+    "date": "2025-01-20",
+    "tags": [
+      "homelab"
+    ]
+  },
+  {
+    "title": "JTAG Hacking the Original Xbox in 2023",
+    "link": "https://blog.ret2.io/2023/08/09/jtag-hacking-the-original-xbox-2023/",
+    "date": "2025-01-20",
+    "tags": [
+      "hacking"
+    ]
+  },
+  {
+    "title": "Prototyping in Rust",
+    "link": "https://corrode.dev/blog/prototyping/",
+    "date": "2025-01-20",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Reverse Engineering Bambu Connect",
+    "link": "https://wiki.rossmanngroup.com/wiki/Reverse_Engineering_Bambu_Connect",
+    "date": "2025-01-20",
+    "tags": [
+      "reverse-engineering"
+    ]
+  },
+  {
+    "title": "Beating cuBLAS in Single-Precision General Matrix Multiplication",
+    "link": "https://salykova.github.io/sgemm-gpu",
+    "date": "2025-01-19",
+    "tags": [
+      "gpu"
+    ]
+  },
+  {
+    "title": "Haskell: A Great Procedural Language",
+    "link": "https://entropicthoughts.com/haskell-procedural-programming",
+    "date": "2025-01-19",
+    "tags": [
+      "haskell"
+    ]
+  },
+  {
+    "title": "Rust: Investigating a Strange Out-of-Memory Error",
+    "link": "https://www.qovery.com/blog/rust-investigating-a-strange-out-of-memory-error/",
+    "date": "2025-01-19",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "My Framework for Writing Systems in C++",
+    "link": "https://deplet.ing/#/post/8",
+    "date": "2025-01-18",
+    "tags": [
+      "c++"
+    ]
+  },
+  {
+    "title": "So You Want to Build Your Own Data Center",
+    "link": "https://blog.railway.com/p/data-center-build-part-one",
+    "date": "2025-01-18",
+    "tags": [
+      "homelab"
+    ]
+  },
+  {
+    "title": "Distributed Transactions at Scale in Amazon DynamoDB",
+    "link": "http://muratbuffalo.blogspot.com/2023/08/distributed-transactions-at-scale-in.html",
+    "date": "2025-01-15",
+    "tags": [
+      "distributed-systems"
+    ]
+  },
+  {
+    "title": "How rqlite is tested",
+    "link": "https://philipotoole.com/how-is-rqlite-tested/",
+    "date": "2025-01-15",
+    "tags": [
+      "database"
+    ]
+  },
+  {
+    "title": "Transformer^2: Self-Adaptive LLMs",
+    "link": "https://sakana.ai/transformer-squared/",
+    "date": "2025-01-15",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "HardBreak - a Hardware Hacking Wiki",
+    "link": "https://www.hardbreak.wiki/",
+    "date": "2025-01-14",
+    "tags": [
+      "hardware"
+    ]
+  },
+  {
+    "title": "Debugging: Indispensable rules for finding even the most elusive problems",
+    "link": "https://dwheeler.com/essays/debugging-agans.html",
+    "date": "2025-01-13",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Entropy of a Large Language Model output",
+    "link": "https://nikkin.dev/blog/llm-entropy.html",
+    "date": "2025-01-13",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "From ASCII to ASIC: Porting donut.c to a tiny slice of silicon",
+    "link": "https://www.a1k0n.net/2025/01/10/tiny-tapeout-donut.html",
+    "date": "2025-01-13",
+    "tags": [
+      "c"
+    ]
+  },
+  {
+    "title": "I spent 18 years in the Linux console and I don't regret it",
+    "link": "https://eugene-andrienko.com/en/it/2024/01/02/life-in-console",
+    "date": "2025-01-13",
+    "tags": [
+      "linux"
+    ]
+  },
+  {
+    "title": "Why Rust nextest is process-per-test",
+    "link": "https://sunshowers.io/posts/nextest-process-per-test/",
+    "date": "2025-01-13",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "What is an Invariant?",
+    "link": "https://matklad.github.io/2023/10/06/what-is-an-invariant.html",
+    "date": "2025-01-12",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Operating System in 1,000 Lines",
+    "link": "https://operating-system-in-1000-lines.vercel.app/en",
+    "date": "2025-01-09",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "We Cracked a 512-Bit DKIM Key for Less Than $8 in the Cloud",
+    "link": "https://dmarcchecker.app/articles/crack-512-bit-dkim-rsa-key",
+    "date": "2025-01-09",
+    "tags": [
+      "hacking"
+    ]
+  },
+  {
+    "title": "Writing a simple pool allocator in C",
+    "link": "https://8dcc.github.io/programming/pool-allocator.html",
+    "date": "2025-01-09",
+    "tags": [
+      "c"
+    ]
+  },
+  {
+    "title": "The Most Elegant Configuration Language",
+    "link": "https://chshersh.com/blog/2025-01-06-the-most-elegant-configuration-language.html",
+    "date": "2025-01-07",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Caches in Rust",
+    "link": "https://matklad.github.io/2022/06/11/caches-in-rust.html",
+    "date": "2025-01-06",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Ownership",
+    "link": "https://without.boats/blog/ownership/",
+    "date": "2025-01-06",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Reverse Engineering the Constants in the Pentium FPU",
+    "link": "http://www.righto.com/2025/01/pentium-floating-point-ROM.html",
+    "date": "2025-01-06",
+    "tags": [
+      "reverse-engineering"
+    ]
+  },
+  {
+    "title": "World's First MIDI Shellcode",
+    "link": "https://psi3.ru/blog/swl01u/",
+    "date": "2025-01-06",
+    "tags": [
+      "hacking"
+    ]
+  },
+  {
+    "title": "Ghostty Is Native\u2014So What?",
+    "link": "https://gpanders.com/blog/ghostty-is-native-so-what/",
+    "date": "2024-12-22",
+    "tags": [
+      "zig"
+    ]
+  },
+  {
+    "title": "In search of a faster SQLite",
+    "link": "https://avi.im/blag/2024/faster-sqlite/",
+    "date": "2024-12-17",
+    "tags": [
+      "database"
+    ]
+  },
+  {
+    "title": "Fast LLM Inference From Scratch",
+    "link": "https://andrewkchan.dev/posts/yalm.html",
+    "date": "2024-12-16",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "LLM abstraction levels inspired by fish eye lens",
+    "link": "https://wattenberger.com/thoughts/fish-eye",
+    "date": "2024-12-16",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "What is Vim?",
+    "link": "https://blog.jonas.foo/whats_vim.html",
+    "date": "2024-12-15",
+    "tags": [
+      "vim"
+    ]
+  },
+  {
+    "title": "GPU Glossary",
+    "link": "https://modal.com/gpu-glossary/readme",
+    "date": "2024-12-14",
+    "tags": [
+      "gpu"
+    ]
+  },
+  {
+    "title": "Mastering Ruby Debugging: From puts to Professional Tools",
+    "link": "https://blog.jetbrains.com/ruby/2024/12/mastering_ruby_debugging/",
+    "date": "2024-12-13",
+    "tags": [
+      "ruby"
+    ]
+  },
+  {
+    "title": "Rust's incremental compiler architecture",
+    "link": "https://lwn.net/Articles/997784/",
+    "date": "2024-12-13",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Ways to use torch.compile",
+    "link": "http://blog.ezyang.com/2024/11/ways-to-use-torch-compile/",
+    "date": "2024-12-13",
+    "tags": [
+      "python"
+    ]
+  },
+  {
+    "title": "Reverse engineering the Sega Channel game image file format",
+    "link": "https://www.infochunk.com/schannel/index.html",
+    "date": "2024-12-08",
+    "tags": [
+      "reverse-engineering"
+    ]
+  },
+  {
+    "title": "Optimizing a Rust GPU matmul kernel",
+    "link": "https://rust-gpu.github.io/blog/optimizing-matmul/",
+    "date": "2024-12-06",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "7 Databases in 7 Weeks for 2025",
+    "link": "https://matt.blwt.io/post/7-databases-in-7-weeks-for-2025/",
+    "date": "2024-12-05",
+    "tags": [
+      "database"
+    ]
+  },
+  {
+    "title": "Move semantics in rust, C++, and Hylo",
+    "link": "https://lukas-prokop.at/articles/2024-11-29-move-semantics-in-rust-cpp-and-hylo",
+    "date": "2024-12-05",
+    "tags": [
+      "language-design"
+    ]
+  },
+  {
+    "title": "Creating a Proxmox or QEMU ChromeOS Flex VM",
+    "link": "https://kevindavid.org/code/2024/03/20/chrome-os-flex-proxmox.html",
+    "date": "2024-12-04",
+    "tags": [
+      "homelab"
+    ]
+  },
+  {
+    "title": "Nous DisTrO",
+    "link": "https://distro.nousresearch.com/",
+    "date": "2024-12-04",
+    "tags": [
+      "distributed-systems"
+    ]
+  },
+  {
+    "title": "Optimization adventures: making a parallel Rust workload 10x faster with (or without) Rayon",
+    "link": "https://gendignoux.com/blog/2024/11/18/rust-rayon-optimized.html",
+    "date": "2024-12-04",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Kubernetes on Hetzner",
+    "link": "https://bilbof.com/posts/kubernetes-on-hetzner",
+    "date": "2024-12-02",
+    "tags": [
+      "software-architecture"
+    ]
+  },
+  {
+    "title": "An Intuitive Explanation of Sparse Autoencoders for LLM Interpretability",
+    "link": "https://adamkarvonen.github.io/machine_learning/2024/06/11/sae-intuitions.html",
+    "date": "2024-11-29",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "A Vanity VNC server (or Joke over RFB)",
+    "link": "https://ache.one/articles/a-vanity-vnc-server",
+    "date": "2024-11-27",
+    "tags": [
+      "network"
+    ]
+  },
+  {
+    "title": "Model Context Protocol Quickstart",
+    "link": "https://glama.ai/blog/2024-11-25-model-context-protocol-quickstart",
+    "date": "2024-11-26",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "This Website is Hosted on BlueSky",
+    "link": "https://danielmangum.com/posts/this-website-is-hosted-on-bluesky/",
+    "date": "2024-11-25",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Traits are a Local Maxima",
+    "link": "https://thunderseethe.dev/posts/traits-are-a-local-maxima/",
+    "date": "2024-11-22",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "1 week with David Beazley and SICP",
+    "link": "https://ezzeriesa.notion.site/1-week-with-David-Beazley-and-SICP-4c440389cf1e43f48fe67c969967f655",
+    "date": "2024-11-18",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Constraints in Go",
+    "link": "https://bitfieldconsulting.com/posts/constraints",
+    "date": "2024-11-18",
+    "tags": [
+      "golang"
+    ]
+  },
+  {
+    "title": "File Over App: A Philosophy for Digital Longevity",
+    "link": "https://rishikeshs.com/file-over-app/",
+    "date": "2024-11-18",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Inside M4 chips: E and P cores",
+    "link": "https://eclecticlight.co/2024/11/18/inside-m4-chips-e-and-p-cores/",
+    "date": "2024-11-18",
+    "tags": [
+      "hardware"
+    ]
+  },
+  {
+    "title": "ML in Go with a Python sidecar",
+    "link": "https://eli.thegreenplace.net/2024/ml-in-go-with-a-python-sidecar/",
+    "date": "2024-11-18",
+    "tags": [
+      "machine-learning"
+    ]
+  },
+  {
+    "title": "Reverse Engineering iOS 18 Inactivity Reboot",
+    "link": "https://naehrdine.blogspot.com/2024/11/reverse-engineering-ios-18-inactivity.html",
+    "date": "2024-11-18",
+    "tags": [
+      "reverse-engineering"
+    ]
+  },
+  {
+    "title": "All the data can be yours",
+    "link": "https://jero.zone/posts/reverse-engineering-apis?utm_source=tldrwebdev",
+    "date": "2024-11-14",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "How We Built a Self-Healing System to Survive a Terrifying Concurrency Bug At Netflix",
+    "link": "https://pushtoprod.substack.com/p/netflix-terrifying-concurrency-bug",
+    "date": "2024-11-13",
+    "tags": [
+      "distributed-systems"
+    ]
+  },
+  {
+    "title": "Rust's Sneaky Deadlock With `if let` Blocks",
+    "link": "https://brooksblog.bearblog.dev/rusts-sneaky-deadlock-with-if-let-blocks/",
+    "date": "2024-11-13",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Finding Exploits in Video Games",
+    "link": "https://shalzuth.com/Blog/FindingExploitsInGames",
+    "date": "2024-11-12",
+    "tags": [
+      "reverse-engineering"
+    ]
+  },
+  {
+    "title": "Git and jujutsu: in miniature",
+    "link": "https://lottia.net/notes/0013-git-jujutsu-miniature.html",
+    "date": "2024-11-12",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "How I ship projects at big tech companies",
+    "link": "https://www.seangoedecke.com/how-to-ship/",
+    "date": "2024-11-12",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Improving Steam Client stability on Linux: setenv and multithreaded environments",
+    "link": "https://ttimo.typepad.com/blog/2024/11/the-steam-client-update-earlier-this-week-mentions-fixed-some-miscellaneous-common-crashes-in-the-linux-notes-which-i-wante.html",
+    "date": "2024-11-12",
+    "tags": [
+      "linux"
+    ]
+  },
+  {
+    "title": "Optimizing a WebGPU Matmul Kernel for 1TFLOP+ Performance",
+    "link": "https://www.nuss-and-bolts.com/p/optimizing-a-webgpu-matmul-kernel",
+    "date": "2024-11-12",
+    "tags": [
+      "gpu"
+    ]
+  },
+  {
+    "title": "I sent an Ethernet packet",
+    "link": "https://github.com/francisrstokes/githublog/blob/main/2024%2F11%2F1%2Fsending-an-ethernet-packet.md",
+    "date": "2024-11-11",
+    "tags": [
+      "network"
+    ]
+  },
+  {
+    "title": "AI for Real-time Fusion Plasma Behavior Prediction and Manipulation",
+    "link": "https://control.princeton.edu/machine-learning-for-rt-profile-control-in-tokamaks/",
+    "date": "2024-11-08",
+    "tags": [
+      "machine-learning"
+    ]
+  },
+  {
+    "title": "Build Your Own Text Editor",
+    "link": "https://viewsourcecode.org/snaptoken/kilo/",
+    "date": "2024-11-08",
+    "tags": [
+      "c"
+    ]
+  },
+  {
+    "title": "I'm Not Mutable, I'm Partially Instantiated",
+    "link": "https://blog.dnmfarrell.com/post/incomplete-data-structures/",
+    "date": "2024-11-08",
+    "tags": [
+      "data-structures"
+    ]
+  },
+  {
+    "title": "Perhaps Rust needs defer",
+    "link": "https://gaultier.github.io/blog/perhaps_rust_needs_defer.html",
+    "date": "2024-11-08",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Why I love Rust for tokenising and parsing",
+    "link": "https://xnacly.me/posts/2024/rust-pldev/",
+    "date": "2024-11-08",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Under the microscope: Ecco the Dolphin \u2014 Defender of the Future",
+    "link": "https://32bits.substack.com/p/under-the-microscope-ecco-the-dolphin",
+    "date": "2024-11-07",
+    "tags": [
+      "reverse-engineering"
+    ]
+  },
+  {
+    "title": "Algorithm = Logic + Control",
+    "link": "https://www.doc.ic.ac.uk/~rak/papers/algorithm%20=%20logic%20+%20control.pdf",
+    "date": "2024-11-06",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Hacking 700 Million Electronic Arts Accounts",
+    "link": "https://battleda.sh/blog/ea-account-takeover",
+    "date": "2024-11-06",
+    "tags": [
+      "hacking"
+    ]
+  },
+  {
+    "title": "Low-Poly Image Generation Using Evolutionary Algorithms in Ruby",
+    "link": "https://thomascountz.com/2023/07/30/low-poly-image-generation",
+    "date": "2024-11-05",
+    "tags": [
+      "ruby"
+    ]
+  },
+  {
+    "title": "What Every Developer Should Know About GPU Computing",
+    "link": "https://blog.codingconfessions.com/p/gpu-computing",
+    "date": "2024-11-05",
+    "tags": [
+      "gpu"
+    ]
+  },
+  {
+    "title": "Writing secure Go code",
+    "link": "https://jarosz.dev/article/writing-secure-go-code/",
+    "date": "2024-11-05",
+    "tags": [
+      "golang"
+    ]
+  },
+  {
+    "title": "Weird Lexical Syntax",
+    "link": "https://justine.lol/lex/",
+    "date": "2024-11-03",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Implementing a tiny CPU rasterizer",
+    "link": "https://lisyarus.github.io/blog/posts/implementing-a-tiny-cpu-rasterizer.html",
+    "date": "2024-11-01",
+    "tags": [
+      "c++"
+    ]
+  },
+  {
+    "title": "418 I'm a teapot",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418",
+    "date": "2024-10-28",
+    "tags": [
+      "network"
+    ]
+  },
+  {
+    "title": "Using Rust in Non-Rust Servers to Improve Performance",
+    "link": "https://github.com/pretzelhammer/rust-blog/blob/master/posts/rust-in-non-rust-servers.md",
+    "date": "2024-10-28",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Understanding Round Robin DNS",
+    "link": "https://blog.hyperknot.com/p/understanding-round-robin-dns",
+    "date": "2024-10-27",
+    "tags": [
+      "network"
+    ]
+  },
+  {
+    "title": "What Every Programmer Should Know About Memory",
+    "link": "https://people.freebsd.org/~lstewart/articles/cpumemory.pdf",
+    "date": "2024-10-25",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Why Distributed Computing?",
+    "link": "https://www.artima.com/weblogs/viewpost.jsp?thread=4247",
+    "date": "2024-10-25",
+    "tags": [
+      "distributed-systems"
+    ]
+  },
+  {
+    "title": "Never Missing the Train Again, Thanks to Rust",
+    "link": "https://lilymara.xyz/posts/2024/01/transit-kindle/",
+    "date": "2024-10-24",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "On Designing and Deploying Internet-Scale Services",
+    "link": "https://mvdirona.com/jrh/talksAndPapers/JamesRH_Lisa.pdf",
+    "date": "2024-10-22",
+    "tags": [
+      "distributed-systems"
+    ]
+  },
+  {
+    "title": "Adding syntax to the CPython Interpreter",
+    "link": "https://leontrolski.github.io/grammar.html",
+    "date": "2024-10-21",
+    "tags": [
+      "python"
+    ]
+  },
+  {
+    "title": "AAA gaming on Asahi Linux",
+    "link": "https://rosenzweig.io/blog/aaa-gaming-on-m1.html",
+    "date": "2024-10-11",
+    "tags": [
+      "linux"
+    ]
+  },
+  {
+    "title": "The Ultimate Guide to Error Handling in Python",
+    "link": "https://blog.miguelgrinberg.com/post/the-ultimate-guide-to-error-handling-in-python",
+    "date": "2024-10-10",
+    "tags": [
+      "python"
+    ]
+  },
+  {
+    "title": "(Re)Using rustc components in gccrs",
+    "link": "https://rust-gcc.github.io/2024/09/20/reusing-rustc-components.html",
+    "date": "2024-10-09",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "An Illustrated Proof of the CAP Theorem",
+    "link": "https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/",
+    "date": "2024-10-08",
+    "tags": [
+      "distributed-systems"
+    ]
+  },
+  {
+    "title": "Rust GPU \u2013 The future of GPU programming",
+    "link": "https://rust-gpu.github.io/",
+    "date": "2024-10-08",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Are We Web Yet?",
+    "link": "https://www.arewewebyet.org/",
+    "date": "2024-10-07",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "AVX Bitwise ternary logic instruction busted",
+    "link": "https://arnaud-carre.github.io/2024-10-06-vpternlogd/",
+    "date": "2024-10-07",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Smolderingly fast B-Trees",
+    "link": "https://www.scattered-thoughts.net/writing/smolderingly-fast-btrees/",
+    "date": "2024-10-07",
+    "tags": [
+      "data-structures"
+    ]
+  },
+  {
+    "title": "Whence newline?",
+    "link": "https://rodarmor.com/blog/whence-newline/",
+    "date": "2024-10-07",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Why does man print 'gimme gimme gimme' at 00:30?",
+    "link": "https://unix.stackexchange.com/questions/405783/why-does-man-print-gimme-gimme-gimme-at-0030",
+    "date": "2024-10-06",
+    "tags": [
+      "c"
+    ]
+  },
+  {
+    "title": "Java for Everything",
+    "link": "https://www.teamten.com/lawrence/writings/java-for-everything.html",
+    "date": "2024-10-05",
+    "tags": [
+      "java"
+    ]
+  },
+  {
+    "title": "Linux From Scratch",
+    "link": "https://www.linuxfromscratch.org/",
+    "date": "2024-10-05",
+    "tags": [
+      "linux"
+    ]
+  },
+  {
+    "title": "Rust by Example",
+    "link": "https://doc.rust-lang.org/rust-by-example/",
+    "date": "2024-10-05",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "rustlings",
+    "link": "https://github.com/rust-lang/rustlings/",
+    "date": "2024-10-05",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "The Rust Programming Language (The Book)",
+    "link": "https://doc.rust-lang.org/book/",
+    "date": "2024-10-05",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Efficient Distributed LLM Inference with Dynamic Partitioning",
+    "link": "https://www2.eecs.berkeley.edu/Pubs/TechRpts/2024/EECS-2024-108.pdf",
+    "date": "2024-10-04",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "Reverse Engineering and Dismantling Kekz Headphones",
+    "link": "https://nv1t.github.io/blog/kekz-headphones/",
+    "date": "2024-10-04",
+    "tags": [
+      "reverse-engineering"
+    ]
+  },
+  {
+    "title": "Why and how we are migrating many of our servers from Linux to the BSDs",
+    "link": "https://it-notes.dragas.net/2024/10/03/i-solve-problems-eurobsdcon/",
+    "date": "2024-10-04",
+    "tags": [
+      "linux"
+    ]
+  },
+  {
+    "title": "The Fastest Mutexes",
+    "link": "https://justine.lol/mutex/",
+    "date": "2024-10-03",
+    "tags": [
+      "c"
+    ]
+  },
+  {
+    "title": "Time, Clocks and the Ordering of Events in a Distributed System",
+    "link": "https://www.microsoft.com/en-us/research/publication/time-clocks-ordering-events-distributed-system/",
+    "date": "2024-10-03",
+    "tags": [
+      "distributed-systems"
+    ]
+  },
+  {
+    "title": "Type-erased generic functions for C: A modest non-proposal",
+    "link": "https://duriansoftware.com/joe/type-erased-generic-functions-for-c:-a-modest-non-proposal",
+    "date": "2024-10-03",
+    "tags": [
+      "c"
+    ]
+  },
+  {
+    "title": "NixOS is a good server OS, except when it isn't",
+    "link": "https://sidhion.com/blog/posts/nixos_server_issues/",
+    "date": "2024-10-02",
+    "tags": [
+      "linux"
+    ]
+  },
+  {
+    "title": "A half-hour to learn Rust",
+    "link": "https://fasterthanli.me/articles/a-half-hour-to-learn-rust",
+    "date": "2024-10-01",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Hunting for Gems",
+    "link": "https://www.railsexplained.com/pages/hunting-for-gems/",
+    "date": "2024-09-30",
+    "tags": [
+      "ruby"
+    ]
+  },
+  {
+    "title": "How Discord Stores Trillions of Messages",
+    "link": "https://discord.com/blog/how-discord-stores-trillions-of-messages",
+    "date": "2024-09-29",
+    "tags": [
+      "database"
+    ]
+  },
+  {
+    "title": "Some Go web dev notes",
+    "link": "https://jvns.ca/blog/2024/09/27/some-go-web-dev-notes/",
+    "date": "2024-09-29",
+    "tags": [
+      "golang"
+    ]
+  },
+  {
+    "title": "Too much efficiency makes everything worse: overfitting and the strong version of Goodhart's law",
+    "link": "https://sohl-dickstein.github.io/2022/11/06/strong-Goodhart.html",
+    "date": "2024-09-29",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Attacking Unix Systems Via CUPS, Part I",
+    "link": "https://www.evilsocket.net/2024/09/26/Attacking-UNIX-systems-via-CUPS-Part-I/",
+    "date": "2024-09-28",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "It's hard to write code for computers, but it's even harder to write code for humans",
+    "link": "https://erikbern.com/2024/09/27/its-hard-to-write-code-for-humans.html",
+    "date": "2024-09-27",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Rewriting Rust",
+    "link": "https://josephg.com/blog/rewriting-rust/",
+    "date": "2024-09-26",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "Rearchitecting: Redis to SQLite",
+    "link": "https://wafris.org/blog/rearchitecting-for-sqlite",
+    "date": "2024-09-25",
+    "tags": [
+      "database"
+    ]
+  },
+  {
+    "title": "Why I rewrote my Rust keyboard firmware in Zig: consistency, mastery, and fun",
+    "link": "https://kevinlynagh.com/rust-zig/",
+    "date": "2024-09-25",
+    "tags": [
+      "zig"
+    ]
+  },
+  {
+    "title": "Jetstream: Shrinking the AT Proto Firehose by >99%",
+    "link": "https://jazco.dev/2024/09/24/jetstream/",
+    "date": "2024-09-24",
+    "tags": [
+      "network"
+    ]
+  },
+  {
+    "title": "Tune Llama3 405B on AMD MI300x (our journey)",
+    "link": "https://publish.obsidian.md/felafax/pages/Tune+Llama3+405B+on+AMD+MI300x+(our+journey)",
+    "date": "2024-09-24",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "http:, ftp:, and ... dict:?",
+    "link": "https://shkspr.mobi/blog/2024/09/http-ftp-and-dict/",
+    "date": "2024-09-23",
+    "tags": [
+      "network"
+    ]
+  },
+  {
+    "title": "Linux/4004: booting Linux on Intel 4004 for fun, art, and no profit",
+    "link": "https://dmitry.gr/?r=05.Projects&proj=35.%20Linux4004",
+    "date": "2024-09-23",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Overview of cross-architecture portability problems",
+    "link": "https://blogs.gentoo.org/mgorny/2024/09/23/overview-of-cross-architecture-portability-problems/",
+    "date": "2024-09-23",
+    "tags": [
+      "software-architecture"
+    ]
+  },
+  {
+    "title": "The Transformer Family Version 2.0",
+    "link": "https://lilianweng.github.io/posts/2023-01-27-the-transformer-family-v2/",
+    "date": "2024-09-22",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "Training Language Models to Self-Correct via Reinforcement Learning",
+    "link": "https://arxiv.org/pdf/2409.12917",
+    "date": "2024-09-22",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "Visual guide to SSH tunneling and port forwarding",
+    "link": "https://ittavern.com/visual-guide-to-ssh-tunneling-and-port-forwarding/",
+    "date": "2024-09-20",
+    "tags": [
+      "network"
+    ]
+  },
+  {
+    "title": "Distributed Systems Shibboleths",
+    "link": "https://jolynch.github.io/posts/distsys_shibboleths/",
+    "date": "2024-09-19",
+    "tags": [
+      "distributed-systems"
+    ]
+  },
+  {
+    "title": "A generalised solution to distributed consensus",
+    "link": "https://blog.acolyer.org/2019/03/08/a-generalised-solution-to-distributed-consensus/",
+    "date": "2024-09-18",
+    "tags": [
+      "distributed-systems"
+    ]
+  },
+  {
+    "title": "Motivating Adam Optimizer",
+    "link": "https://noahgsolomon.com/motivating-adam-optimizer",
+    "date": "2024-09-17",
+    "tags": [
+      "optimization"
+    ]
+  },
+  {
+    "title": "Rearchitecting Core Services at X",
+    "link": "https://x.com/cambridgemike/status/1835774409786986572",
+    "date": "2024-09-17",
+    "tags": [
+      "software-architecture"
+    ]
+  },
+  {
+    "title": "Conditionally Disabling Code with Comptime in Zig",
+    "link": "https://mitchellh.com/writing/zig-comptime-conditional-disable",
+    "date": "2024-09-15",
+    "tags": [
+      "zig"
+    ]
+  },
+  {
+    "title": "6 Techniques I Use to Create a Great User Experience for Shell Scripts",
+    "link": "https://nochlin.com/blog/6-techniques-i-use-to-create-a-great-user-experience-for-shell-scripts",
+    "date": "2024-09-14",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "My 71 TiB ZFS NAS After 10 Years and Zero Drive Failures",
+    "link": "https://louwrentius.com/my-71-tib-zfs-nas-after-10-years-and-zero-drive-failures.html",
+    "date": "2024-09-14",
+    "tags": [
+      "homelab"
+    ]
+  },
+  {
+    "title": "My Homelab Setup",
+    "link": "https://arslan.io/2024/09/10/my-homelab-setup/",
+    "date": "2024-09-14",
+    "tags": [
+      "homelab"
+    ]
+  },
+  {
+    "title": "Reverse Engineering and Modding Mario Pinball Land (GBA)",
+    "link": "https://cturt.github.io/pinball.html",
+    "date": "2024-09-14",
+    "tags": [
+      "reverse-engineering"
+    ]
+  },
+  {
+    "title": "Understanding the Tilde Operator in Python",
+    "link": "https://x.com/0x_pix/status/1834722202182152527",
+    "date": "2024-09-14",
+    "tags": [
+      "python"
+    ]
+  },
+  {
+    "title": "Reverse Engineering for Noobs",
+    "link": "https://x86re.com/",
+    "date": "2024-09-13",
+    "tags": [
+      "reverse-engineering"
+    ]
+  },
+  {
+    "title": "Safe C++",
+    "link": "https://safecpp.org/draft.html",
+    "date": "2024-09-13",
+    "tags": [
+      "c++"
+    ]
+  },
+  {
+    "title": "The intuition behind Rust\u2019s borrowing rules and ownership",
+    "link": "https://rainingcomputers.blog/dist/the_intuition_behind_rusts_borrowing_rules_and_ownership.md",
+    "date": "2024-09-13",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "The Secret Inside One Million Checkboxes",
+    "link": "https://eieio.games/essays/the-secret-in-one-million-checkboxes/",
+    "date": "2024-09-13",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Design Patterns Are Temporary, Language Features Are Forever",
+    "link": "https://ptrtojoel.dev/posts/design-patterns-are-temporary/",
+    "date": "2024-09-12",
+    "tags": [
+      "design-patterns"
+    ]
+  },
+  {
+    "title": "The Perfect Voxel Engine",
+    "link": "https://voxely.net/blog/the-perfect-voxel-engine/",
+    "date": "2024-09-12",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Why Haskell?",
+    "link": "https://www.gtf.io/musings/why-haskell",
+    "date": "2024-09-12",
+    "tags": [
+      "haskell"
+    ]
+  },
+  {
+    "title": "Ditherpunk \u2014 The article I wish I had about monochrome image dithering",
+    "link": "https://surma.dev/things/ditherpunk/",
+    "date": "2024-09-11",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Don't defer Close() on writable files",
+    "link": "https://www.joeshaw.org/dont-defer-close-on-writable-files/",
+    "date": "2024-09-11",
+    "tags": [
+      "golang"
+    ]
+  },
+  {
+    "title": "Introduction to GGML",
+    "link": "https://huggingface.co/blog/introduction-to-ggml",
+    "date": "2024-09-11",
+    "tags": [
+      "machine-learning"
+    ]
+  },
+  {
+    "title": "Odin is a weird programming language to advertise/market for",
+    "link": "https://x.com/TheGingerBill/status/1832797478728433873",
+    "date": "2024-09-11",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "PyTorch is dead. Long live JAX",
+    "link": "https://neel04.github.io/my-website/blog/pytorch_rant/",
+    "date": "2024-09-11",
+    "tags": [
+      "machine-learning"
+    ]
+  },
+  {
+    "title": "SQLite on Rails: The how and why of optimal performance",
+    "link": "https://fractaledmind.github.io/2024/04/15/sqlite-on-rails-the-how-and-why-of-optimal-performance/",
+    "date": "2024-09-11",
+    "tags": [
+      "database"
+    ]
+  },
+  {
+    "title": "B-trees and database indexes",
+    "link": "https://planetscale.com/blog/btrees-and-database-indexes",
+    "date": "2024-09-10",
+    "tags": [
+      "data-structures"
+    ]
+  },
+  {
+    "title": "Towards high-performance AI compilers",
+    "link": "https://hy3na.com/posts/compilers.html",
+    "date": "2024-09-10",
+    "tags": [
+      "compilers"
+    ]
+  },
+  {
+    "title": "5000x faster CRDTs: An Adventure in Optimization",
+    "link": "https://josephg.com/blog/crdts-go-brrr/",
+    "date": "2024-09-09",
+    "tags": [
+      "optimization"
+    ]
+  },
+  {
+    "title": "Crafting an event system",
+    "link": "https://deplet.ing/#/post/2",
+    "date": "2024-09-09",
+    "tags": [
+      "design-patterns"
+    ]
+  },
+  {
+    "title": "Equals as Assignment",
+    "link": "https://www.hillelwayne.com/post/equals-as-assignment/",
+    "date": "2024-09-09",
+    "tags": [
+      "language-design"
+    ]
+  },
+  {
+    "title": "Flattening ASTs (and Other Compiler Data Structures)",
+    "link": "https://www.cs.cornell.edu/~asampson/blog/flattening.html",
+    "date": "2024-09-09",
+    "tags": [
+      "data-structures"
+    ]
+  },
+  {
+    "title": "From the Transistor",
+    "link": "https://www.fromthetransistor.com/",
+    "date": "2024-09-09",
+    "tags": [
+      "various"
+    ]
+  },
+  {
+    "title": "Go Garbage Collector",
+    "link": "https://cs.opensource.google/go/go/+/master:src/runtime/mgc.go",
+    "date": "2024-09-09",
+    "tags": [
+      "golang"
+    ]
+  },
+  {
+    "title": "How to do distributed locking",
+    "link": "https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html",
+    "date": "2024-09-09",
+    "tags": [
+      "distributed-systems"
+    ]
+  },
+  {
+    "title": "How to Optimize a CUDA Matmul Kernel for cuBLAS-like Performance: a Worklog",
+    "link": "https://siboehm.com/articles/22/CUDA-MMM",
+    "date": "2024-09-09",
+    "tags": [
+      "gpu"
+    ]
+  },
+  {
+    "title": "llama3 implemented from scratch",
+    "link": "https://github.com/naklecha/llama3-from-scratch",
+    "date": "2024-09-09",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "Lockfree Algorithms",
+    "link": "https://www.1024cores.net/home/lock-free-algorithms",
+    "date": "2024-09-09",
+    "tags": [
+      "algorithms"
+    ]
+  },
+  {
+    "title": "My first superoptimizer",
+    "link": "https://austinhenley.com/blog/superoptimizer.html",
+    "date": "2024-09-09",
+    "tags": [
+      "optimization"
+    ]
+  },
+  {
+    "title": "normcore-llm / anti-hype LLM reading list",
+    "link": "https://gist.github.com/veekaybee/be375ab33085102f9027853128dc5f0e",
+    "date": "2024-09-09",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
+    "title": "Notes on Distributed Systems for Young Bloods",
+    "link": "https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/",
+    "date": "2024-09-09",
+    "tags": [
+      "distributed-systems"
+    ]
+  },
+  {
+    "title": "Rust Atomics and Locks \u2013 Low-Level Concurrency in Practice",
+    "link": "https://marabos.nl/atomics/",
+    "date": "2024-09-09",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "title": "The world in which IPv6 was a good design",
+    "link": "https://apenwarr.ca/log/20190318",
+    "date": "2024-09-09",
+    "tags": [
+      "network"
+    ]
+  }
+]
