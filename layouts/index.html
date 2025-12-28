@@ -1,70 +1,80 @@
 {{ define "main" }}
 <div class="home">
-    {{ $posts := where .Site.RegularPages "Section" "posts" }}
-    {{ $notes := where .Site.RegularPages "Section" "notes" }}
-    {{ $links := where .Site.RegularPages "Section" "links" }}
-    
-    {{ $allContent := slice }}
-    {{ $allContent = $allContent | append $posts }}
-    {{ $allContent = $allContent | append $notes }}
-    {{ $allContent = $allContent | append $links }}
-    {{ $allContent = sort $allContent "Date" "desc" }}
-    
-    <h2 class="section-header">Recent</h2>
-    
-    <div class="home-stream">
-        {{ range first 30 $allContent }}
-        <article class="stream-item stream-{{ .Section }}">
-            <div class="stream-meta">
-                <time class="stream-time" datetime="{{ .Date.Format "2006-01-02" }}">
-                    {{ .Date.Format "Jan 2, 2006" }}
-                </time>
-                <span class="content-type">{{ .Section | title | singularize }}</span>
-            </div>
-            
-            <div class="stream-content">
-                {{ if eq .Section "posts" }}
+    {{ $posts := sort (where .Site.RegularPages "Section" "posts") "Date" "desc" }}
+    {{ $notes := sort (where .Site.RegularPages "Section" "notes") "Date" "desc" }}
+    {{ $links := sort (where .Site.RegularPages "Section" "links") "Date" "desc" }}
+
+    <section class="home-section">
+        <h2 class="section-header">Posts</h2>
+        <div class="home-stream">
+            {{ range first 5 $posts }}
+            <article class="stream-item stream-posts">
+                <div class="stream-row">
                     <h2 class="stream-title">
                         <a href="{{ .Permalink }}">{{ .Title }}</a>
                     </h2>
-                    {{ with .Summary }}
-                    <p class="stream-summary">{{ . | truncate 280 }}</p>
-                    {{ end }}
-                    {{ with .Params.tags }}
-                    <div class="stream-tags">
-                        {{ range . }}
-                        <span class="mini-tag">{{ . }}</span>
-                        {{ end }}
-                    </div>
-                    {{ end }}
-                    
-                {{ else if eq .Section "notes" }}
-                    <div class="stream-note">
-                        {{ .Content }}
-                    </div>
-                    <a href="{{ .Permalink }}" class="permalink">Permalink</a>
-                    
-                {{ else if eq .Section "links" }}
+                    <time class="stream-time" datetime="{{ .Date.Format "2006-01-02" }}">
+                        {{ .Date.Format "2006-01-02" }}
+                    </time>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+        <div class="section-more">
+            <a href="/posts/" class="section-link">See all posts →</a>
+        </div>
+    </section>
+
+    <section class="home-section">
+        <h2 class="section-header">Notes</h2>
+        <div class="home-stream">
+            {{ range first 5 $notes }}
+            <article class="stream-item stream-notes">
+                <div class="stream-row">
+                    <h2 class="stream-title">
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </h2>
+                    <time class="stream-time" datetime="{{ .Date.Format "2006-01-02" }}">
+                        {{ .Date.Format "2006-01-02" }}
+                    </time>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+        <div class="section-more">
+            <a href="/notes/" class="section-link">See all notes →</a>
+        </div>
+    </section>
+
+    <section class="home-section">
+        <h2 class="section-header">Links</h2>
+        <div class="home-stream">
+            {{ range first 5 $links }}
+            {{ $linkPage := . }}
+            <article class="stream-item stream-links">
+                <div class="stream-meta">
+                    <time class="stream-time" datetime="{{ .Date.Format "2006-01-02" }}">
+                        {{ .Date.Format "2006-01-02" }}
+                    </time>
+                </div>
+
+                <div class="stream-content">
+                    {{ with $linkPage.Params.link }}
                     <h3 class="stream-link-title">
-                        <a href="{{ .Params.link }}" target="_blank" rel="noopener">{{ .Title }} →</a>
+                        <a href="{{ . }}" target="_blank" rel="noopener">{{ $linkPage.Title }} →</a>
                     </h3>
-                    <div class="stream-link-url">{{ .Params.link | replaceRE "^https?://(www\\.)?" "" | truncate 50 }}</div>
-                    {{ with .Content }}
+                    <div class="stream-link-url">{{ . | replaceRE "^https?://(www\\.)?" "" | truncate 50 }}</div>
+                    {{ end }}
+                    {{ with $linkPage.Content }}
                     <div class="stream-note">{{ . }}</div>
                     {{ end }}
-                {{ end }}
-            </div>
-        </article>
-        {{ end }}
-    </div>
-    
-    {{ if gt (len $allContent) 30 }}
-    <div class="load-more">
-        <p>Showing 30 most recent entries</p>
-        <a href="/posts/" class="btn">All Posts</a>
-        <a href="/notes/" class="btn">All Notes</a>
-        <a href="/links/" class="btn">All Links</a>
-    </div>
-    {{ end }}
+                </div>
+            </article>
+            {{ end }}
+        </div>
+        <div class="section-more">
+            <a href="/links/" class="section-link">See all links ({{ len $links }}) →</a>
+        </div>
+    </section>
 </div>
 {{ end }}
