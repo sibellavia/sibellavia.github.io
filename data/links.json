@@ -1,5 +1,16 @@
 [
   {
+    "title": "LSFG-VK: Vulkan layer for frame generation via lossless scaling",
+    "link": "https://github.com/PancakeTAS/lsfg-vk",
+    "date": "2025-12-30T17:27:00+01:00",
+    "tags": [
+      "vulkan",
+      "linux",
+      "lossless-scaling",
+      "frame-generation"
+    ]
+  },
+  {
     "title": "My First Meshtastic Network",
     "link": "https://rickcarlino.com/notes/electronics/my-first-meshtastic-network.html",
     "date": "2025-12-29T08:50:00+01:00",
