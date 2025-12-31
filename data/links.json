@@ -1,5 +1,14 @@
 [
   {
+    "title": "FediMeteo: A €4 FreeBSD VPS Became a Global Weather Service",
+    "link": "https://it-notes.dragas.net/2025/02/26/fedimeteo-how-a-tiny-freebsd-vps-became-a-global-weather-service-for-thousands/",
+    "date": "2025-12-31T08:33:00+01:00",
+    "tags": [
+      "fediverse",
+      "freebsd"
+    ]
+  },
+  {
     "title": "Reverse Engineering A Mysterious UDP Stream in My Hotel",
     "link": "https://www.gkbrk.com/hotel-music",
     "date": "2025-12-31T08:18:00+01:00",
