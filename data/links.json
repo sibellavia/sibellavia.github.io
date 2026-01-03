@@ -1,5 +1,15 @@
 [
   {
+    "title": "Publish (on your) Own Site, Syndicate Elsewhere (POSSE)",
+    "link": "https://indieweb.org/POSSE",
+    "date": "2026-01-03T08:41:00+01:00",
+    "tags": [
+      "blogging",
+      "indieweb",
+      "posse"
+    ]
+  },
+  {
     "title": "FediMeteo: A €4 FreeBSD VPS Became a Global Weather Service",
     "link": "https://it-notes.dragas.net/2025/02/26/fedimeteo-how-a-tiny-freebsd-vps-became-a-global-weather-service-for-thousands/",
     "date": "2025-12-31T08:33:00+01:00",
