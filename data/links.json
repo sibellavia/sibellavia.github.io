@@ -1,5 +1,16 @@
 [
   {
+    "title": "Kernel bugs hide for 2 years on average. Some hide for 20.",
+    "link": "https://pebblebed.com/blog/kernel-bugs",
+    "date": "2026-01-08T08:30:00+01:00",
+    "tags": [
+      "linux",
+      "kernel",
+      "bugs",
+      "machine-learning"
+    ]
+  },
+  {
     "title": "Publish (on your) Own Site, Syndicate Elsewhere (POSSE)",
     "link": "https://indieweb.org/POSSE",
     "date": "2026-01-03T08:41:00+01:00",
