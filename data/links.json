@@ -1,5 +1,15 @@
 [
   {
+    "title": "Finding and Fixing Ghostty's Largest Memory Leak",
+    "link": "https://mitchellh.com/writing/ghostty-memory-leak-fix",
+    "date": "2026-01-11T11:15:00+01:00",
+    "tags": [
+      "zig",
+      "bugs",
+      "ghostty"
+    ]
+  },
+  {
     "title": "Fixing a Buffer Overflow in UNIX v4 Like It Is 1973",
     "link": "https://sigma-star.at/blog/2025/12/unix-v4-buffer-overflow/",
     "date": "2026-01-09T09:22:00+01:00",
