@@ -1,5 +1,14 @@
 [
   {
+    "title": "Don't fall into the anti-AI hype",
+    "link": "https://antirez.com/news/158",
+    "date": "2026-01-12T10:47:00+01:00",
+    "tags": [
+      "agents",
+      "antirez"
+    ]
+  },
+  {
     "title": "Finding and Fixing Ghostty's Largest Memory Leak",
     "link": "https://mitchellh.com/writing/ghostty-memory-leak-fix",
     "date": "2026-01-11T11:15:00+01:00",
