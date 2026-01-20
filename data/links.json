@@ -1,5 +1,13 @@
 [
   {
+    "title": "Running Claude Code dangerously (safely)",
+    "link": "https://blog.emilburzo.com/2026/01/running-claude-code-dangerously-safely/",
+    "date": "2026-01-20T14:38:00+01:00",
+    "tags": [
+      "agents"
+    ]
+  },
+  {
     "title": "Scaling long-running autonomous coding agents",
     "link": "https://simonwillison.net/2026/Jan/19/scaling-long-running-autonomous-coding/",
     "date": "2026-01-20T12:46:00+01:00",
