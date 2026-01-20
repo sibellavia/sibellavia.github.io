@@ -1,5 +1,13 @@
 [
   {
+    "title": "Scaling long-running autonomous coding agents",
+    "link": "https://simonwillison.net/2026/Jan/19/scaling-long-running-autonomous-coding/",
+    "date": "2026-01-20T12:46:00+01:00",
+    "tags": [
+      "agents"
+    ]
+  },
+  {
     "title": "Flux 2 Klein pure C inference",
     "link": "https://news.ycombinator.com/item?id=46670279",
     "date": "2026-01-19T10:39:00+01:00",
