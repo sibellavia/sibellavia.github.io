@@ -1,5 +1,14 @@
 [
   {
+    "title": "Unrolling the Codex agent loop",
+    "link": "https://openai.com/index/unrolling-the-codex-agent-loop/",
+    "date": "2026-01-24T10:54:00+01:00",
+    "tags": [
+      "agents",
+      "codex"
+    ]
+  },
+  {
     "title": "Running Claude Code dangerously (safely)",
     "link": "https://blog.emilburzo.com/2026/01/running-claude-code-dangerously-safely/",
     "date": "2026-01-20T14:38:00+01:00",
