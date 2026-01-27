@@ -1,5 +1,13 @@
 [
   {
+    "title": "ChatGPT Containers can now run bash, install packages, and download files",
+    "link": "https://simonwillison.net/2026/Jan/26/chatgpt-containers/",
+    "date": "2026-01-27T09:29:00+01:00",
+    "tags": [
+      "sandboxing"
+    ]
+  },
+  {
     "title": "Unrolling the Codex agent loop",
     "link": "https://openai.com/index/unrolling-the-codex-agent-loop/",
     "date": "2026-01-24T10:54:00+01:00",
