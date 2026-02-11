@@ -1,5 +1,13 @@
 [
   {
+    "title": "The Singularity will Occur on a Tuesday",
+    "link": "https://campedersen.com/singularity",
+    "date": "2026-02-11T10:05:00+01:00",
+    "tags": [
+      "llm"
+    ]
+  },
+  {
     "title": "ChatGPT Containers can now run bash, install packages, and download files",
     "link": "https://simonwillison.net/2026/Jan/26/chatgpt-containers/",
     "date": "2026-01-27T09:29:00+01:00",
