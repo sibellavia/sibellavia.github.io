@@ -1,5 +1,13 @@
 [
   {
+    "title": "My smart sleep mask broadcasts users' brainwaves to an open MQTT broker",
+    "link": "https://aimilios.bearblog.dev/reverse-engineering-sleep-mask/",
+    "date": "2026-02-15T09:24:00+01:00",
+    "tags": [
+      "reverse-engineering"
+    ]
+  },
+  {
     "title": "Using an engineering notebook",
     "link": "https://ntietz.com/blog/using-an-engineering-notebook/",
     "date": "2026-02-12T10:53:00+01:00",
