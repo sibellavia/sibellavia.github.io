@@ -1,5 +1,14 @@
 [
   {
+    "title": "How kernel anti cheats work",
+    "link": "https://s4dbrd.github.io/posts/how-kernel-anti-cheats-work/",
+    "date": "2026-03-15T12:18:00+01:00",
+    "tags": [
+      "kernel",
+      "reverse-engineering"
+    ]
+  },
+  {
     "title": "How I built Timeframe, our family e-paper dashboard",
     "link": "https://hawksley.org/2026/02/17/timeframe.html",
     "date": "2026-02-23T09:16:00+01:00",
