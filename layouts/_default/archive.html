@@ -2,7 +2,7 @@
 <div class="archive">
     <h1>Archive</h1>
     
-    {{ $pages := where .Site.RegularPages "Type" "in" (slice "posts" "notes" "links") }}
+    {{ $pages := where .Site.RegularPages "Type" "in" (slice "posts" "links") }}
     {{ $grouped := $pages.GroupByDate "2006" }}
     
     {{ range $grouped }}

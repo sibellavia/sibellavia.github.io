@@ -1,7 +1,6 @@
 {{ define "main" }}
 <div class="home">
     {{ $posts := sort (where .Site.RegularPages "Section" "posts") "Date" "desc" }}
-    {{ $notes := sort (where .Site.RegularPages "Section" "notes") "Date" "desc" }}
     {{ $links := sort .Site.Data.links "date" "desc" }}
 
     <section class="home-section">
@@ -22,27 +21,6 @@
         </div>
         <div class="section-more">
             <a href="/posts/" class="section-link">See all posts →</a>
-        </div>
-    </section>
-
-    <section class="home-section">
-        <h2 class="section-header">Notes</h2>
-        <div class="home-stream">
-            {{ range first 5 $notes }}
-            <article class="stream-item stream-notes">
-                <div class="stream-row">
-                    <h2 class="stream-title">
-                        <a href="{{ .Permalink }}">{{ .Title }}</a>
-                    </h2>
-                    <time class="stream-time" datetime="{{ .Date.Format "2006-01-02" }}">
-                        {{ .Date.Format "2006-01-02" }}
-                    </time>
-                </div>
-            </article>
-            {{ end }}
-        </div>
-        <div class="section-more">
-            <a href="/notes/" class="section-link">See all notes →</a>
         </div>
     </section>
 

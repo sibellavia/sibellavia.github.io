@@ -17,21 +17,6 @@
         {{ end }}
     </ul>
     
-    {{ else if eq .Section "notes" }}
-    <ul class="note-list">
-        {{ range .Pages.ByDate.Reverse }}
-        <li class="note-item">
-            <div class="note-meta">
-                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006 3:04 PM" }}</time>
-            </div>
-            <div class="note-content">
-                {{ .Content }}
-            </div>
-            <a href="{{ .Permalink }}" class="permalink">Permalink</a>
-        </li>
-        {{ end }}
-    </ul>
-    
     {{ else if eq .Section "links" }}
     {{ $links := sort .Site.Data.links "date" "desc" }}
     <ul class="link-list">
