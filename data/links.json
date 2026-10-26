@@ -1,5 +1,21 @@
 [
   {
+    "title": "We should be more ambitious with the software we build", 
+    "link": "https://danluu.com/ambitious/",
+    "date": "2026-10-26T09:36:00+01:00",
+    "tags": [
+     "various"
+    ]
+  },
+  {
+    "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis", 
+    "link": "https://lynchlab.net/llm-skin-cancer",
+    "date": "2026-10-26T09:36:00+01:00",
+    "tags": [
+     "health"
+    ]
+  },
+  {
     "title": "Things to know if you get cancer (2026 Edition)", 
     "link": "https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/",
     "date": "2026-10-15T09:08:00+02:00",
